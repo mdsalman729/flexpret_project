@@ -1,0 +1,61 @@
+WAIT_FOR_THREAD should use RUN_UNTIL
+RUN_THREADS_UNTIL and RUN_EACH_THREAD_UNTIL
+remove SELECT_THREAD, use CHOOSE_THREAD
+* need construct to permute threads
+* checkpoint messages for long executions, for example after 1000 events, etc.
+* take which test method to call from the command line arguments
+***radbench_bug4: hashtable to store key/ADDRINT pairs for get info from the program.
+*** WITH_ALL_THREADS{..} scope should be treated NULL when it is empty
+***Test programin standard outputunu dosyaya yonlendir, sadece stderr ekrana yazilsin.
+***Static counters to access them without using the hashmap
+
+move test library loading calling to TestDriver class
+
+https://bugzilla.mozilla.org/show_bug.cgi?id=546828
+https://bugzilla.mozilla.org/show_bug.cgi?id=477021	
+
+- WAIT FOR ALL'da end node koy ya da TEARDOWN'da assertion violation exception'a izin ver (su an exceptiona izin verilmiyor)
+
+- static variable koy, ayni dslxxx'den olusturmak icin.
+- pinden gelen before ve after transition callari standard olacak, sadece aux statei degistiren callbackler de olacak.
+- state'i map yap, daha efficient olabilir.
+- dot file classlarinin renk/stil gibi ozelliklerini de class constructor parametrelere ekle
+- execution tree'yi dot dosyasina dump et, grafigini cikart.
+- ENDING diye bir status'a ihtiyac var mi?
+- transition eklerken predicate False'a esitse direk backtrack at
+- end of script olan branchlara, endscriptnode : endnode ve bir backtrack(endofscript) exception
+- eger script bittigi icin backtrack yapan kod varsa, backtrack sirasinda bunu tespit edip covered yap
+- script bittikten sonra controlled transition devam ediyorsa backtrack et, success olmasin.
+---- satisfy edilmeyen transitionlar nedeniyle olan backtrackli executionlari forall'da sayma
+- INSTANCEOF lari ASINSTANCEOF ile yer degistir dynamic castlari bire dusurmek icin
+
+ -- pin instrumentation'i kaldir!!!
+- rununcontrolled yield mod icin nasil calisacak, ayri flag gerekebilir!
+
+- if(ENABLED <= status && status < BLOCKED) {
+- PASSIVE ya da TERMINATED'dan bir status'u sil coroutine'den (once gerekli mi diye bak)
+
+
+FEATURES
+		threadleri yield noktasina kadar parallel calistir.
+		timer tut, tek tek ve toplam zamani olc, sonunda raporla. Kuda'dan zamanla ilgili kodlari al.
+		vctracker'li ve coverage'li scenario'yu default scenario'dan ayir.
+
+		dpor'u compile time flag degil runtime flag yap.
+		cogu zaman bir execution birden fazla ziyaret ediliyor, yielddan sonra transferde ayni yere gitmemesi icin bir flag koy
+		sadece bir thread varsa o threadden yield yapma sonuna kadar. bunun icin de flag koy cunku bazen gerekli olabiliyor.
+		yield yaptiktan sonra baska bir thread'i sec. bunun icin de bir flag koy ya da EXCEPT ile devam et.
+		yieldpointdeki prev pointeri kullanarak last coming coroutine;i belirle ve bunu kullanarak EXCEPT_LAST() ekle.
+		yieldpoint'de next pointera gerek var mi?
+		
+		save etme ve replay etme
+		UNTIL(TRANSFER) seklinde olsun -- lambda expressions -- http://matt.might.net/articles/static-closures-in-c-plus-plus/
+		generate test scenarios from schedules
+		sequential mode yaninda true concurrency modu koy, direk threadleri senkronize etmeden calistir.
+		
+		handle case where a yield point is associated with not only a single access but a set of accesses
+		lp.cpp'deki TODO'lara bak, onlarla ilgilen.
+		
+REFACTORINGS
+		std::string yerine olabildigince const char* kullan
+		

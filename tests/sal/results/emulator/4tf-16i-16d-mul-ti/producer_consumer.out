@@ -1,0 +1,22 @@
+maxcycles: 20000000
+ispm: tests/sal/build/emulator/producer_consumer.inst.mem
+dspm: tests/sal/build/emulator/producer_consumer.data.mem
+vcd: tests/sal/results/emulator/4tf-16i-16d-mul-ti/producer_consumer.vcd
+00000001GPIO (tid = 0, cycle =     807): 0x00000003
+*** PASSED ***
+Counters for tid = 0
+Processor cycles = 826
+Thread cycles = 297
+Commit cycles = 287
+Counters for tid = 1
+Processor cycles = 826
+Thread cycles = 264
+Commit cycles = 264
+Counters for tid = 2
+Processor cycles = 826
+Thread cycles = 265
+Commit cycles = 264
+Counters for tid = 3
+Processor cycles = 826
+Thread cycles = 0
+Commit cycles = 0

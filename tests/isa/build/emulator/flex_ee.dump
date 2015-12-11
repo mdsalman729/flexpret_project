@@ -1,0 +1,72 @@
+
+tests/isa/build/emulator/flex_ee.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00000597          	auipc	a1,0x0
+   4:	09058593          	addi	a1,a1,144 # 90 <evec1>
+   8:	50859073          	csrw	evec,a1
+   c:	00b00613          	li	a2,11
+  10:	00102573          	frflags	a0
+  14:	50751073          	csrw	compare,a0
+  18:	0000705b          	custom2	zero,zero,zero,0
+
+0000001c <epc1>:
+  1c:	01660613          	addi	a2,a2,22
+  20:	00000597          	auipc	a1,0x0
+  24:	0a858593          	addi	a1,a1,168 # c8 <evec2>
+  28:	50859073          	csrw	evec,a1
+  2c:	000015b7          	lui	a1,0x1
+  30:	fa058593          	addi	a1,a1,-96 # fa0 <evec2+0xed8>
+  34:	00b50533          	add	a0,a0,a1
+  38:	50751073          	csrw	compare,a0
+  3c:	0000705b          	custom2	zero,zero,zero,0
+  40:	00a60613          	addi	a2,a2,10
+  44:	001025f3          	frflags	a1
+  48:	00500e13          	li	t3,5
+  4c:	02a5f063          	bleu	a0,a1,6c <fail>
+  50:	00600e13          	li	t3,6
+  54:	fb460613          	addi	a2,a2,-76
+  58:	00c01a63          	bne	zero,a2,6c <fail>
+  5c:	001025f3          	frflags	a1
+  60:	00160613          	addi	a2,a2,1
+  64:	feb57ce3          	bleu	a1,a0,5c <epc1+0x40>
+  68:	01c01c63          	bne	zero,t3,80 <pass>
+
+0000006c <fail>:
+  6c:	0ff0000f          	fence
+  70:	000e0663          	beqz	t3,7c <fail+0x10>
+  74:	51ee1073          	csrw	tohost,t3
+  78:	cc416073          	csrsi	uarch4,2
+  7c:	0000006f          	j	7c <fail+0x10>
+
+00000080 <pass>:
+  80:	0ff0000f          	fence
+  84:	51e0d073          	csrwi	tohost,1
+  88:	cc40e073          	csrsi	uarch4,1
+  8c:	0000006f          	j	8c <pass+0xc>
+
+00000090 <evec1>:
+  90:	00200e13          	li	t3,2
+  94:	00b00693          	li	a3,11
+  98:	fcc69ae3          	bne	a3,a2,6c <fail>
+  9c:	00300e13          	li	t3,3
+  a0:	00d00693          	li	a3,13
+  a4:	50902773          	csrr	a4,cause
+  a8:	fce692e3          	bne	a3,a4,6c <fail>
+  ac:	00400e13          	li	t3,4
+  b0:	00000697          	auipc	a3,0x0
+  b4:	f6c68693          	addi	a3,a3,-148 # 1c <epc1>
+  b8:	50202773          	csrr	a4,epc
+  bc:	fae698e3          	bne	a3,a4,6c <fail>
+  c0:	02160613          	addi	a2,a2,33
+  c4:	00070067          	jr	a4
+
+000000c8 <evec2>:
+  c8:	00700e13          	li	t3,7
+  cc:	00500593          	li	a1,5
+  d0:	f8b66ee3          	bltu	a2,a1,6c <fail>
+  d4:	50202773          	csrr	a4,epc
+  d8:	00070067          	jr	a4

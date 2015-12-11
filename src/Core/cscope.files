@@ -1,0 +1,13 @@
+/home/salman/salman_cps/flexpret/src/Core/core.scala
+/home/salman/salman_cps/flexpret/src/Core/multiplier.scala
+/home/salman/salman_cps/flexpret/src/Core/constants.scala
+/home/salman/salman_cps/flexpret/src/Core/loadstore.scala
+/home/salman/salman_cps/flexpret/src/Core/decode.scala
+/home/salman/salman_cps/flexpret/src/Core/csr.scala
+/home/salman/salman_cps/flexpret/src/Core/regfile.scala
+/home/salman/salman_cps/flexpret/src/Core/scheduler.scala
+/home/salman/salman_cps/flexpret/src/Core/ispm.scala
+/home/salman/salman_cps/flexpret/src/Core/instructions.scala
+/home/salman/salman_cps/flexpret/src/Core/dspm.scala
+/home/salman/salman_cps/flexpret/src/Core/datapath.scala
+/home/salman/salman_cps/flexpret/src/Core/control.scala

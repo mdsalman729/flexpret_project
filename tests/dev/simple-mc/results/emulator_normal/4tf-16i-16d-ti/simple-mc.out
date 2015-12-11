@@ -1,0 +1,5 @@
+maxcycles: 20000000
+ispm: tests/dev/simple-mc/build/emulator_normal/simple-mc.inst.mem
+dspm: tests/dev/simple-mc/build/emulator_normal/simple-mc.data.mem
+vcd: tests/dev/simple-mc/results/emulator_normal/4tf-16i-16d-ti/simple-mc.vcd
+*** FAILED ***(Max cycles timeout)

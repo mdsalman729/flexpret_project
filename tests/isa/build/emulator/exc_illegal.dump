@@ -1,0 +1,36 @@
+
+tests/isa/build/emulator/exc_illegal.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00000517          	auipc	a0,0x0
+   4:	04450513          	addi	a0,a0,68 # 44 <stvec_handler>
+   8:	50851073          	csrw	evec,a0
+   c:	00200e13          	li	t3,2
+  10:	0000                	unimp
+  12:	0000                	unimp
+  14:	00c0006f          	j	20 <fail>
+  18:	01c0006f          	j	34 <pass>
+  1c:	01c01c63          	bne	zero,t3,34 <pass>
+
+00000020 <fail>:
+  20:	0ff0000f          	fence
+  24:	000e0663          	beqz	t3,30 <fail+0x10>
+  28:	51ee1073          	csrw	tohost,t3
+  2c:	cc416073          	csrsi	uarch4,2
+  30:	0000006f          	j	30 <fail+0x10>
+
+00000034 <pass>:
+  34:	0ff0000f          	fence
+  38:	51e0d073          	csrwi	tohost,1
+  3c:	cc40e073          	csrsi	uarch4,1
+  40:	0000006f          	j	40 <pass+0xc>
+
+00000044 <stvec_handler>:
+  44:	00200593          	li	a1,2
+  48:	50902573          	csrr	a0,cause
+  4c:	fcb51ae3          	bne	a0,a1,20 <fail>
+  50:	50202573          	csrr	a0,epc
+  54:	00850067          	jr	a0,8

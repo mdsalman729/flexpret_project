@@ -1,0 +1,216 @@
+
+tests/isa/build/emulator/lb.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	20000097          	auipc	ra,0x20000
+   4:	00008093          	mv	ra,ra
+   8:	00008183          	lb	gp,0(ra) # 20000000 <DATA_START_ADDR>
+   c:	fff00e93          	li	t4,-1
+  10:	00200e13          	li	t3,2
+  14:	23d19c63          	bne	gp,t4,24c <fail>
+
+00000018 <test_3>:
+  18:	20000097          	auipc	ra,0x20000
+  1c:	fe808093          	addi	ra,ra,-24 # 20000000 <DATA_START_ADDR>
+  20:	00108183          	lb	gp,1(ra)
+  24:	00000e93          	li	t4,0
+  28:	00300e13          	li	t3,3
+  2c:	23d19063          	bne	gp,t4,24c <fail>
+
+00000030 <test_4>:
+  30:	20000097          	auipc	ra,0x20000
+  34:	fd008093          	addi	ra,ra,-48 # 20000000 <DATA_START_ADDR>
+  38:	00208183          	lb	gp,2(ra)
+  3c:	ff000e93          	li	t4,-16
+  40:	00400e13          	li	t3,4
+  44:	21d19463          	bne	gp,t4,24c <fail>
+
+00000048 <test_5>:
+  48:	20000097          	auipc	ra,0x20000
+  4c:	fb808093          	addi	ra,ra,-72 # 20000000 <DATA_START_ADDR>
+  50:	00308183          	lb	gp,3(ra)
+  54:	00f00e93          	li	t4,15
+  58:	00500e13          	li	t3,5
+  5c:	1fd19863          	bne	gp,t4,24c <fail>
+
+00000060 <test_6>:
+  60:	20000097          	auipc	ra,0x20000
+  64:	fa308093          	addi	ra,ra,-93 # 20000003 <tdat4>
+  68:	ffd08183          	lb	gp,-3(ra)
+  6c:	fff00e93          	li	t4,-1
+  70:	00600e13          	li	t3,6
+  74:	1dd19c63          	bne	gp,t4,24c <fail>
+
+00000078 <test_7>:
+  78:	20000097          	auipc	ra,0x20000
+  7c:	f8b08093          	addi	ra,ra,-117 # 20000003 <tdat4>
+  80:	ffe08183          	lb	gp,-2(ra)
+  84:	00000e93          	li	t4,0
+  88:	00700e13          	li	t3,7
+  8c:	1dd19063          	bne	gp,t4,24c <fail>
+
+00000090 <test_8>:
+  90:	20000097          	auipc	ra,0x20000
+  94:	f7308093          	addi	ra,ra,-141 # 20000003 <tdat4>
+  98:	fff08183          	lb	gp,-1(ra)
+  9c:	ff000e93          	li	t4,-16
+  a0:	00800e13          	li	t3,8
+  a4:	1bd19463          	bne	gp,t4,24c <fail>
+
+000000a8 <test_9>:
+  a8:	20000097          	auipc	ra,0x20000
+  ac:	f5b08093          	addi	ra,ra,-165 # 20000003 <tdat4>
+  b0:	00008183          	lb	gp,0(ra)
+  b4:	00f00e93          	li	t4,15
+  b8:	00900e13          	li	t3,9
+  bc:	19d19863          	bne	gp,t4,24c <fail>
+
+000000c0 <test_10>:
+  c0:	20000097          	auipc	ra,0x20000
+  c4:	f4008093          	addi	ra,ra,-192 # 20000000 <DATA_START_ADDR>
+  c8:	fe008093          	addi	ra,ra,-32
+  cc:	02008183          	lb	gp,32(ra)
+  d0:	fff00e93          	li	t4,-1
+  d4:	00a00e13          	li	t3,10
+  d8:	17d19a63          	bne	gp,t4,24c <fail>
+
+000000dc <test_11>:
+  dc:	20000097          	auipc	ra,0x20000
+  e0:	f2408093          	addi	ra,ra,-220 # 20000000 <DATA_START_ADDR>
+  e4:	ffa08093          	addi	ra,ra,-6
+  e8:	00708183          	lb	gp,7(ra)
+  ec:	00000e93          	li	t4,0
+  f0:	00b00e13          	li	t3,11
+  f4:	15d19c63          	bne	gp,t4,24c <fail>
+
+000000f8 <test_12>:
+  f8:	00c00e13          	li	t3,12
+  fc:	00000213          	li	tp,0
+ 100:	20000097          	auipc	ra,0x20000
+ 104:	f0108093          	addi	ra,ra,-255 # 20000001 <tdat2>
+ 108:	00108183          	lb	gp,1(ra)
+ 10c:	00018313          	mv	t1,gp
+ 110:	ff000e93          	li	t4,-16
+ 114:	13d31c63          	bne	t1,t4,24c <fail>
+ 118:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 11c:	00200293          	li	t0,2
+ 120:	fe5210e3          	bne	tp,t0,100 <test_12+0x8>
+
+00000124 <test_13>:
+ 124:	00d00e13          	li	t3,13
+ 128:	00000213          	li	tp,0
+ 12c:	20000097          	auipc	ra,0x20000
+ 130:	ed608093          	addi	ra,ra,-298 # 20000002 <tdat3>
+ 134:	00108183          	lb	gp,1(ra)
+ 138:	00000013          	nop
+ 13c:	00018313          	mv	t1,gp
+ 140:	00f00e93          	li	t4,15
+ 144:	11d31463          	bne	t1,t4,24c <fail>
+ 148:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 14c:	00200293          	li	t0,2
+ 150:	fc521ee3          	bne	tp,t0,12c <test_13+0x8>
+
+00000154 <test_14>:
+ 154:	00e00e13          	li	t3,14
+ 158:	00000213          	li	tp,0
+ 15c:	20000097          	auipc	ra,0x20000
+ 160:	ea408093          	addi	ra,ra,-348 # 20000000 <DATA_START_ADDR>
+ 164:	00108183          	lb	gp,1(ra)
+ 168:	00000013          	nop
+ 16c:	00000013          	nop
+ 170:	00018313          	mv	t1,gp
+ 174:	00000e93          	li	t4,0
+ 178:	0dd31a63          	bne	t1,t4,24c <fail>
+ 17c:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 180:	00200293          	li	t0,2
+ 184:	fc521ce3          	bne	tp,t0,15c <test_14+0x8>
+
+00000188 <test_15>:
+ 188:	00f00e13          	li	t3,15
+ 18c:	00000213          	li	tp,0
+ 190:	20000097          	auipc	ra,0x20000
+ 194:	e7108093          	addi	ra,ra,-399 # 20000001 <tdat2>
+ 198:	00108183          	lb	gp,1(ra)
+ 19c:	ff000e93          	li	t4,-16
+ 1a0:	0bd19663          	bne	gp,t4,24c <fail>
+ 1a4:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 1a8:	00200293          	li	t0,2
+ 1ac:	fe5212e3          	bne	tp,t0,190 <test_15+0x8>
+
+000001b0 <test_16>:
+ 1b0:	01000e13          	li	t3,16
+ 1b4:	00000213          	li	tp,0
+ 1b8:	20000097          	auipc	ra,0x20000
+ 1bc:	e4a08093          	addi	ra,ra,-438 # 20000002 <tdat3>
+ 1c0:	00000013          	nop
+ 1c4:	00108183          	lb	gp,1(ra)
+ 1c8:	00f00e93          	li	t4,15
+ 1cc:	09d19063          	bne	gp,t4,24c <fail>
+ 1d0:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 1d4:	00200293          	li	t0,2
+ 1d8:	fe5210e3          	bne	tp,t0,1b8 <test_16+0x8>
+
+000001dc <test_17>:
+ 1dc:	01100e13          	li	t3,17
+ 1e0:	00000213          	li	tp,0
+ 1e4:	20000097          	auipc	ra,0x20000
+ 1e8:	e1c08093          	addi	ra,ra,-484 # 20000000 <DATA_START_ADDR>
+ 1ec:	00000013          	nop
+ 1f0:	00000013          	nop
+ 1f4:	00108183          	lb	gp,1(ra)
+ 1f8:	00000e93          	li	t4,0
+ 1fc:	05d19863          	bne	gp,t4,24c <fail>
+ 200:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+ 204:	00200293          	li	t0,2
+ 208:	fc521ee3          	bne	tp,t0,1e4 <test_17+0x8>
+
+0000020c <test_18>:
+ 20c:	20000197          	auipc	gp,0x20000
+ 210:	df418193          	addi	gp,gp,-524 # 20000000 <DATA_START_ADDR>
+ 214:	00018103          	lb	sp,0(gp)
+ 218:	00200113          	li	sp,2
+ 21c:	00200e93          	li	t4,2
+ 220:	01200e13          	li	t3,18
+ 224:	03d11463          	bne	sp,t4,24c <fail>
+
+00000228 <test_19>:
+ 228:	20000197          	auipc	gp,0x20000
+ 22c:	dd818193          	addi	gp,gp,-552 # 20000000 <DATA_START_ADDR>
+ 230:	00018103          	lb	sp,0(gp)
+ 234:	00000013          	nop
+ 238:	00200113          	li	sp,2
+ 23c:	00200e93          	li	t4,2
+ 240:	01300e13          	li	t3,19
+ 244:	01d11463          	bne	sp,t4,24c <fail>
+ 248:	01c01c63          	bne	zero,t3,260 <pass>
+
+0000024c <fail>:
+ 24c:	0ff0000f          	fence
+ 250:	000e0663          	beqz	t3,25c <fail+0x10>
+ 254:	51ee1073          	csrw	tohost,t3
+ 258:	cc416073          	csrsi	uarch4,2
+ 25c:	0000006f          	j	25c <fail+0x10>
+
+00000260 <pass>:
+ 260:	0ff0000f          	fence
+ 264:	51e0d073          	csrwi	tohost,1
+ 268:	cc40e073          	csrsi	uarch4,1
+ 26c:	0000006f          	j	26c <pass+0xc>
+
+Disassembly of section .data:
+
+20000000 <begin_signature>:
+20000000:	00ff                	0xff
+
+20000001 <tdat2>:
+	...
+
+20000002 <tdat3>:
+20000002:	0ff0                	0xff0
+
+20000003 <tdat4>:
+20000003:	0000000f          	fence	unknown,unknown
+	...

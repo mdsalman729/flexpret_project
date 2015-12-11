@@ -1,0 +1,52 @@
+
+tests/isa/build/emulator/lui.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	000000b7          	lui	ra,0x0
+   4:	00000e93          	li	t4,0
+   8:	00200e13          	li	t3,2
+   c:	05d09a63          	bne	ra,t4,60 <fail>
+
+00000010 <test_3>:
+  10:	fffff0b7          	lui	ra,0xfffff
+  14:	4010d093          	srai	ra,ra,0x1
+  18:	80000e93          	li	t4,-2048
+  1c:	00300e13          	li	t3,3
+  20:	05d09063          	bne	ra,t4,60 <fail>
+
+00000024 <test_4>:
+  24:	7ffff0b7          	lui	ra,0x7ffff
+  28:	4140d093          	srai	ra,ra,0x14
+  2c:	7ff00e93          	li	t4,2047
+  30:	00400e13          	li	t3,4
+  34:	03d09663          	bne	ra,t4,60 <fail>
+
+00000038 <test_5>:
+  38:	800000b7          	lui	ra,0x80000
+  3c:	4140d093          	srai	ra,ra,0x14
+  40:	80000e93          	li	t4,-2048
+  44:	00500e13          	li	t3,5
+  48:	01d09c63          	bne	ra,t4,60 <fail>
+
+0000004c <test_6>:
+  4c:	80000037          	lui	zero,0x80000
+  50:	00000e93          	li	t4,0 # 80000000 <begin_signature+0x60000000>
+  54:	00600e13          	li	t3,6
+  58:	01d01463          	bne	zero,t4,60 <fail>
+  5c:	01c01c63          	bne	zero,t3,74 <pass>
+
+00000060 <fail>:
+  60:	0ff0000f          	fence
+  64:	000e0663          	beqz	t3,70 <fail+0x10>
+  68:	51ee1073          	csrw	tohost,t3
+  6c:	cc416073          	csrsi	uarch4,2
+  70:	0000006f          	j	70 <fail+0x10>
+
+00000074 <pass>:
+  74:	0ff0000f          	fence
+  78:	51e0d073          	csrwi	tohost,1
+  7c:	cc40e073          	csrsi	uarch4,1
+  80:	0000006f          	j	80 <pass+0xc>

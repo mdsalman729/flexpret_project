@@ -1,0 +1,37 @@
+maxcycles: 150000
+ispm: tests/isa/build/emulator/sra.inst.mem
+dspm: tests/isa/build/emulator/sra.data.mem
+vcd: tests/isa/results/emulator/4tf-16i-16d-ti/sra.vcd
+sweep
+*** PASSED (tid = 0, f = 1/1) ***
+*** PASSED (tid = 0, f = 1/2) ***
+*** PASSED (tid = 0, f = 1/3) ***
+*** PASSED (tid = 0, f = 1/4) ***
+*** PASSED (tid = 0, f = 1/5) ***
+*** PASSED (tid = 0, f = 1/6) ***
+*** PASSED (tid = 0, f = 1/7) ***
+*** PASSED (tid = 0, f = 1/8) ***
+*** PASSED (tid = 1, f = 1/1) ***
+*** PASSED (tid = 1, f = 1/2) ***
+*** PASSED (tid = 1, f = 1/3) ***
+*** PASSED (tid = 1, f = 1/4) ***
+*** PASSED (tid = 1, f = 1/5) ***
+*** PASSED (tid = 1, f = 1/6) ***
+*** PASSED (tid = 1, f = 1/7) ***
+*** PASSED (tid = 1, f = 1/8) ***
+*** PASSED (tid = 2, f = 1/1) ***
+*** PASSED (tid = 2, f = 1/2) ***
+*** PASSED (tid = 2, f = 1/3) ***
+*** PASSED (tid = 2, f = 1/4) ***
+*** PASSED (tid = 2, f = 1/5) ***
+*** PASSED (tid = 2, f = 1/6) ***
+*** PASSED (tid = 2, f = 1/7) ***
+*** PASSED (tid = 2, f = 1/8) ***
+*** PASSED (tid = 3, f = 1/1) ***
+*** PASSED (tid = 3, f = 1/2) ***
+*** PASSED (tid = 3, f = 1/3) ***
+*** PASSED (tid = 3, f = 1/4) ***
+*** PASSED (tid = 3, f = 1/5) ***
+*** PASSED (tid = 3, f = 1/6) ***
+*** PASSED (tid = 3, f = 1/7) ***
+*** PASSED (tid = 3, f = 1/8) ***

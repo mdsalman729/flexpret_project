@@ -1,0 +1,36 @@
+
+tests/isa/build/emulator/flex_wu.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00b00613          	li	a2,11
+   4:	00102573          	frflags	a0
+   8:	50751073          	csrw	compare,a0
+   c:	0000702b          	custom1	zero,zero,zero,0
+  10:	01660613          	addi	a2,a2,22
+  14:	3e850513          	addi	a0,a0,1000
+  18:	50751073          	csrw	compare,a0
+  1c:	0000702b          	custom1	zero,zero,zero,0
+  20:	02160613          	addi	a2,a2,33
+  24:	001025f3          	frflags	a1
+  28:	00200e13          	li	t3,2
+  2c:	00b57a63          	bleu	a1,a0,40 <fail>
+  30:	00300e13          	li	t3,3
+  34:	fbe60613          	addi	a2,a2,-66
+  38:	00c01463          	bne	zero,a2,40 <fail>
+  3c:	01c01c63          	bne	zero,t3,54 <pass>
+
+00000040 <fail>:
+  40:	0ff0000f          	fence
+  44:	000e0663          	beqz	t3,50 <fail+0x10>
+  48:	51ee1073          	csrw	tohost,t3
+  4c:	cc416073          	csrsi	uarch4,2
+  50:	0000006f          	j	50 <fail+0x10>
+
+00000054 <pass>:
+  54:	0ff0000f          	fence
+  58:	51e0d073          	csrwi	tohost,1
+  5c:	cc40e073          	csrsi	uarch4,1
+  60:	0000006f          	j	60 <pass+0xc>

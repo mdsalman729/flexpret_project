@@ -1,0 +1,202 @@
+
+tests/sal/build/emulator/radbench_bug_6.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <reset>:
+   0:	50b02573          	csrr	a0,hartid
+   4:	02050263          	beqz	a0,28 <init>
+   8:	20000617          	auipc	a2,0x20000
+   c:	ff860613          	addi	a2,a2,-8 # 20000000 <DATA_START_ADDR>
+  10:	00351513          	slli	a0,a0,0x3
+  14:	00a60633          	add	a2,a2,a0
+
+00000018 <wait>:
+  18:	00062503          	lw	a0,0(a2)
+  1c:	fe050ee3          	beqz	a0,18 <wait>
+  20:	00462583          	lw	a1,4(a2)
+  24:	0180006f          	j	3c <startup>
+
+00000028 <init>:
+  28:	20000597          	auipc	a1,0x20000
+  2c:	fd858593          	addi	a1,a1,-40 # 20000000 <DATA_START_ADDR>
+  30:	00000517          	auipc	a0,0x0
+  34:	1b050513          	addi	a0,a0,432 # 1e0 <main>
+  38:	0045a583          	lw	a1,4(a1)
+
+0000003c <startup>:
+  3c:	00058113          	mv	sp,a1
+  40:	000500e7          	jalr	a0
+  44:	50b025f3          	csrr	a1,hartid
+  48:	00058e63          	beqz	a1,64 <done>
+  4c:	20000617          	auipc	a2,0x20000
+  50:	fb460613          	addi	a2,a2,-76 # 20000000 <DATA_START_ADDR>
+  54:	00359593          	slli	a1,a1,0x3
+  58:	00b60633          	add	a2,a2,a1
+  5c:	00062023          	sw	zero,0(a2)
+  60:	fa1ff06f          	j	0 <reset>
+
+00000064 <done>:
+  64:	00051463          	bnez	a0,6c <done+0x8>
+  68:	00f50513          	addi	a0,a0,15
+  6c:	51e51073          	csrw	tohost,a0
+  70:	0000006f          	j	70 <done+0xc>
+
+00000074 <allocator>:
+  74:	200007b7          	lui	a5,0x20000
+  78:	20000737          	lui	a4,0x20000
+  7c:	200005b7          	lui	a1,0x20000
+  80:	0407a683          	lw	a3,64(a5) # 20000040 <a>
+  84:	03b70713          	addi	a4,a4,59 # 2000003b <qbuf+0x7>
+  88:	03358593          	addi	a1,a1,51 # 20000033 <bss_start+0x3>
+  8c:	03900513          	li	a0,57
+  90:	0140006f          	j	a4 <allocator+0x30>
+  94:	00c70023          	sb	a2,0(a4)
+  98:	fff70713          	addi	a4,a4,-1
+  9c:	0046d693          	srli	a3,a3,0x4
+  a0:	02b70263          	beq	a4,a1,c4 <allocator+0x50>
+  a4:	00f6f793          	andi	a5,a3,15
+  a8:	03078613          	addi	a2,a5,48
+  ac:	03778793          	addi	a5,a5,55
+  b0:	fec572e3          	bleu	a2,a0,94 <allocator+0x20>
+  b4:	00f70023          	sb	a5,0(a4)
+  b8:	fff70713          	addi	a4,a4,-1
+  bc:	0046d693          	srli	a3,a3,0x4
+  c0:	feb712e3          	bne	a4,a1,a4 <allocator+0x30>
+  c4:	200007b7          	lui	a5,0x20000
+  c8:	0347c703          	lbu	a4,52(a5) # 20000034 <qbuf>
+  cc:	03478693          	addi	a3,a5,52
+  d0:	00068423          	sb	zero,8(a3)
+  d4:	03478793          	addi	a5,a5,52
+  d8:	400006b7          	lui	a3,0x40000
+  dc:	00070a63          	beqz	a4,f0 <allocator+0x7c>
+  e0:	00e68023          	sb	a4,0(a3) # 40000000 <a+0x1fffffc0>
+  e4:	00178793          	addi	a5,a5,1
+  e8:	0007c703          	lbu	a4,0(a5)
+  ec:	fe071ae3          	bnez	a4,e0 <allocator+0x6c>
+  f0:	00100513          	li	a0,1
+  f4:	00008067          	ret
+
+000000f8 <deallocator>:
+  f8:	200007b7          	lui	a5,0x20000
+  fc:	02078793          	addi	a5,a5,32 # 20000020 <DATA_START_ADDR+0x20>
+ 100:	04400713          	li	a4,68
+ 104:	400006b7          	lui	a3,0x40000
+ 108:	00e68023          	sb	a4,0(a3) # 40000000 <a+0x1fffffc0>
+ 10c:	00178793          	addi	a5,a5,1
+ 110:	0007c703          	lbu	a4,0(a5)
+ 114:	fe071ae3          	bnez	a4,108 <deallocator+0x10>
+ 118:	200007b7          	lui	a5,0x20000
+ 11c:	0207a823          	sw	zero,48(a5) # 20000030 <bss_start>
+ 120:	00100513          	li	a0,1
+ 124:	00008067          	ret
+
+00000128 <itoa_hex>:
+ 128:	20000737          	lui	a4,0x20000
+ 12c:	20000637          	lui	a2,0x20000
+ 130:	03b70713          	addi	a4,a4,59 # 2000003b <qbuf+0x7>
+ 134:	03360613          	addi	a2,a2,51 # 20000033 <bss_start+0x3>
+ 138:	03900593          	li	a1,57
+ 13c:	0140006f          	j	150 <itoa_hex+0x28>
+ 140:	00d70023          	sb	a3,0(a4)
+ 144:	fff70713          	addi	a4,a4,-1
+ 148:	00455513          	srli	a0,a0,0x4
+ 14c:	02c70263          	beq	a4,a2,170 <itoa_hex+0x48>
+ 150:	00f57793          	andi	a5,a0,15
+ 154:	03078693          	addi	a3,a5,48
+ 158:	03778793          	addi	a5,a5,55
+ 15c:	fed5f2e3          	bleu	a3,a1,140 <itoa_hex+0x18>
+ 160:	00f70023          	sb	a5,0(a4)
+ 164:	fff70713          	addi	a4,a4,-1
+ 168:	00455513          	srli	a0,a0,0x4
+ 16c:	fec712e3          	bne	a4,a2,150 <itoa_hex+0x28>
+ 170:	20000537          	lui	a0,0x20000
+ 174:	03450793          	addi	a5,a0,52 # 20000034 <qbuf>
+ 178:	00078423          	sb	zero,8(a5)
+ 17c:	03450513          	addi	a0,a0,52
+ 180:	00008067          	ret
+
+00000184 <emulator_outputstr>:
+ 184:	00054783          	lbu	a5,0(a0)
+ 188:	40000737          	lui	a4,0x40000
+ 18c:	00078a63          	beqz	a5,1a0 <emulator_outputstr+0x1c>
+ 190:	00f70023          	sb	a5,0(a4) # 40000000 <a+0x1fffffc0>
+ 194:	00150513          	addi	a0,a0,1
+ 198:	00054783          	lbu	a5,0(a0)
+ 19c:	fe079ae3          	bnez	a5,190 <emulator_outputstr+0xc>
+ 1a0:	00008067          	ret
+
+000001a4 <hwthread_start>:
+ 1a4:	200007b7          	lui	a5,0x20000
+ 1a8:	00351513          	slli	a0,a0,0x3
+ 1ac:	00078793          	mv	a5,a5
+ 1b0:	00f50533          	add	a0,a0,a5
+ 1b4:	00b52023          	sw	a1,0(a0)
+ 1b8:	00060463          	beqz	a2,1c0 <hwthread_start+0x1c>
+ 1bc:	00c52223          	sw	a2,4(a0)
+ 1c0:	00008067          	ret
+
+000001c4 <hwthread_done>:
+ 1c4:	200007b7          	lui	a5,0x20000
+ 1c8:	00078793          	mv	a5,a5
+ 1cc:	00351513          	slli	a0,a0,0x3
+ 1d0:	00f50533          	add	a0,a0,a5
+ 1d4:	00052503          	lw	a0,0(a0)
+ 1d8:	00153513          	seqz	a0,a0
+ 1dc:	00008067          	ret
+
+000001e0 <main>:
+ 1e0:	200007b7          	lui	a5,0x20000
+ 1e4:	00078793          	mv	a5,a5
+ 1e8:	07400713          	li	a4,116
+ 1ec:	00e7a423          	sw	a4,8(a5) # 20000008 <DATA_START_ADDR+0x8>
+ 1f0:	0f800713          	li	a4,248
+ 1f4:	00e7a823          	sw	a4,16(a5)
+ 1f8:	01300737          	lui	a4,0x1300
+ 1fc:	fff70713          	addi	a4,a4,-1 # 12fffff <main+0x12ffe1f>
+ 200:	50371773          	csrrw	a4,badvaddr,a4
+ 204:	04000713          	li	a4,64
+ 208:	50471073          	csrw	ptbr,a4
+ 20c:	0087a683          	lw	a3,8(a5)
+ 210:	0107a703          	lw	a4,16(a5)
+ 214:	fe071ce3          	bnez	a4,20c <main+0x2c>
+ 218:	fe069ae3          	bnez	a3,20c <main+0x2c>
+ 21c:	cc41e7f3          	csrrs	a5,uarch4,3
+ 220:	00100513          	li	a0,1
+ 224:	00008067          	ret
+
+Disassembly of section .data:
+
+20000000 <startup_state>:
+20000000:	01e0                	0x1e0
+20000002:	0000                	unimp
+20000004:	0ffc                	0xffc
+20000006:	2000                	0x2000
+20000008:	0000                	unimp
+2000000a:	0000                	unimp
+2000000c:	1ffc                	0x1ffc
+2000000e:	2000                	0x2000
+20000010:	0000                	unimp
+20000012:	0000                	unimp
+20000014:	2ffc                	0x2ffc
+20000016:	2000                	0x2000
+20000018:	0000                	unimp
+2000001a:	0000                	unimp
+2000001c:	3ffc                	0x3ffc
+2000001e:	2000                	0x2000
+20000020:	6544                	0x6544
+20000022:	6120                	0x6120
+20000024:	6c6c                	0x6c6c
+20000026:	7461636f          	jal	t1,2001676c <a+0x1672c>
+2000002a:	6e69                	0x6e69
+2000002c:	00000067          	jr	zero
+
+Disassembly of section .bss:
+
+20000030 <b>:
+20000030:	0000                	unimp
+	...
+
+20000034 <qbuf>:
+	...

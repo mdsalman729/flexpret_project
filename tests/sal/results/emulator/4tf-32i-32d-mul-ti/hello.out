@@ -1,0 +1,22 @@
+maxcycles: 20000000
+ispm: tests/sal/build/emulator/hello.inst.mem
+dspm: tests/sal/build/emulator/hello.data.mem
+vcd: tests/sal/results/emulator/4tf-32i-32d-mul-ti/hello.vcd
+BLDoiBonpgB rdBuenlBnaiyngLoop runningLoop runningLoop runningLoop running00000000GPIO (tid = 0, cycle =    2039): 0x00000003
+*** PASSED ***
+Counters for tid = 0
+Processor cycles = 2060
+Thread cycles = 845
+Commit cycles = 545
+Counters for tid = 1
+Processor cycles = 2060
+Thread cycles = 405
+Commit cycles = 405
+Counters for tid = 2
+Processor cycles = 2060
+Thread cycles = 405
+Commit cycles = 405
+Counters for tid = 3
+Processor cycles = 2060
+Thread cycles = 405
+Commit cycles = 404

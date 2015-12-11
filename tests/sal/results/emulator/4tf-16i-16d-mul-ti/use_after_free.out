@@ -1,0 +1,22 @@
+maxcycles: 20000000
+ispm: tests/sal/build/emulator/use_after_free.inst.mem
+dspm: tests/sal/build/emulator/use_after_free.data.mem
+vcd: tests/sal/results/emulator/4tf-16i-16d-mul-ti/use_after_free.vcd
+De allocating00000000GPIO (tid = 0, cycle =     442): 0x00000003
+*** PASSED ***
+Counters for tid = 0
+Processor cycles = 461
+Thread cycles = 174
+Commit cycles = 164
+Counters for tid = 1
+Processor cycles = 461
+Thread cycles = 143
+Commit cycles = 142
+Counters for tid = 2
+Processor cycles = 461
+Thread cycles = 144
+Commit cycles = 143
+Counters for tid = 3
+Processor cycles = 461
+Thread cycles = 0
+Commit cycles = 0

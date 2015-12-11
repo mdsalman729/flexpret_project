@@ -1,0 +1,39 @@
+
+tests/isa/build/emulator/auipc.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00002517          	auipc	a0,0x2
+   4:	71c50513          	addi	a0,a0,1820 # 271c <pass+0x26c4>
+   8:	004005ef          	jal	a1,c <_start+0xc>
+   c:	40b50533          	sub	a0,a0,a1
+  10:	00002eb7          	lui	t4,0x2
+  14:	710e8e93          	addi	t4,t4,1808 # 2710 <pass+0x26b8>
+  18:	00200e13          	li	t3,2
+  1c:	03d51463          	bne	a0,t4,44 <fail>
+
+00000020 <test_3>:
+  20:	ffffe517          	auipc	a0,0xffffe
+  24:	8fc50513          	addi	a0,a0,-1796 # ffffd91c <begin_signature+0xdfffd91c>
+  28:	004005ef          	jal	a1,2c <test_3+0xc>
+  2c:	40b50533          	sub	a0,a0,a1
+  30:	ffffeeb7          	lui	t4,0xffffe
+  34:	8f0e8e93          	addi	t4,t4,-1808 # ffffd8f0 <begin_signature+0xdfffd8f0>
+  38:	00300e13          	li	t3,3
+  3c:	01d51463          	bne	a0,t4,44 <fail>
+  40:	01c01c63          	bne	zero,t3,58 <pass>
+
+00000044 <fail>:
+  44:	0ff0000f          	fence
+  48:	000e0663          	beqz	t3,54 <fail+0x10>
+  4c:	51ee1073          	csrw	tohost,t3
+  50:	cc416073          	csrsi	uarch4,2
+  54:	0000006f          	j	54 <fail+0x10>
+
+00000058 <pass>:
+  58:	0ff0000f          	fence
+  5c:	51e0d073          	csrwi	tohost,1
+  60:	cc40e073          	csrsi	uarch4,1
+  64:	0000006f          	j	64 <pass+0xc>

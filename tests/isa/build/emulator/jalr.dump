@@ -1,0 +1,102 @@
+
+tests/isa/build/emulator/jalr.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00200e13          	li	t3,2
+   4:	00000f93          	li	t6,0
+   8:	00000117          	auipc	sp,0x0
+   c:	01810113          	addi	sp,sp,24 # 20 <target_2>
+
+00000010 <linkaddr_2>:
+  10:	000109e7          	jalr	s3,sp
+  14:	00000013          	nop
+  18:	00000013          	nop
+  1c:	0e40006f          	j	100 <fail>
+
+00000020 <target_2>:
+  20:	00000097          	auipc	ra,0x0
+  24:	ff008093          	addi	ra,ra,-16 # 10 <linkaddr_2>
+  28:	00408093          	addi	ra,ra,4
+  2c:	0d309a63          	bne	ra,s3,100 <fail>
+
+00000030 <test_3>:
+  30:	00300e13          	li	t3,3
+  34:	00000f93          	li	t6,0
+  38:	00000197          	auipc	gp,0x0
+  3c:	01418193          	addi	gp,gp,20 # 4c <target_3>
+
+00000040 <linkaddr_3>:
+  40:	00018067          	jr	gp
+  44:	00000013          	nop
+  48:	0b80006f          	j	100 <fail>
+
+0000004c <target_3>:
+  4c:	0a0f9a63          	bnez	t6,100 <fail>
+
+00000050 <test_4>:
+  50:	00400e13          	li	t3,4
+  54:	00000213          	li	tp,0
+  58:	00000317          	auipc	t1,0x0
+  5c:	01030313          	addi	t1,t1,16 # 68 <test_4+0x18>
+  60:	000309e7          	jalr	s3,t1
+  64:	09c01e63          	bne	zero,t3,100 <fail>
+  68:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+  6c:	00200293          	li	t0,2
+  70:	fe5214e3          	bne	tp,t0,58 <test_4+0x8>
+
+00000074 <test_5>:
+  74:	00500e13          	li	t3,5
+  78:	00000213          	li	tp,0
+  7c:	00000317          	auipc	t1,0x0
+  80:	01430313          	addi	t1,t1,20 # 90 <test_5+0x1c>
+  84:	00000013          	nop
+  88:	000309e7          	jalr	s3,t1
+  8c:	07c01a63          	bne	zero,t3,100 <fail>
+  90:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+  94:	00200293          	li	t0,2
+  98:	fe5212e3          	bne	tp,t0,7c <test_5+0x8>
+
+0000009c <test_6>:
+  9c:	00600e13          	li	t3,6
+  a0:	00000213          	li	tp,0
+  a4:	00000317          	auipc	t1,0x0
+  a8:	01830313          	addi	t1,t1,24 # bc <test_6+0x20>
+  ac:	00000013          	nop
+  b0:	00000013          	nop
+  b4:	000309e7          	jalr	s3,t1
+  b8:	05c01463          	bne	zero,t3,100 <fail>
+  bc:	00120213          	addi	tp,tp,1 # 1 <_start+0x1>
+  c0:	00200293          	li	t0,2
+  c4:	fe5210e3          	bne	tp,t0,a4 <test_6+0x8>
+
+000000c8 <test_7>:
+  c8:	00100093          	li	ra,1
+  cc:	00000117          	auipc	sp,0x0
+  d0:	01c10113          	addi	sp,sp,28 # e8 <test_7+0x20>
+  d4:	ffc109e7          	jalr	s3,sp,-4
+  d8:	00108093          	addi	ra,ra,1
+  dc:	00108093          	addi	ra,ra,1
+  e0:	00108093          	addi	ra,ra,1
+  e4:	00108093          	addi	ra,ra,1
+  e8:	00108093          	addi	ra,ra,1
+  ec:	00108093          	addi	ra,ra,1
+  f0:	00400e93          	li	t4,4
+  f4:	00700e13          	li	t3,7
+  f8:	01d09463          	bne	ra,t4,100 <fail>
+  fc:	01c01c63          	bne	zero,t3,114 <pass>
+
+00000100 <fail>:
+ 100:	0ff0000f          	fence
+ 104:	000e0663          	beqz	t3,110 <fail+0x10>
+ 108:	51ee1073          	csrw	tohost,t3
+ 10c:	cc416073          	csrsi	uarch4,2
+ 110:	0000006f          	j	110 <fail+0x10>
+
+00000114 <pass>:
+ 114:	0ff0000f          	fence
+ 118:	51e0d073          	csrwi	tohost,1
+ 11c:	cc40e073          	csrsi	uarch4,1
+ 120:	0000006f          	j	120 <pass+0xc>

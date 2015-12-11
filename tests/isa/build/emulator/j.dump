@@ -1,0 +1,37 @@
+
+tests/isa/build/emulator/j.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00200e13          	li	t3,2
+   4:	0080006f          	j	c <test_2>
+   8:	0340006f          	j	3c <fail>
+
+0000000c <test_2>:
+   c:	00100093          	li	ra,1
+  10:	0140006f          	j	24 <test_2+0x18>
+  14:	00108093          	addi	ra,ra,1
+  18:	00108093          	addi	ra,ra,1
+  1c:	00108093          	addi	ra,ra,1
+  20:	00108093          	addi	ra,ra,1
+  24:	00108093          	addi	ra,ra,1
+  28:	00108093          	addi	ra,ra,1
+  2c:	00300e93          	li	t4,3
+  30:	00300e13          	li	t3,3
+  34:	01d09463          	bne	ra,t4,3c <fail>
+  38:	01c01c63          	bne	zero,t3,50 <pass>
+
+0000003c <fail>:
+  3c:	0ff0000f          	fence
+  40:	000e0663          	beqz	t3,4c <fail+0x10>
+  44:	51ee1073          	csrw	tohost,t3
+  48:	cc416073          	csrsi	uarch4,2
+  4c:	0000006f          	j	4c <fail+0x10>
+
+00000050 <pass>:
+  50:	0ff0000f          	fence
+  54:	51e0d073          	csrwi	tohost,1
+  58:	cc40e073          	csrsi	uarch4,1
+  5c:	0000006f          	j	5c <pass+0xc>

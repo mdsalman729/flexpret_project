@@ -1,0 +1,22 @@
+maxcycles: 20000000
+ispm: tests/sal/build/emulator/pointer.inst.mem
+dspm: tests/sal/build/emulator/pointer.data.mem
+vcd: tests/sal/results/emulator/4tf-16i-16d-mul-ti/pointer.vcd
+Hello World00000000GPIO (tid = 0, cycle =     448): 0x00000003
+*** PASSED ***
+Counters for tid = 0
+Processor cycles = 467
+Thread cycles = 176
+Commit cycles = 166
+Counters for tid = 1
+Processor cycles = 467
+Thread cycles = 145
+Commit cycles = 144
+Counters for tid = 2
+Processor cycles = 467
+Thread cycles = 146
+Commit cycles = 145
+Counters for tid = 3
+Processor cycles = 467
+Thread cycles = 0
+Commit cycles = 0

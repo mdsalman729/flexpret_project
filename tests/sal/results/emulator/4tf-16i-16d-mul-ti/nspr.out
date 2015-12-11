@@ -1,0 +1,22 @@
+maxcycles: 20000000
+ispm: tests/sal/build/emulator/nspr.inst.mem
+dspm: tests/sal/build/emulator/nspr.data.mem
+vcd: tests/sal/results/emulator/4tf-16i-16d-mul-ti/nspr.vcd
+ThrTeharde a3d  i2s  issc hsecdhueldeudled00000001GPIO (tid = 0, cycle =    1069): 0x00000003
+*** PASSED ***
+Counters for tid = 0
+Processor cycles = 1094
+Thread cycles = 298
+Commit cycles = 288
+Counters for tid = 1
+Processor cycles = 1094
+Thread cycles = 265
+Commit cycles = 265
+Counters for tid = 2
+Processor cycles = 1094
+Thread cycles = 265
+Commit cycles = 264
+Counters for tid = 3
+Processor cycles = 1094
+Thread cycles = 266
+Commit cycles = 265

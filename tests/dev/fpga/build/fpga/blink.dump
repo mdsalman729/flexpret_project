@@ -1,0 +1,20 @@
+
+tests/dev/fpga/build/fpga/blink.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	f0400113          	li	sp,-252
+   4:	00300193          	li	gp,3
+
+00000008 <blink>:
+   8:	001e8237          	lui	tp,0x1e8
+   c:	48020213          	addi	tp,tp,1152 # 1e8480 <decr+0x1e8468>
+  10:	00310023          	sb	gp,0(sp)
+  14:	00f1c193          	xori	gp,gp,15
+
+00000018 <decr>:
+  18:	fff20213          	addi	tp,tp,-1
+  1c:	fe401ee3          	bne	zero,tp,18 <decr>
+  20:	fe9ff06f          	j	8 <blink>

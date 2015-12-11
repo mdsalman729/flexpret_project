@@ -1,0 +1,176 @@
+
+tests/examples/build/fpga/delay_until.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <reset>:
+   0:	50b02573          	csrr	a0,hartid
+   4:	02050263          	beqz	a0,28 <init>
+   8:	20000617          	auipc	a2,0x20000
+   c:	ff860613          	addi	a2,a2,-8 # 20000000 <DATA_START_ADDR>
+  10:	00351513          	slli	a0,a0,0x3
+  14:	00a60633          	add	a2,a2,a0
+
+00000018 <wait>:
+  18:	00062503          	lw	a0,0(a2)
+  1c:	fe050ee3          	beqz	a0,18 <wait>
+  20:	00462583          	lw	a1,4(a2)
+  24:	0180006f          	j	3c <startup>
+
+00000028 <init>:
+  28:	20000597          	auipc	a1,0x20000
+  2c:	fd858593          	addi	a1,a1,-40 # 20000000 <DATA_START_ADDR>
+  30:	00000517          	auipc	a0,0x0
+  34:	0c050513          	addi	a0,a0,192 # f0 <main>
+  38:	0045a583          	lw	a1,4(a1)
+
+0000003c <startup>:
+  3c:	00058113          	mv	sp,a1
+  40:	000500e7          	jalr	a0
+  44:	50b025f3          	csrr	a1,hartid
+  48:	00058e63          	beqz	a1,64 <done>
+  4c:	20000617          	auipc	a2,0x20000
+  50:	fb460613          	addi	a2,a2,-76 # 20000000 <DATA_START_ADDR>
+  54:	00359593          	slli	a1,a1,0x3
+  58:	00b60633          	add	a2,a2,a1
+  5c:	00062023          	sw	zero,0(a2)
+  60:	fa1ff06f          	j	0 <reset>
+
+00000064 <done>:
+  64:	00051463          	bnez	a0,6c <done+0x8>
+  68:	00f50513          	addi	a0,a0,15
+  6c:	51e51073          	csrw	tohost,a0
+  70:	0000006f          	j	70 <done+0xc>
+
+00000074 <itoa_hex>:
+  74:	20000737          	lui	a4,0x20000
+  78:	20000637          	lui	a2,0x20000
+  7c:	02770713          	addi	a4,a4,39 # 20000027 <bss_start+0x7>
+  80:	01f60613          	addi	a2,a2,31 # 2000001f <DATA_START_ADDR+0x1f>
+  84:	03900593          	li	a1,57
+  88:	0140006f          	j	9c <itoa_hex+0x28>
+  8c:	00d70023          	sb	a3,0(a4)
+  90:	fff70713          	addi	a4,a4,-1
+  94:	00455513          	srli	a0,a0,0x4
+  98:	02c70263          	beq	a4,a2,bc <itoa_hex+0x48>
+  9c:	00f57793          	andi	a5,a0,15
+  a0:	03078693          	addi	a3,a5,48
+  a4:	03778793          	addi	a5,a5,55
+  a8:	fed5f2e3          	bleu	a3,a1,8c <itoa_hex+0x18>
+  ac:	00f70023          	sb	a5,0(a4)
+  b0:	fff70713          	addi	a4,a4,-1
+  b4:	00455513          	srli	a0,a0,0x4
+  b8:	fec712e3          	bne	a4,a2,9c <itoa_hex+0x28>
+  bc:	20000537          	lui	a0,0x20000
+  c0:	02050793          	addi	a5,a0,32 # 20000020 <bss_start>
+  c4:	00078423          	sb	zero,8(a5)
+  c8:	02050513          	addi	a0,a0,32
+  cc:	00008067          	ret
+
+000000d0 <emulator_outputstr>:
+  d0:	00054783          	lbu	a5,0(a0)
+  d4:	40000737          	lui	a4,0x40000
+  d8:	00078a63          	beqz	a5,ec <emulator_outputstr+0x1c>
+  dc:	00f70023          	sb	a5,0(a4) # 40000000 <bss_end+0x1fffffd7>
+  e0:	00150513          	addi	a0,a0,1
+  e4:	00054783          	lbu	a5,0(a0)
+  e8:	fe079ae3          	bnez	a5,dc <emulator_outputstr+0xc>
+  ec:	00008067          	ret
+
+000000f0 <main>:
+  f0:	001022f3          	frflags	t0
+  f4:	200007b7          	lui	a5,0x20000
+  f8:	20000837          	lui	a6,0x20000
+  fc:	02778693          	addi	a3,a5,39 # 20000027 <bss_start+0x7>
+ 100:	00028613          	mv	a2,t0
+ 104:	01f80813          	addi	a6,a6,31 # 2000001f <DATA_START_ADDR+0x1f>
+ 108:	02778793          	addi	a5,a5,39
+ 10c:	03900893          	li	a7,57
+ 110:	0140006f          	j	124 <main+0x34>
+ 114:	00b78023          	sb	a1,0(a5)
+ 118:	fff78793          	addi	a5,a5,-1
+ 11c:	00465613          	srli	a2,a2,0x4
+ 120:	03078263          	beq	a5,a6,144 <main+0x54>
+ 124:	00f67713          	andi	a4,a2,15
+ 128:	03070593          	addi	a1,a4,48
+ 12c:	03770713          	addi	a4,a4,55
+ 130:	feb8f2e3          	bleu	a1,a7,114 <main+0x24>
+ 134:	00e78023          	sb	a4,0(a5)
+ 138:	fff78793          	addi	a5,a5,-1
+ 13c:	00465613          	srli	a2,a2,0x4
+ 140:	ff0792e3          	bne	a5,a6,124 <main+0x34>
+ 144:	20000337          	lui	t1,0x20000
+ 148:	02034783          	lbu	a5,32(t1) # 20000020 <bss_start>
+ 14c:	02030713          	addi	a4,t1,32
+ 150:	00070423          	sb	zero,8(a4)
+ 154:	02030613          	addi	a2,t1,32
+ 158:	400005b7          	lui	a1,0x40000
+ 15c:	00078a63          	beqz	a5,170 <main+0x80>
+ 160:	00f58023          	sb	a5,0(a1) # 40000000 <bss_end+0x1fffffd7>
+ 164:	00160613          	addi	a2,a2,1
+ 168:	00064783          	lbu	a5,0(a2)
+ 16c:	fe079ae3          	bnez	a5,160 <main+0x70>
+ 170:	00002537          	lui	a0,0x2
+ 174:	00a00613          	li	a2,10
+ 178:	400007b7          	lui	a5,0x40000
+ 17c:	71050513          	addi	a0,a0,1808 # 2710 <main+0x2620>
+ 180:	00c78023          	sb	a2,0(a5) # 40000000 <bss_end+0x1fffffd7>
+ 184:	00a28533          	add	a0,t0,a0
+ 188:	50751073          	csrw	compare,a0
+ 18c:	0000700b          	custom0	zero,zero,zero,0
+ 190:	001022f3          	frflags	t0
+ 194:	03900893          	li	a7,57
+ 198:	00028613          	mv	a2,t0
+ 19c:	0140006f          	j	1b0 <main+0xc0>
+ 1a0:	00b68023          	sb	a1,0(a3)
+ 1a4:	fff68693          	addi	a3,a3,-1
+ 1a8:	00465613          	srli	a2,a2,0x4
+ 1ac:	02d80263          	beq	a6,a3,1d0 <main+0xe0>
+ 1b0:	00f67793          	andi	a5,a2,15
+ 1b4:	03078593          	addi	a1,a5,48
+ 1b8:	03778793          	addi	a5,a5,55
+ 1bc:	feb8f2e3          	bleu	a1,a7,1a0 <main+0xb0>
+ 1c0:	00f68023          	sb	a5,0(a3)
+ 1c4:	fff68693          	addi	a3,a3,-1
+ 1c8:	00465613          	srli	a2,a2,0x4
+ 1cc:	fed812e3          	bne	a6,a3,1b0 <main+0xc0>
+ 1d0:	02034683          	lbu	a3,32(t1)
+ 1d4:	00070423          	sb	zero,8(a4)
+ 1d8:	00070793          	mv	a5,a4
+ 1dc:	40000737          	lui	a4,0x40000
+ 1e0:	00068a63          	beqz	a3,1f4 <main+0x104>
+ 1e4:	00d70023          	sb	a3,0(a4) # 40000000 <bss_end+0x1fffffd7>
+ 1e8:	00178793          	addi	a5,a5,1
+ 1ec:	0007c683          	lbu	a3,0(a5)
+ 1f0:	fe069ae3          	bnez	a3,1e4 <main+0xf4>
+ 1f4:	00a00713          	li	a4,10
+ 1f8:	400007b7          	lui	a5,0x40000
+ 1fc:	00e78023          	sb	a4,0(a5) # 40000000 <bss_end+0x1fffffd7>
+ 200:	00552533          	slt	a0,a0,t0
+ 204:	00008067          	ret
+
+Disassembly of section .data:
+
+20000000 <startup_state>:
+20000000:	00f0                	0xf0
+20000002:	0000                	unimp
+20000004:	0ffc                	0xffc
+20000006:	2000                	0x2000
+20000008:	0000                	unimp
+2000000a:	0000                	unimp
+2000000c:	1ffc                	0x1ffc
+2000000e:	2000                	0x2000
+20000010:	0000                	unimp
+20000012:	0000                	unimp
+20000014:	2ffc                	0x2ffc
+20000016:	2000                	0x2000
+20000018:	0000                	unimp
+2000001a:	0000                	unimp
+2000001c:	3ffc                	0x3ffc
+2000001e:	2000                	0x2000
+
+Disassembly of section .bss:
+
+20000020 <qbuf>:
+	...

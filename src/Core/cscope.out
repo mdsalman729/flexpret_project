@@ -1,0 +1,19941 @@
+cscope 15 $HOME/salman_cps/flexpret/src/Core               0000096745
+	@/home/salman/salman_cps/flexpret/src/Core/constants.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+12 
+objeù
+ 
+	gFËx´‘CÚ¡ªts
+
+
+16 
+v®
+ 
+	gREG_ADDR_BITS
+ = 5
+
+22 
+v®
+ 
+T
+ = 
+BoŞ
+(
+Œue
+)
+
+23 
+v®
+ 
+F
+ = 
+BoŞ
+(
+çl£
+)
+
+24 
+v®
+ 
+X
+ = 
+B™s
+("b?", 1)
+
+27 
+v®
+ 
+	gIMM_WI
+ = 3
+
+28 
+v®
+ 
+IMM_S
+ = 
+UIÁ
+(0, 3)
+
+29 
+v®
+ 
+	gIMM_B
+ = 
+UIÁ
+(1, 3)
+
+30 
+v®
+ 
+	gIMM_U
+ = 
+UIÁ
+(2, 3)
+
+31 
+v®
+ 
+	gIMM_J
+ = 
+UIÁ
+(3, 3)
+
+32 
+v®
+ 
+	gIMM_I
+ = 
+UIÁ
+(4, 3)
+
+33 
+v®
+ 
+	gIMM_Z
+ = 
+UIÁ
+(5, 3)
+
+34 
+v®
+ 
+	gIMM_X
+ = 
+B™s
+("b???", 3)
+
+37 
+v®
+ 
+	gOP1_WI
+ = 2
+
+38 
+v®
+ 
+OP1_PC
+ = 
+UIÁ
+(0, 2)
+
+39 
+v®
+ 
+	gOP1_RS1
+ = 
+UIÁ
+(1, 2)
+
+40 
+v®
+ 
+	gOP1_0
+ = 
+UIÁ
+(2, 2)
+
+41 
+v®
+ 
+	gOP1_X
+ = 
+B™s
+("b??", 2)
+
+44 
+v®
+ 
+	gOP2_WI
+ = 2
+
+45 
+v®
+ 
+OP2_IMM
+ = 
+UIÁ
+(0, 2)
+
+46 
+v®
+ 
+	gOP2_RS2
+ = 
+UIÁ
+(1, 2)
+
+47 
+v®
+ 
+	gOP2_0
+ = 
+UIÁ
+(2, 2)
+
+48 
+v®
+ 
+	gOP2_4
+ = 
+UIÁ
+(3, 2)
+
+49 
+v®
+ 
+	gOP2_X
+ = 
+B™s
+("b??", 2)
+
+52 
+v®
+ 
+	gALU_WI
+ = 4
+
+53 
+v®
+ 
+ALU_ADD
+ = 
+UIÁ
+( 0, 4)
+
+54 
+v®
+ 
+	gALU_SLL
+ = 
+UIÁ
+( 1, 4)
+
+55 
+v®
+ 
+	gALU_XOR
+ = 
+UIÁ
+( 4, 4)
+
+56 
+v®
+ 
+	gALU_SRL
+ = 
+UIÁ
+( 5, 4)
+
+57 
+v®
+ 
+	gALU_OR
+ = 
+UIÁ
+( 6, 4)
+
+58 
+v®
+ 
+	gALU_AND
+ = 
+UIÁ
+( 7, 4)
+
+59 
+v®
+ 
+	gALU_SUB
+ = 
+UIÁ
+( 8, 4)
+
+60 
+v®
+ 
+	gALU_SLT
+ = 
+UIÁ
+(10, 4)
+
+61 
+v®
+ 
+	gALU_SLTU
+ = 
+UIÁ
+(11, 4)
+
+62 
+v®
+ 
+	gALU_SRA
+ = 
+UIÁ
+(13, 4)
+
+63 
+v®
+ 
+	gALU_X
+ = 
+B™s
+("b????", 4)
+
+66 
+v®
+ 
+	gBR_WI
+ = 3
+
+67 
+v®
+ 
+BR_EQ
+ = 
+UIÁ
+(0, 3)
+
+68 
+v®
+ 
+	gBR_NE
+ = 
+UIÁ
+(1, 3)
+
+69 
+v®
+ 
+	gBR_LT
+ = 
+UIÁ
+(2, 3)
+
+70 
+v®
+ 
+	gBR_GE
+ = 
+UIÁ
+(3, 3)
+
+71 
+v®
+ 
+	gBR_LTU
+ = 
+UIÁ
+(4, 3)
+
+72 
+v®
+ 
+	gBR_GEU
+ = 
+UIÁ
+(5, 3)
+
+73 
+v®
+ 
+	gBR_X
+ = 
+B™s
+("b???", 3)
+
+76 
+v®
+ 
+	gCSR_WI
+ = 2
+
+77 
+v®
+ 
+CSR_W
+ = 
+UIÁ
+(1, 2)
+
+78 
+v®
+ 
+	gCSR_S
+ = 
+UIÁ
+(2, 2)
+
+79 
+v®
+ 
+	gCSR_C
+ = 
+UIÁ
+(3, 2)
+
+80 
+v®
+ 
+	gCSR_X
+ = 
+B™s
+("b??", 2)
+
+83 
+v®
+ 
+	gEXE_RD_WI
+ = 2
+
+84 
+v®
+ 
+EXE_RD_ALU
+ = 
+UIÁ
+(0, 2)
+
+85 
+v®
+ 
+	gEXE_RD_CSR
+ = 
+UIÁ
+(1, 2)
+
+86 
+v®
+ 
+	gEXE_RD_PC4
+ = 
+UIÁ
+(2, 2)
+
+87 
+v®
+ 
+	gEXE_RD_X
+ = 
+B™s
+("b??", 2)
+
+90 
+v®
+ 
+	gMEM_WI
+ = 4
+
+91 
+v®
+ 
+MEM_LB
+ = 
+UIÁ
+(0, 4)
+
+92 
+v®
+ 
+	gMEM_LH
+ = 
+UIÁ
+(1, 4)
+
+93 
+v®
+ 
+	gMEM_LW
+ = 
+UIÁ
+(2, 4)
+
+94 
+v®
+ 
+	gMEM_LBU
+ = 
+UIÁ
+(4, 4)
+
+95 
+v®
+ 
+	gMEM_LHU
+ = 
+UIÁ
+(5, 4)
+
+96 
+v®
+ 
+	gMEM_SB
+ = 
+UIÁ
+(8, 4)
+
+97 
+v®
+ 
+	gMEM_SH
+ = 
+UIÁ
+(9, 4)
+
+98 
+v®
+ 
+	gMEM_SW
+ = 
+UIÁ
+(10, 4)
+
+99 
+v®
+ 
+	gMEM_X
+ = 
+B™s
+("b????", 4)
+
+101 
+v®
+ 
+	gMUL_WI
+ = 2
+
+102 
+v®
+ 
+MUL_L
+ = 
+UIÁ
+(0, 2)
+
+103 
+v®
+ 
+	gMUL_H
+ = 
+UIÁ
+(1, 2)
+
+104 
+v®
+ 
+	gMUL_HSU
+ = 
+UIÁ
+(2, 2)
+
+105 
+v®
+ 
+	gMUL_HU
+ = 
+UIÁ
+(3, 2)
+
+106 
+v®
+ 
+	gMUL_X
+ = 
+B™s
+("b??", 2)
+
+109 
+v®
+ 
+	gMEM_RD_WI
+ = 2
+
+110 
+v®
+ 
+MEM_RD_REG
+ = 
+UIÁ
+(0, 2)
+
+111 
+v®
+ 
+	gMEM_RD_MEM
+ = 
+UIÁ
+(1, 2)
+
+112 
+v®
+ 
+	gMEM_RD_MUL
+ = 
+UIÁ
+(2, 2)
+
+113 
+v®
+ 
+	gMEM_RD_X
+ = 
+B™s
+("b??", 2)
+
+120 
+v®
+ 
+	gNPC_WI
+ = 2
+
+121 
+v®
+ 
+NPC_PCREG
+ = 
+UIÁ
+(0, 2)
+
+122 
+v®
+ 
+	gNPC_PLUS4
+ = 
+UIÁ
+(1, 2)
+
+123 
+v®
+ 
+	gNPC_BRJMP
+ = 
+UIÁ
+(2, 2)
+
+124 
+v®
+ 
+	gNPC_EVEC
+ = 
+UIÁ
+(3, 2)
+
+127 
+v®
+ 
+	gRS1_WI
+ = 2
+
+128 
+v®
+ 
+RS1_DEC
+ = 
+UIÁ
+(0, 2)
+
+129 
+v®
+ 
+	gRS1_EXE
+ = 
+UIÁ
+(1, 2)
+
+130 
+v®
+ 
+	gRS1_MEM
+ = 
+UIÁ
+(2, 2)
+
+131 
+v®
+ 
+	gRS1_WB
+ = 
+UIÁ
+(3, 2)
+
+134 
+v®
+ 
+	gRS2_WI
+ = 2
+
+135 
+v®
+ 
+RS2_DEC
+ = 
+UIÁ
+(0, 2)
+
+136 
+v®
+ 
+	gRS2_EXE
+ = 
+UIÁ
+(1, 2)
+
+137 
+v®
+ 
+	gRS2_MEM
+ = 
+UIÁ
+(2, 2)
+
+138 
+v®
+ 
+	gRS2_WB
+ = 
+UIÁ
+(3, 2)
+
+144 
+v®
+ 
+	gSLOT_WI
+ = 4
+
+145 
+v®
+ 
+SLOT_T0
+ = 
+UIÁ
+(0, 4)
+
+146 
+v®
+ 
+	gSLOT_T1
+ = 
+UIÁ
+(1, 4)
+
+147 
+v®
+ 
+	gSLOT_T2
+ = 
+UIÁ
+(2, 4)
+
+148 
+v®
+ 
+	gSLOT_T3
+ = 
+UIÁ
+(3, 4)
+
+149 
+v®
+ 
+	gSLOT_T4
+ = 
+UIÁ
+(4, 4)
+
+150 
+v®
+ 
+	gSLOT_T5
+ = 
+UIÁ
+(5, 4)
+
+151 
+v®
+ 
+	gSLOT_T6
+ = 
+UIÁ
+(6, 4)
+
+152 
+v®
+ 
+	gSLOT_T7
+ = 
+UIÁ
+(7, 4)
+
+153 
+v®
+ 
+	gSLOT_S
+ = 
+UIÁ
+(14, 4)
+
+154 
+v®
+ 
+	gSLOT_D
+ = 
+UIÁ
+(15, 4)
+
+157 
+v®
+ 
+	gTMODE_WI
+ = 2
+
+158 
+v®
+ 
+TMODE_HA
+ = 
+UIÁ
+(0, 2)
+
+159 
+v®
+ 
+	gTMODE_HZ
+ = 
+UIÁ
+(1, 2)
+
+160 
+v®
+ 
+	gTMODE_SA
+ = 
+UIÁ
+(2, 2)
+
+161 
+v®
+ 
+	gTMODE_SZ
+ = 
+UIÁ
+(3, 2)
+
+162 
+v®
+ 
+	gTMODE_AND_A
+ = 
+UIÁ
+(2, 2)
+
+163 
+v®
+ 
+	gTMODE_OR_Z
+ = 
+UIÁ
+(1, 2)
+
+166 
+v®
+ 
+	gTIMER_WI
+ = 2
+
+167 
+v®
+ 
+TIMER_OFF
+ = 
+UIÁ
+(0, 2)
+
+168 
+v®
+ 
+	gTIMER_DU_WU
+ = 
+UIÁ
+(1, 2)
+
+169 
+v®
+ 
+	gTIMER_IE
+ = 
+UIÁ
+(2, 2)
+
+170 
+v®
+ 
+	gTIMER_EE
+ = 
+UIÁ
+(3, 2)
+
+173 
+v®
+ 
+	gADDR_PC_INIT
+ = 
+B™s
+("h00000000", 32)
+
+174 
+v®
+ 
+	gADDR_EVEC_INIT
+ = 
+B™s
+("h00000000", 32)
+
+175 
+v®
+ 
+	gADDR_ISPM_BITS
+ = 3
+
+176 
+v®
+ 
+ADDR_ISPM_VAL
+ = 
+B™s
+("b000", 
+ADDR_ISPM_BITS
+)
+
+177 
+v®
+ 
+	gADDR_DSPM_BITS
+ = 3
+
+178 
+v®
+ 
+ADDR_DSPM_VAL
+ = 
+B™s
+("b001", 
+ADDR_DSPM_BITS
+)
+
+179 
+v®
+ 
+	gADDR_BUS_BITS
+ = 2
+
+180 
+v®
+ 
+ADDR_BUS_VAL
+ = 
+B™s
+("b01", 
+ADDR_BUS_BITS
+)
+
+183 
+v®
+ 
+	gMEMP_WI
+ = 4
+
+184 
+v®
+ 
+MEMP_T0
+ = 
+UIÁ
+(0, 4)
+
+185 
+v®
+ 
+	gMEMP_T1
+ = 
+UIÁ
+(1, 4)
+
+186 
+v®
+ 
+	gMEMP_T2
+ = 
+UIÁ
+(2, 4)
+
+187 
+v®
+ 
+	gMEMP_T3
+ = 
+UIÁ
+(3, 4)
+
+188 
+v®
+ 
+	gMEMP_T4
+ = 
+UIÁ
+(4, 4)
+
+189 
+v®
+ 
+	gMEMP_T5
+ = 
+UIÁ
+(5, 4)
+
+190 
+v®
+ 
+	gMEMP_T6
+ = 
+UIÁ
+(6, 4)
+
+191 
+v®
+ 
+	gMEMP_T7
+ = 
+UIÁ
+(7, 4)
+
+192 
+v®
+ 
+	gMEMP_SH
+ = 
+UIÁ
+(8, 4)
+
+193 
+v®
+ 
+	gMEMP_RO
+ = 
+UIÁ
+(12, 4)
+
+196 
+v®
+ 
+	gCAUSE_WI
+ = 5
+
+	@/home/salman/salman_cps/flexpret/src/Core/control.scala
+
+9 
+·ckage
+ 
+CÜe
+
+
+11 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+12 
+impÜt
+ 
+	gFËx´‘CÚ¡ªts
+.
+_
+
+
+13 
+impÜt
+ 
+	gIn¡ruùiÚs
+.
+_
+
+
+15 şas 
+	cCÚŒŞD©­©hIO
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BundË
+
+
+18 
+v®
+ 
+dec_imm_£l
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+IMM_WI
+)
+
+19 
+v®
+ 
+dec_İ1_£l
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+OP1_WI
+)
+
+20 
+v®
+ 
+dec_İ2_£l
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+OP2_WI
+)
+
+21 
+v®
+ 
+exe_®u_ty³
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+ALU_WI
+)
+
+22 
+v®
+ 
+exe_br_ty³
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+BR_WI
+)
+
+23 
+v®
+ 
+exe_c¤_ty³
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+CSR_WI
+)
+
+24 
+v®
+ 
+exe_mul_ty³
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+MUL_WI
+)
+
+25 
+v®
+ 
+exe_rd_d©a_£l
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+EXE_RD_WI
+)
+
+26 
+v®
+ 
+exe_mem_ty³
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+MEM_WI
+)
+
+27 
+v®
+ 
+mem_rd_d©a_£l
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+MEM_RD_WI
+)
+
+30 
+v®
+ 
+Ãxt_pc_£l
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`UIÁ
+(
+OUTPUT
+, 
+NPC_WI
+) }
+
+31 
+v®
+ 
+Ãxt_tid
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+32 
+v®
+ 
+Ãxt_v®id
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+33 
+v®
+ 
+dec_rs1_£l
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+RS1_WI
+)
+
+34 
+v®
+ 
+dec_rs2_£l
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+RS2_WI
+)
+
+35 
+v®
+ 
+exe_v®id
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+36 
+v®
+ 
+exe_lßd
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+37 
+v®
+ 
+exe_¡Üe
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+38 
+v®
+ 
+exe_c¤_wr™e
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+39 
+v®
+ 
+exe_exû±iÚ
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+40 
+v®
+ 
+exe_ÿu£
+ = 
+	$UIÁ
+(
+OUTPUT
+, 
+CAUSE_WI
+)
+
+41 
+v®
+ 
+exe_kl
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+42 
+v®
+ 
+exe_¦“p
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+43 
+v®
+ 
+exe_›
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+44 
+v®
+ 
+exe_“
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+45 
+v®
+ 
+exe_¤‘
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+46 
+v®
+ 
+exe_cyşe
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+47 
+v®
+ 
+exe_š¡»t
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+48 
+v®
+ 
+mem_rd_wr™e
+ = 
+	$BoŞ
+(
+OUTPUT
+)
+
+51 
+v®
+ 
+if_tid
+ = 
+	$UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+52 
+v®
+ 
+dec_tid
+ = 
+	$UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+53 
+v®
+ 
+dec_š¡
+ = 
+	$B™s
+(
+INPUT
+, 32)
+
+54 
+v®
+ 
+exe_br_cÚd
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+55 
+v®
+ 
+exe_tid
+ = 
+	$UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+56 
+v®
+ 
+exe_rd_addr
+ = 
+	$UIÁ
+(
+INPUT
+, 
+REG_ADDR_BITS
+)
+
+57 
+v®
+ 
+exe_expœe
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+58 
+v®
+ 
+c¤_¦Ùs
+ = 
+Vec
+.
+	$fl
+(8è{ 
+	`UIÁ
+(
+INPUT
+, 
+SLOT_WI
+è
+	}
+}
+
+59 
+v®
+ 
+c¤_tmodes
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`UIÁ
+(
+INPUT
+, 
+TMODE_WI
+è
+	}
+}
+
+60 
+v®
+ 
+mem_tid
+ = 
+	$UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+61 
+v®
+ 
+mem_rd_addr
+ = 
+	$UIÁ
+(
+INPUT
+, 
+REG_ADDR_BITS
+)
+
+62 
+v®
+ 
+wb_tid
+ = 
+	$UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+63 
+v®
+ 
+wb_rd_addr
+ = 
+	$UIÁ
+(
+INPUT
+, 
+REG_ADDR_BITS
+)
+
+66 
+v®
+ 
+if_exc_mi§ligÃd
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+67 
+v®
+ 
+if_exc_çuÉ
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+68 
+v®
+ 
+exe_exc_´iv_š¡
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+69 
+v®
+ 
+exe_exc_lßd_mi§ligÃd
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+70 
+v®
+ 
+exe_exc_lßd_çuÉ
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+71 
+v®
+ 
+exe_exc_¡Üe_mi§ligÃd
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+72 
+v®
+ 
+exe_exc_¡Üe_çuÉ
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+73 
+v®
+ 
+exe_exc_expœe
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+74 
+v®
+ 
+exe_št_expœe
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+75 
+v®
+ 
+exe_št_ext
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+76 
+	}
+}
+
+78 şas 
+	cCÚŒŞ
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+ModuË
+
+
+80 
+v®
+ 
+io
+ = 
+Ãw
+ 
+	$CÚŒŞD©­©hIO
+()
+
+93 
+v®
+  =
+
+94 
+	$Li¡
+(
+F
+, 
+IMM_X
+, 
+OP1_X
+, 
+OP2_X
+, 
+ALU_X
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+ , F, F, F, F, F, F, F, F, F, F, F, F)
+
+95 
+v®
+ 
+decode_bË
+ = 
+	`A¼ay
+(
+
+96 
+LUI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_U
+, 
+OP1_0
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+97 
+AUIPC
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_U
+, 
+OP1_PC
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+98 
+JAL
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_J
+, 
+OP1_PC
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_PC4
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, T, F, F, F, F, F, F, F, F, F),
+
+99 
+JALR
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_PC4
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, T, F, F, F, F, F, F, F, F, F),
+
+100 
+BEQ
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_B
+, 
+OP1_PC
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_EQ
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+ , 
+F
+, T, F, F, F, F, F, F, F, F, F, F),
+
+101 
+BNE
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_B
+, 
+OP1_PC
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_NE
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+ , 
+F
+, T, F, F, F, F, F, F, F, F, F, F),
+
+102 
+BLT
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_B
+, 
+OP1_PC
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_LT
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+ , 
+F
+, T, F, F, F, F, F, F, F, F, F, F),
+
+103 
+BGE
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_B
+, 
+OP1_PC
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_GE
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+ , 
+F
+, T, F, F, F, F, F, F, F, F, F, F),
+
+104 
+BLTU
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_B
+, 
+OP1_PC
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_LTU
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+ , 
+F
+, T, F, F, F, F, F, F, F, F, F, F),
+
+105 
+BGEU
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_B
+, 
+OP1_PC
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_GEU
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+ , 
+F
+, T, F, F, F, F, F, F, F, F, F, F),
+
+106 
+LB
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_LB
+, 
+MEM_RD_MEM
+, T, 
+F
+, F, F, T, F, F, F, F, F, F, F),
+
+107 
+LH
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_LH
+, 
+MEM_RD_MEM
+, T, 
+F
+, F, F, T, F, F, F, F, F, F, F),
+
+108 
+LW
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_LW
+, 
+MEM_RD_MEM
+, T, 
+F
+, F, F, T, F, F, F, F, F, F, F),
+
+109 
+LBU
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_LBU
+, 
+MEM_RD_MEM
+, T, 
+F
+, F, F, T, F, F, F, F, F, F, F),
+
+110 
+LHU
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_LHU
+, 
+MEM_RD_MEM
+, T, 
+F
+, F, F, T, F, F, F, F, F, F, F),
+
+111 
+SB
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_S
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_SB
+, 
+MEM_RD_X
+ , 
+F
+, F, F, F, F, T, F, F, F, F, F, F),
+
+112 
+SH
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_S
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_SH
+, 
+MEM_RD_X
+ , 
+F
+, F, F, F, F, T, F, F, F, F, F, F),
+
+113 
+SW
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_S
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_SW
+, 
+MEM_RD_X
+ , 
+F
+, F, F, F, F, T, F, F, F, F, F, F),
+
+114 
+ADDI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+115 
+SLTI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_SLT
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+116 
+SLTIU
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_SLTU
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+117 
+XORI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_XOR
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+118 
+ORI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_OR
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+119 
+ANDI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_AND
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+120 
+SLLI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_SLL
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+121 
+SRLI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_SRL
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+122 
+SRAI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_I
+, 
+OP1_RS1
+, 
+OP2_IMM
+, 
+ALU_SRA
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+123 
+ADD
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+124 
+SUB
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_SUB
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+125 
+SLL
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_SLL
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+126 
+SLT
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_SLT
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+127 
+SLTU
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_SLTU
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+128 
+XOR
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_XOR
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+129 
+SRL
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_SRL
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+130 
+SRA
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_SRA
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+131 
+OR
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_OR
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+132 
+AND
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_AND
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_ALU
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F),
+
+133 
+CSRRW
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_0
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_W
+, 
+MUL_X
+, 
+EXE_RD_CSR
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, T, F, F, F, F, F, F, F, F),
+
+134 
+CSRRS
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_0
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_S
+, 
+MUL_X
+, 
+EXE_RD_CSR
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, T, F, F, F, F, F, F, F, F),
+
+135 
+CSRRC
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_0
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_C
+, 
+MUL_X
+, 
+EXE_RD_CSR
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, T, F, F, F, F, F, F, F, F),
+
+136 
+CSRRWI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_Z
+, 
+OP1_0
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_W
+, 
+MUL_X
+, 
+EXE_RD_CSR
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, T, F, F, F, F, F, F, F, F),
+
+137 
+CSRRSI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_Z
+, 
+OP1_0
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_S
+, 
+MUL_X
+, 
+EXE_RD_CSR
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, T, F, F, F, F, F, F, F, F),
+
+138 
+CSRRCI
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_Z
+, 
+OP1_0
+, 
+OP2_IMM
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_C
+, 
+MUL_X
+, 
+EXE_RD_CSR
+, 
+MEM_X
+, 
+MEM_RD_REG
+, T, 
+F
+, F, T, F, F, F, F, F, F, F, F),
+
+139 
+FENCE
+ -> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_X
+, 
+OP2_X
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+, 
+F
+, F, F, F, F, F, T, F, F, F, F, F),
+
+140 
+FENCE_I
+-> 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_X
+, 
+OP2_X
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+, 
+F
+, F, F, F, F, F, F, T, F, F, F, F),
+
+141 
+MUL
+ -> (if(
+cÚf
+.
+mul
+) {
+
+142 
+	`Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_X
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_L
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_MUL
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F)
+
+143 } {  
+	}
+}),
+
+144 
+	gMULH
+ -> (if(
+	gcÚf
+.
+	gmul
+) {
+
+145 
+Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_X
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_H
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_MUL
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F)
+
+147 
+	gMULHSU
+ -> (if(
+	gcÚf
+.
+	gmul
+) {
+
+148 
+Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_X
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_HSU
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_MUL
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F)
+
+150 
+	gMULHU
+ -> (if(
+	gcÚf
+.
+	gmul
+) {
+
+151 
+Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_RS1
+, 
+OP2_RS2
+, 
+ALU_X
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_HU
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_MUL
+, T, 
+F
+, F, F, F, F, F, F, F, F, F, F)
+
+153 
+	gSCALL
+ -> 
+Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_X
+, 
+OP2_X
+, 
+ALU_X
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+, 
+F
+, F, F, F, F, F, F, F, T, F, F, F),
+
+154 
+	gSRET
+ -> (if(
+	gcÚf
+.
+	g´ivegedMode
+) {
+
+155 
+Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_X
+, 
+OP2_X
+, 
+ALU_X
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+, 
+F
+, F, F, F, F, F, F, F, F, T, F, F)
+
+157 
+	gDU
+ -> (if(
+	gcÚf
+.
+	gd–ayUÁ
+) {
+
+158 
+Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_PC
+, 
+OP2_0
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+, 
+F
+, F, F, F, F, F, F, F, F, F, T, F)
+
+160 
+	gWU
+ -> (if(
+	gcÚf
+.
+	gd–ayUÁ
+) {
+
+161 
+Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_PC
+, 
+OP2_4
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+, 
+F
+, F, F, F, F, F, F, F, F, F, T, F)
+
+163 
+	gIE
+ -> (if(
+	gcÚf
+.
+	gš‹¼u±Expœe
+) {
+
+164 
+Li¡
+(
+T
+, 
+IMM_X
+, 
+OP1_PC
+, 
+OP2_4
+, 
+ALU_ADD
+, 
+BR_X
+, 
+CSR_X
+, 
+MUL_X
+, 
+EXE_RD_X
+, 
+MEM_X
+, 
+MEM_RD_X
+, 
+F
+, F, F, F, F, F, F, F, F, F, F, T)
+
+169 
+v®
+ 
+	gdecoded_š¡
+ = 
+	$DecodeLogic
+(
+io
+.
+dec_š¡
+, , 
+decode_bË
+)
+
+173 
+v®
+ 
+dec_Ëg®
+ :: 
+dec_imm_£l
+ :: 
+dec_İ1_£l
+ :: 
+dec_İ2_£l
+ :: 
+dec_®u_ty³
+ :: 
+dec_br_ty³
+ :: 
+dec_c¤_ty³
+ :: 
+dec_mul_ty³
+ :: 
+dec_exe_rd_d©a_£l
+ :: 
+dec_mem_ty³
+ :: 
+dec_mem_rd_d©a_£l
+ :: 
+N
+ = 
+decoded_š¡
+.
+	$¦iû
+(0,11)
+
+174 
+v®
+ 
+dec_rd_’
+ :: 
+dec_b¿nch
+ :: 
+dec_jump
+ :: 
+dec_c¤
+ :: 
+dec_lßd
+ :: 
+dec_¡Üe
+ :: 
+dec_ãnû
+ :: 
+dec_ãnû_i
+ :: 
+dec_sÿÎ
+ :: 
+dec_¤‘
+ :: 
+dec_du
+ :: 
+dec_›
+ :: 
+N
+ = 
+decoded_š¡
+.
+	$¦iû
+(11,23)
+
+179 
+v®
+ 
+exe_»g_®u_ty³
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_®u_ty³
+)
+
+180 
+v®
+ 
+exe_»g_br_ty³
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_br_ty³
+)
+
+181 
+v®
+ 
+exe_»g_c¤_ty³
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_c¤_ty³
+)
+
+182 
+v®
+ 
+exe_»g_mul_ty³
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_mul_ty³
+)
+
+183 
+v®
+ 
+exe_»g_rd_d©a_£l
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_exe_rd_d©a_£l
+)
+
+184 
+v®
+ 
+exe_»g_mem_ty³
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_mem_ty³
+)
+
+185 
+v®
+ 
+mem_»g_rd_d©a_£l
+ = 
+	`Reg
+(
+Ãxt
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_mem_rd_d©a_£l
+))
+
+187 
+io
+.
+dec_imm_£l
+ := dec_imm_sel
+
+188 
+io
+.
+dec_İ1_£l
+ := dec_op1_sel
+
+189 
+io
+.
+dec_İ2_£l
+ := dec_op2_sel
+
+190 
+io
+.
+exe_®u_ty³
+ :ğ
+exe_»g_®u_ty³
+
+
+191 
+io
+.
+exe_br_ty³
+ :ğ
+exe_»g_br_ty³
+
+
+192 
+io
+.
+exe_c¤_ty³
+ :ğ
+exe_»g_c¤_ty³
+
+
+193 
+io
+.
+exe_mul_ty³
+ :ğ
+exe_»g_mul_ty³
+
+
+194 
+io
+.
+exe_rd_d©a_£l
+ :ğ
+exe_»g_rd_d©a_£l
+
+
+195 
+io
+.
+exe_mem_ty³
+ :ğ
+exe_»g_mem_ty³
+
+
+196 
+io
+.
+mem_rd_d©a_£l
+ :ğ
+mem_»g_rd_d©a_£l
+
+
+205 
+v®
+ 
+exe_exû±iÚ
+ = 
+	$BoŞ
+()
+
+206 
+exe_exû±iÚ
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+207 
+v®
+ 
+mem_»g_exû±iÚ
+ = 
+	$Reg
+(
+Ãxt
+ = 
+exe_exû±iÚ
+)
+
+210 
+v®
+ 
+exe_æush
+ = 
+	$BoŞ
+()
+
+211 
+exe_æush
+ :ğ
+exe_exû±iÚ
+
+
+214 
+v®
+ 
+dec_¡®l
+ = 
+	$BoŞ
+()
+
+215 
+dec_¡®l
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+218 
+v®
+ 
+¡®l_couÁ
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+	`UIÁ
+(0, 2)è
+	}
+}
+
+219 
+	gtid
+ <- 0 
+uÁ
+ 
+	gcÚf
+.
+	gth»ads
+) {
+
+221 
+¡®l_couÁ
+(
+tid
+è:ğ
+Mux
+(¡®l_couÁÑidè!ğ
+UIÁ
+(0), stall_count(tid) - UInt(1), UInt(0))
+
+235 
+v®
+ 
+	gÃxt_v®id
+ = 
+	$BoŞ
+()
+
+236 
+v®
+ 
+if_»g_v®id
+ = 
+	`Reg
+(
+Ãxt
+ = 
+Ãxt_v®id
+, 
+š™
+ = 
+	$BoŞ
+(
+çl£
+))
+
+237 
+v®
+ 
+if_´e_v®id
+ = 
+if_»g_v®id
+ &&
+
+238 !(
+dec_¡®l
+ && (
+io
+.
+if_tid
+ ==ğio.
+dec_tid
+)) &&
+
+239 
+	`¡®l_couÁ
+(
+io
+.
+if_tid
+è==ğ
+	$UIÁ
+(0)
+
+240 
+v®
+ 
+if_v®id
+ = 
+if_´e_v®id
+ &&
+
+241 !(
+exe_æush
+ && (
+io
+.
+if_tid
+ ==ğio.
+exe_tid
+))
+
+242 
+v®
+ 
+dec_»g_v®id
+ = 
+	`Reg
+(
+Ãxt
+ = 
+if_v®id
+, 
+š™
+ = 
+	$BoŞ
+(
+çl£
+))
+
+243 
+v®
+ 
+dec_v®id
+ = 
+dec_»g_v®id
+ &&
+
+244 !(
+exe_æush
+ && (
+io
+.
+dec_tid
+ ==ğio.
+exe_tid
+))
+
+245 
+v®
+ 
+exe_»g_v®id
+ = 
+	`Reg
+(
+Ãxt
+ = 
+dec_v®id
+, 
+š™
+ = 
+	$BoŞ
+(
+çl£
+))
+
+246 
+v®
+ 
+exe_v®id
+ = 
+exe_»g_v®id
+ && !
+exe_exû±iÚ
+
+
+247 
+	$debug
+(
+exe_v®id
+)
+
+248 
+v®
+ 
+mem_»g_v®id
+ = 
+	`Reg
+(
+Ãxt
+ = 
+exe_v®id
+, 
+š™
+ = 
+	$BoŞ
+(
+çl£
+))
+
+249 
+v®
+ 
+mem_v®id
+ = 
+mem_»g_v®id
+
+
+250 
+v®
+ 
+wb_»g_v®id
+ = 
+	`Reg
+(
+Ãxt
+ = 
+mem_v®id
+, 
+š™
+ = 
+	$BoŞ
+(
+çl£
+))
+
+251 
+v®
+ 
+wb_v®id
+ = 
+wb_»g_v®id
+
+
+258 
+v®
+ 
+Ãxt_tid
+ = 
+	$UIÁ
+()
+
+259 
+v®
+ 
+scheduËr
+ = 
+	`ModuË
+(
+Ãw
+ 
+	$ScheduËr
+())
+
+260 
+scheduËr
+.
+io
+.
+¦Ùs
+ :ğio.
+c¤_¦Ùs
+
+
+261 
+scheduËr
+.
+io
+.
+th»ad_modes
+ :ğio.
+c¤_tmodes
+
+
+262 if(!
+cÚf
+.
+»gScheduË
+) {
+
+263 
+Ãxt_tid
+ :ğ
+scheduËr
+.
+io
+.
+th»ad
+
+
+264 
+Ãxt_v®id
+ :ğ
+scheduËr
+.
+io
+.
+v®id
+
+
+265 
+	}
+} {
+
+266 
+Ãxt_tid
+ :ğ
+Reg
+(
+Ãxt
+ = 
+scheduËr
+.
+io
+.
+th»ad
+)
+
+267 
+Ãxt_v®id
+ :ğ
+Reg
+(
+Ãxt
+ = 
+scheduËr
+.
+io
+.
+v®id
+, 
+š™
+ = 
+BoŞ
+(
+çl£
+))
+
+272 
+v®
+ 
+	gdec_rd_wr™e
+ = (
+io
+.
+dec_š¡
+(11, 7è!ğ
+UIÁ
+(0)è&& 
+dec_rd_’
+.
+toBoŞ
+
+
+275 
+v®
+ 
+exe_»g_rd_wr™e
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_rd_wr™e
+ && 
+dec_»g_v®id
+)
+
+279 
+v®
+ 
+mem_»g_rd_wr™e
+ = 
+	$Reg
+(
+Ãxt
+ = 
+exe_»g_rd_wr™e
+ && 
+exe_»g_v®id
+)
+
+280 
+v®
+ 
+mem_rd_wr™e
+ = 
+mem_»g_rd_wr™e
+ && 
+mem_»g_v®id
+
+
+285 
+v®
+ 
+wb_»g_rd_wr™e
+ = 
+	$Reg
+(
+Ãxt
+ = 
+mem_rd_wr™e
+)
+
+290 
+v®
+ 
+exe_»g_c¤_wr™e
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_c¤
+.
+toBoŞ
+)
+
+291 
+v®
+ 
+exe_c¤_wr™e
+ = 
+exe_»g_c¤_wr™e
+ && 
+exe_»g_v®id
+
+
+294 
+v®
+ 
+exe_»g_sÿÎ
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_sÿÎ
+.
+toBoŞ
+)
+
+295 
+v®
+ 
+exe_»g_¤‘
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_¤‘
+.
+toBoŞ
+)
+
+296 
+v®
+ 
+exe_¤‘
+ = 
+exe_»g_¤‘
+ && 
+exe_»g_v®id
+
+
+301 
+v®
+ 
+exe_»g_lßd
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_lßd
+.
+toBoŞ
+)
+
+302 
+v®
+ 
+exe_lßd
+ = 
+exe_»g_lßd
+ && 
+exe_»g_v®id
+
+
+303 
+v®
+ 
+exe_»g_¡Üe
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_¡Üe
+.
+toBoŞ
+)
+
+304 
+v®
+ 
+exe_¡Üe
+ = 
+exe_»g_¡Üe
+ && 
+exe_»g_v®id
+
+
+307 
+v®
+ 
+exe_»g_b¿nch
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_b¿nch
+.
+toBoŞ
+)
+
+308 
+v®
+ 
+exe_»g_jump
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dec_jump
+.
+toBoŞ
+)
+
+310 
+v®
+ 
+exe_brjmp
+ = 
+exe_»g_v®id
+ && (
+exe_»g_jump
+ || (
+exe_»g_b¿nch
+ && 
+io
+.
+exe_br_cÚd
+))
+
+315 
+v®
+ 
+exe_du
+ = 
+	$BoŞ
+()
+
+316 if(
+cÚf
+.
+d–ayUÁ
+) {
+
+317 
+v®
+ 
+exe_»g_du
+ = 
+	`Reg
+(
+Ãxt
+ = 
+dec_du
+.
+toBoŞ
+)
+
+322 
+exe_du
+ :ğ
+exe_»g_v®id
+ && 
+exe_»g_du
+ && !
+io
+.
+exe_expœe
+
+
+324 
+	}
+} {
+
+325 
+exe_du
+ :ğ
+BoŞ
+(
+çl£
+)
+
+328 
+v®
+ 
+exe_¦“p
+ = 
+exe_du
+ && 
+exe_v®id
+
+
+332 
+v®
+ 
+mem_»g_brjmp
+ = 
+Reg
+(
+Ãxt
+ = (
+exe_brjmp
+ || 
+exe_du
+è&& 
+exe_v®id
+)
+
+335 
+v®
+ 
+exe_›
+ = 
+	$BoŞ
+()
+
+336 
+v®
+ 
+exe_“
+ = 
+	$BoŞ
+()
+
+337 if(
+cÚf
+.
+š‹¼u±Expœe
+) {
+
+338 
+v®
+ 
+exe_»g_›
+ = 
+	`Reg
+(
+Ãxt
+ = 
+dec_›
+.
+toBoŞ
+ && 
+io
+.
+	`dec_š¡
+(25).toBool)
+
+339 
+exe_›
+ :ğ
+exe_v®id
+ && 
+exe_»g_›
+
+
+340 
+v®
+ 
+exe_»g_“
+ = 
+	`Reg
+(
+Ãxt
+ = 
+dec_›
+.
+toBoŞ
+ && !
+io
+.
+	`dec_š¡
+(25).toBool)
+
+341 
+exe_“
+ :ğ
+exe_v®id
+ && 
+exe_»g_“
+
+
+342 
+	}
+} {
+
+343 
+exe_›
+ :ğ
+BoŞ
+(
+çl£
+)
+
+344 
+exe_“
+ :ğ
+BoŞ
+(
+çl£
+)
+
+348 
+v®
+ 
+dec_rs1_£l
+ = 
+	$UIÁ
+()
+
+349 
+v®
+ 
+dec_rs2_£l
+ = 
+	$UIÁ
+()
+
+350 if(
+cÚf
+.
+by·ssšg
+) {
+
+353 
+v®
+ 
+dec_rs1_addr
+ = 
+io
+.
+	`dec_š¡
+(19, 15)
+
+354 
+v®
+ 
+dec_rs2_addr
+ = 
+io
+.
+	`dec_š¡
+(24, 20)
+
+355 
+v®
+ 
+dec_check_exe
+ = (
+io
+.
+dec_tid
+ ==ğio.
+exe_tid
+è&& 
+exe_»g_rd_wr™e
+
+
+356 
+v®
+ 
+dec_check_mem
+ = (
+io
+.
+dec_tid
+ ==ğio.
+mem_tid
+è&& 
+mem_»g_rd_wr™e
+
+
+357 
+v®
+ 
+dec_check_wb
+ = (
+io
+.
+dec_tid
+ ==ğio.
+wb_tid
+è&& 
+wb_»g_rd_wr™e
+
+
+358 
+dec_rs1_£l
+ :=
+
+359 
+	`Mux
+(
+dec_check_exe
+ && (
+dec_rs1_addr
+ ==ğ
+io
+.
+exe_rd_addr
+), 
+RS1_EXE
+,
+
+360 
+	`Mux
+(
+dec_check_mem
+ && (
+dec_rs1_addr
+ ==ğ
+io
+.
+mem_rd_addr
+), 
+RS1_MEM
+,
+
+361 
+	`Mux
+(
+dec_check_wb
+ && (
+dec_rs1_addr
+ ==ğ
+io
+.
+wb_rd_addr
+), 
+RS1_WB
+,
+
+362 
+RS1_DEC
+)))
+
+363 
+dec_rs2_£l
+ :=
+
+364 
+	`Mux
+(
+dec_check_exe
+ && (
+dec_rs2_addr
+ ==ğ
+io
+.
+exe_rd_addr
+), 
+RS2_EXE
+,
+
+365 
+	`Mux
+(
+dec_check_mem
+ && (
+dec_rs2_addr
+ ==ğ
+io
+.
+mem_rd_addr
+), 
+RS2_MEM
+,
+
+366 
+	`Mux
+(
+dec_check_wb
+ && (
+dec_rs2_addr
+ ==ğ
+io
+.
+wb_rd_addr
+), 
+RS2_WB
+,
+
+367 
+RS2_DEC
+)))
+
+368 
+	}
+} {
+
+369 
+	gdec_rs1_£l
+ :ğ
+RS1_DEC
+
+
+370 
+dec_rs2_£l
+ :ğ
+RS2_DEC
+
+
+374 
+v®
+ 
+Ãxt_pc_£l
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`UIÁ
+(è
+	}
+}
+
+375 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+è{ 
+Ãxt_pc_£l
+ :ğ
+NPC_PCREG
+ }
+
+376 
+	$wh’
+(
+if_´e_v®id
+è{ 
+	`Ãxt_pc_£l
+(
+io
+.
+if_tid
+è:ğ
+NPC_PLUS4
+ 
+	}
+}
+
+377 if(!
+cÚf
+.
+»gBrJmp
+) {
+
+378 
+wh’
+(
+exe_brjmp
+ || 
+exe_du
+è{ 
+Ãxt_pc_£l
+(
+io
+.
+exe_tid
+è:ğ
+NPC_BRJMP
+ }
+
+380 
+wh’
+(
+mem_»g_brjmp
+è{ 
+Ãxt_pc_£l
+(
+io
+.
+mem_tid
+è:ğ
+NPC_BRJMP
+ }
+
+382 if(
+cÚf
+.
+exû±iÚs
+) {
+
+383 if(!
+cÚf
+.
+»gEvec
+) {
+
+384 
+wh’
+(
+exe_exû±iÚ
+è{ 
+Ãxt_pc_£l
+(
+io
+.
+exe_tid
+è:ğ
+NPC_EVEC
+ }
+
+386 
+wh’
+(
+mem_»g_exû±iÚ
+è{ 
+Ãxt_pc_£l
+(
+io
+.
+mem_tid
+è:ğ
+NPC_EVEC
+ }
+
+394 
+	$wh’
+(
+exe_brjmp
+) {
+
+395 
+exe_æush
+ :ğ
+	`BoŞ
+(
+Œue
+)
+
+396 if(
+cÚf
+.
+»gBrJmp
+è{ 
+	`¡®l_couÁ
+(
+io
+.
+exe_tid
+è:ğ
+	`UIÁ
+(1) }
+
+397 
+	}
+}
+
+401 
+	$wh’
+(
+exe_¦“p
+) {
+
+402 
+exe_æush
+ :ğ
+	`BoŞ
+(
+Œue
+)
+
+403 if(!
+cÚf
+.
+»gScheduË
+) {
+
+404 
+	`¡®l_couÁ
+(
+io
+.
+exe_tid
+è:ğ
+	`UIÁ
+(1)
+
+406 
+	`¡®l_couÁ
+(
+io
+.
+exe_tid
+è:ğ
+	`UIÁ
+(2)
+
+408 
+	}
+}
+
+412 
+	$wh’
+(
+dec_»g_v®id
+ && 
+dec_lßd
+.
+toBoŞ
+) {
+
+413 
+dec_¡®l
+ :ğ
+	`BoŞ
+(
+Œue
+)
+
+414 
+	}
+}
+
+417 if(
+cÚf
+.
+mul
+) {
+
+418 
+wh’
+(
+dec_»g_v®id
+ && (
+dec_mem_rd_d©a_£l
+ ==ğ
+MEM_RD_MUL
+)) {
+
+419 
+dec_¡®l
+ :ğ
+BoŞ
+(
+Œue
+)
+
+428 
+	$wh’
+(
+dec_»g_v®id
+ && 
+dec_ãnû_i
+.
+toBoŞ
+) {
+
+429 
+dec_¡®l
+ :ğ
+	`BoŞ
+(
+Œue
+)
+
+430 
+	`¡®l_couÁ
+(
+io
+.
+exe_tid
+è:ğ
+	`UIÁ
+(1)
+
+431 
+	}
+}
+
+443 
+def
+ 
+check_exû±iÚs
+(
+exû±iÚs
+: 
+Seq
+[(
+BoŞ
+, 
+IÁ
+)]) = {
+
+444 
+v®
+ 
+’abËd
+ = 
+exû±iÚs
+.
+f‹r
+(
+i
+ => 
+cÚf
+.
+ÿu£s
+.
+cÚšs
+(i.
+_2
+))
+
+445 
+v®
+ 
+exû±iÚ
+ = 
+’abËd
+.
+m­
+(
+_
+.
+_1
+).
+fŞd
+(
+BoŞ
+(
+çl£
+))(_||_)
+
+446 
+v¬
+ 
+ÿu£
+ = 
+UIÁ
+(0)
+
+447 
+’abËd
+.
+»v”£
+.
+fÜ—ch
+ { 
+i
+ => 
+ÿu£
+ = 
+Mux
+(i.
+_1
+, 
+UIÁ
+(i.
+_2
+), cause) }
+
+448 (
+	gexû±iÚ
+, 
+	gÿu£
+)
+
+453 
+v®
+ (
+if_exc
+, 
+if_ÿu£
+èğ
+check_exû±iÚs
+(
+Li¡
+(
+
+454 (
+io
+.
+if_exc_mi§ligÃd
+, 
+Cau£s
+.
+mi§ligÃd_ãtch
+),
+
+455 (
+io
+.
+if_exc_çuÉ
+, 
+Cau£s
+.
+çuÉ_ãtch
+)
+
+458 
+v®
+ 
+	gdec_»g_exc
+ = 
+	$Reg
+(
+Ãxt
+ = 
+if_exc
+)
+
+459 
+v®
+ 
+dec_»g_ÿu£
+ = 
+	$Reg
+(
+Ãxt
+ = 
+if_ÿu£
+)
+
+462 
+	`v®
+ (
+dec_exc
+, 
+dec_ÿu£
+èğ
+	`check_exû±iÚs
+(
+	`Li¡
+(
+
+463 (!
+dec_Ëg®
+.
+toBoŞ
+, 
+Cau£s
+.
+Ëg®_š¡ruùiÚ
+),
+
+464 (
+dec_sÿÎ
+.
+toBoŞ
+, 
+Cau£s
+.
+sysÿÎ
+)
+
+467 
+v®
+ 
+exe_»g_exc
+ = 
+	`Reg
+(
+Ãxt
+ = 
+dec_»g_exc
+ || 
+dec_exc
+)
+
+468 
+v®
+ 
+exe_»g_ÿu£
+ = 
+	`Reg
+(
+Ãxt
+ = 
+	$Mux
+(
+dec_»g_exc
+, 
+dec_»g_ÿu£
+, 
+dec_ÿu£
+))
+
+473 
+	`v®
+ (
+exe_š¡_exc
+, 
+exe_š¡_ÿu£
+èğ
+	`check_exû±iÚs
+(
+	`Li¡
+(
+
+474 (
+io
+.
+exe_exc_´iv_š¡
+, 
+Cau£s
+.
+´iveged_š¡ruùiÚ
+),
+
+475 (
+io
+.
+exe_exc_lßd_mi§ligÃd
+, 
+Cau£s
+.
+mi§ligÃd_lßd
+),
+
+476 (
+io
+.
+exe_exc_lßd_çuÉ
+, 
+Cau£s
+.
+çuÉ_lßd
+),
+
+477 (
+io
+.
+exe_exc_¡Üe_mi§ligÃd
+, 
+Cau£s
+.
+mi§ligÃd_¡Üe
+),
+
+478 (
+io
+.
+exe_exc_¡Üe_çuÉ
+, 
+Cau£s
+.
+çuÉ_¡Üe
+)
+
+481 
+	`v®
+ (
+exe_ªy_exc
+, 
+exe_ªy_ÿu£
+èğ
+	`check_exû±iÚs
+(
+	`Li¡
+(
+
+482 (
+io
+.
+exe_exc_expœe
+, 
+Cau£s
+.
+“
+),
+
+483 (
+io
+.
+exe_št_expœe
+, 
+Cau£s
+.
+›
+),
+
+484 (
+io
+.
+exe_št_ext
+, 
+Cau£s
+.
+ex‹º®_št
+)
+
+490 
+v®
+ 
+exe_kl
+ = 
+exe_»g_exc
+ || 
+exe_ªy_exc
+
+
+493 
+v®
+ 
+exe_exû±iÚ_ÿu£
+ = 
+	$UIÁ
+()
+
+494 
+exe_exû±iÚ_ÿu£
+ :ğ
+	$UIÁ
+(0)
+
+496 if(
+cÚf
+.
+exû±iÚs
+) {
+
+498 
+	`wh’
+(
+exe_»g_v®id
+ && (
+exe_»g_exc
+ || 
+exe_š¡_exc
+ || 
+exe_ªy_exc
+)) {
+
+499 
+exe_exû±iÚ
+ :ğ
+	`BoŞ
+(
+Œue
+)
+
+500 if(
+cÚf
+.
+»gEvec
+è{ 
+	`¡®l_couÁ
+(
+io
+.
+exe_tid
+è:ğ
+	`UIÁ
+(1) }
+
+501 { 
+	`¡®l_couÁ
+(
+io
+.
+exe_tid
+è:ğ
+	`UIÁ
+(0) }
+
+503 
+exe_exû±iÚ_ÿu£
+ :ğ
+	`Mux
+(
+exe_»g_exc
+, 
+exe_»g_ÿu£
+,
+
+504 
+	`Mux
+(
+exe_š¡_exc
+, 
+exe_š¡_ÿu£
+, 
+exe_ªy_ÿu£
+))
+
+505 
+	}
+}
+
+509 if(!
+	gcÚf
+.
+	gby·ssšg
+) {
+
+510 
+	gexe_æush
+ :ğ
+BoŞ
+(
+çl£
+)
+
+511 
+dec_¡®l
+ :ğ
+BoŞ
+(
+çl£
+)
+
+512 
+¡®l_couÁ
+ :ğ
+UIÁ
+(0)
+
+516 
+v®
+ 
+exe_cyşe
+ = 
+	$BoŞ
+()
+
+517 
+exe_cyşe
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+518 
+v®
+ 
+exe_š¡»t
+ = 
+	$BoŞ
+()
+
+519 
+exe_š¡»t
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+520 if(
+cÚf
+.
+¡©s
+) {
+
+521 
+exe_cyşe
+ :ğ
+	`Reg
+(
+Ãxt
+ = RegÒexˆğRegÒexˆğ
+Ãxt_v®id
+)))
+
+522 
+exe_š¡»t
+ :ğ
+exe_v®id
+
+
+523 
+	}
+}
+
+526 
+io
+.
+Ãxt_tid
+ :=‚ext_tid
+
+527 
+io
+.
+Ãxt_v®id
+ :=‚ext_valid
+
+528 
+io
+.
+Ãxt_pc_£l
+ :=‚ext_pc_sel
+
+529 
+io
+.
+dec_rs1_£l
+ := dec_rs1_sel
+
+530 
+io
+.
+dec_rs2_£l
+ := dec_rs2_sel
+
+531 
+io
+.
+exe_v®id
+ :ğ
+exe_»g_v®id
+
+
+532 
+io
+.
+exe_lßd
+ :=ƒxe_load
+
+533 
+io
+.
+exe_¡Üe
+ :=ƒxe_store
+
+534 
+io
+.
+exe_c¤_wr™e
+ :=ƒxe_csr_write
+
+535 
+io
+.
+exe_exû±iÚ
+ :=ƒxe_exception
+
+536 
+io
+.
+exe_ÿu£
+ :ğ
+exe_exû±iÚ_ÿu£
+
+
+537 
+io
+.
+exe_kl
+ :=ƒxe_kill
+
+538 
+io
+.
+exe_¦“p
+ :=ƒxe_sleep
+
+539 
+io
+.
+exe_›
+ :=ƒxe_ie
+
+540 
+io
+.
+exe_“
+ :=ƒxe_ee
+
+541 
+io
+.
+exe_¤‘
+ :=ƒxe_sret
+
+542 
+io
+.
+exe_cyşe
+ :=ƒxe_cycle
+
+543 
+io
+.
+exe_š¡»t
+ :=ƒxe_instret
+
+544 
+io
+.
+mem_rd_wr™e
+ := mem_rd_write
+
+	@/home/salman/salman_cps/flexpret/src/Core/core.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+11 
+impÜt
+ 
+	gFËx´‘CÚ¡ªts
+.
+_
+
+
+13 
+şass
+ 
+	$FËx´‘CÚfigu¿tiÚ
+(
+th»ads
+: 
+IÁ
+, 
+æex
+: 
+BoŞ—n
+, 
+iMemKB
+: IÁ, 
+dMemKB
+: IÁ, 
+mul
+: BoŞ—n, 
+ã©u»s
+: 
+SŒšg
+)
+
+16 
+	`´šn
+("ã©u»s: " + 
+ã©u»s
+)
+
+17 
+v®
+ 
+mt
+ = 
+th»ads
+ > 1
+
+18 
+v®
+ 
+¡©s
+ = 
+ã©u»s
+ == "all"
+
+19 
+	`v®
+ (
+gpioPrÙeùiÚ
+, 
+memPrÙeùiÚ
+, 
+d–ayUÁ
+, 
+š‹¼u±Expœe
+, 
+ex‹º®IÁ”ru±
+, 
+suµÜ‹dCau£s
+) =
+
+20 if(
+ã©u»s
+ =ğ"mš"è(
+çl£
+, f®£, f®£, f®£, f®£, 
+	`Li¡
+())
+
+21 if(
+ã©u»s
+ =ğ"ex"è(
+mt
+, mt, 
+çl£
+, f®£, 
+Œue
+, 
+	`Li¡
+(0,2,3,6,8,9))
+
+22 if(
+ã©u»s
+ =ğ"ti"è(
+mt
+, mt, 
+Œue
+,rue,rue, 
+	`Li¡
+(0,2,3,6,8,9))
+
+23 (
+mt
+, mt, 
+Œue
+,rue,rue, 
+	`Li¡
+(0,1,2,3,6,8,9,10,11))
+
+26 
+v®
+ 
+»gBrJmp
+ = 
+mt
+ && !
+æex
+
+
+27 
+v®
+ 
+»gEvec
+ = 
+Œue
+
+
+28 
+v®
+ 
+»gScheduË
+ = 
+Œue
+
+
+29 
+v®
+ 
+dediÿ‹dC¤D©a
+ = 
+Œue
+
+
+30 
+v®
+ 
+iMemCÜeRW
+ = 
+Œue
+
+
+31 
+v®
+ 
+´ivegedMode
+ = 
+çl£
+
+
+37 
+v®
+ 
+th»adB™s
+ = 
+	`log2Up
+(
+th»ads
+)
+
+43 
+v®
+ 
+by·ssšg
+ = (
+th»ads
+ < 4è|| 
+æex
+
+
+46 
+v®
+ 
+roundRobš
+ = !
+æex
+
+
+47 
+v®
+ 
+š™ŸlSlÙs
+ = 
+	`Li¡
+(
+
+48 
+SLOT_D
+, SLOT_D, SLOT_D, SLOT_D, SLOT_D, SLOT_D, SLOT_D, 
+SLOT_T0
+
+
+50 
+v®
+ 
+š™ŸlTmodes
+ = (0 
+uÁ
+ 
+th»ads
+).
+	`m­
+(
+i
+ => if(˜!ğ0è
+TMODE_HZ
+ 
+TMODE_HA
+)
+
+53 
+v®
+ 
+»gD•th
+ = 32*
+th»ads
+
+
+56 
+v®
+ 
+iMemD•th
+ = 256*
+iMemKB
+
+
+57 
+v®
+ 
+iMemAddrB™s
+ = 
+	`log2Up
+(
+iMemD•th
+)
+
+58 
+v®
+ 
+iMemHighIndex
+ = 
+	`log2Up
+(4*
+iMemD•th
+)-1
+
+59 
+v®
+ 
+iMemFÜûEn
+ = 
+çl£
+
+
+60 
+v®
+ 
+iMemBusRW
+ = 
+çl£
+
+
+63 
+v®
+ 
+dMemD•th
+ = 256*
+dMemKB
+
+
+64 
+v®
+ 
+dMemAddrB™s
+ = 
+	`log2Up
+(4*
+dMemD•th
+)
+
+65 
+v®
+ 
+dMemHighIndex
+ = 
+	`log2Up
+(4*
+dMemD•th
+)-1
+
+66 
+v®
+ 
+dMemFÜûEn
+ = 
+çl£
+
+
+67 
+v®
+ 
+dMemBusRW
+ = 
+çl£
+
+
+70 
+v®
+ 
+gpiPÜtSizes
+ = 
+	`Li¡
+(1, 1, 1, 1)
+
+71 
+v®
+ 
+gpoPÜtSizes
+ = 
+	`Li¡
+(2, 2, 2, 2)
+
+72 
+v®
+ 
+š™ŸlGpo
+ = 
+	`Li¡
+(
+
+73 
+MEMP_T0
+, 
+MEMP_SH
+, MEMP_SH, MEMP_SH
+
+78 
+v®
+ 
+busAddrB™s
+ = 10
+
+81 
+v®
+ 
+memRegiÚs
+ = 8
+
+82 
+v®
+ 
+iMemLowIndex
+ = 
+iMemHighIndex
+ - 
+	`log2Up
+(
+memRegiÚs
+) + 1
+
+83 
+v®
+ 
+dMemLowIndex
+ = 
+dMemHighIndex
+ - 
+	`log2Up
+(
+memRegiÚs
+) + 1
+
+85 
+v®
+ 
+š™ŸlIMem
+ = 
+	`Li¡
+(
+
+86 
+MEMP_SH
+, 
+MEMP_RO
+, MEMP_RO, MEMP_RO, MEMP_RO, MEMP_RO, MEMP_RO, MEMP_RO
+
+88 
+v®
+ 
+š™ŸlDMem
+ = 
+	`Li¡
+(
+
+89 
+MEMP_SH
+, MEMP_SH, MEMP_SH, MEMP_SH, MEMP_SH, MEMP_SH, MEMP_SH, MEMP_SH
+
+93 
+v®
+ 
+timeB™s
+ = 32
+
+94 
+v®
+ 
+timeInc
+ = 10
+
+95 
+	`»quœe
+(
+timeB™s
+ <= 32)
+
+96 
+v®
+ 
+g‘Time
+ = 
+d–ayUÁ
+ || 
+š‹¼u±Expœe
+
+
+100 
+v®
+ 
+exû±iÚs
+ = !
+suµÜ‹dCau£s
+.
+isEm±y
+ || 
+š‹¼u±Expœe
+ || 
+ex‹º®IÁ”ru±
+
+
+101 
+v®
+ 
+ÿu£s
+ =
+
+102 
+suµÜ‹dCau£s
+ ++
+
+103 (if(
+š‹¼u±Expœe
+è
+	`Li¡
+(
+Cau£s
+.
+“
+, Cau£s.
+›
+è
+N
+) ++
+
+104 (if(
+ex‹º®IÁ”ru±
+è
+	`Li¡
+(
+Cau£s
+.
+ex‹º®_št
+è
+N
+)
+
+106 
+	}
+}
+
+108 şas 
+	cIn¡MemBusIO
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BundË
+
+
+111 
+v®
+ 
+addr
+ = 
+	$UIÁ
+(
+INPUT
+, 
+cÚf
+.
+iMemAddrB™s
+)
+
+112 
+v®
+ 
+’abË
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+113 
+v®
+ 
+d©a_out
+ = 
+	$B™s
+(
+OUTPUT
+, 32)
+
+114 
+v®
+ 
+wr™e
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+115 
+v®
+ 
+d©a_š
+ = 
+	$B™s
+(
+INPUT
+, 32)
+
+116 
+v®
+ 
+»ady
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+119 şas 
+	cD©aMemBusIO
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BundË
+
+
+122 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+dMemAddrB™s
+-2)
+
+123 
+v®
+ 
+’abË
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+124 
+v®
+ 
+d©a_out
+ = 
+	$B™s
+(
+OUTPUT
+, 32)
+
+125 
+v®
+ 
+by‹_wr™e
+ = 
+Vec
+.
+	$fl
+(4è{ 
+	`BoŞ
+(
+INPUT
+) }
+
+126 
+v®
+ 
+d©a_š
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+127 
+	}
+}
+
+129 şas 
+	cBusIO
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BundË
+
+
+131 
+v®
+ 
+addr
+ = 
+	$UIÁ
+(
+INPUT
+, 
+cÚf
+.
+busAddrB™s
+)
+
+132 
+v®
+ 
+’abË
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+133 
+v®
+ 
+d©a_out
+ = 
+	$B™s
+(
+OUTPUT
+, 32)
+
+134 
+v®
+ 
+wr™e
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+135 
+v®
+ 
+d©a_š
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+138 şas 
+	cHo¡IO
+(è
+ex‹nds
+ 
+BundË
+
+
+140 
+v®
+ 
+to_ho¡
+ = 
+	`B™s
+(
+OUTPUT
+, 32)
+
+143 şas 
+	cGPIO
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BundË
+
+
+145 
+v®
+ 
+š
+ = 
+	`Vec
+(
+cÚf
+.
+gpiPÜtSizes
+.
+	`m­
+(
+i
+ => 
+	$B™s
+(
+INPUT
+, 
+i
+)))
+
+146 
+v®
+ 
+out
+ = 
+	`Vec
+(
+cÚf
+.
+gpoPÜtSizes
+.
+	`m­
+(
+i
+ => 
+	`B™s
+(
+OUTPUT
+, i)))
+
+149 şas 
+	cCÜeIO
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BundË
+
+
+151 
+v®
+ 
+imem
+ = 
+Ãw
+ 
+	$In¡MemBusIO
+()
+
+152 
+v®
+ 
+dmem
+ = 
+Ãw
+ 
+	$D©aMemBusIO
+()
+
+153 
+v®
+ 
+bus
+ = 
+Ãw
+ 
+	`BusIO
+().
+æ
+
+
+154 
+v®
+ 
+ho¡
+ = 
+Ãw
+ 
+	$Ho¡IO
+()
+
+155 
+v®
+ 
+gpio
+ = 
+Ãw
+ 
+	$GPIO
+()
+
+156 
+v®
+ 
+št_exts
+ = 
+Vec
+.
+	$fl
+(8è{ 
+	`BoŞ
+(
+INPUT
+) }
+
+158 
+	}
+}
+
+160 şas 
+	cCÜe
+(
+cÚfIn
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+ModuË
+
+
+163 
+im¶ic™
+ 
+v®
+ 
+cÚf
+ = 
+cÚfIn
+
+
+165 
+v®
+ 
+io
+ = 
+Ãw
+ 
+	$CÜeIO
+()
+
+167 
+v®
+ 
+cÚŒŞ
+ = 
+	`ModuË
+(
+Ãw
+ 
+	$CÚŒŞ
+())
+
+168 
+v®
+ 
+d©­©h
+ = 
+	`ModuË
+(
+Ãw
+ 
+	$D©­©h
+())
+
+169 
+v®
+ 
+imem
+ = 
+	`ModuË
+(
+Ãw
+ 
+	$ISpm
+())
+
+171 
+v®
+ 
+dmem
+ = 
+	`ModuË
+(
+Ãw
+ 
+	$DSpm
+())
+
+175 
+d©­©h
+.
+io
+.
+cÚŒŞ
+ <> control.io
+
+176 
+d©­©h
+.
+io
+.
+imem
+ <> imem.io.
+cÜe
+
+
+177 
+d©­©h
+.
+io
+.
+dmem
+ <> dmem.io.
+cÜe
+
+
+180 
+io
+.
+imem
+ <> imem.io.
+bus
+
+
+181 
+io
+.
+dmem
+ <> dmem.io.
+bus
+
+
+182 
+io
+.
+bus
+ <> 
+d©­©h
+.io.bus
+
+183 
+io
+.
+ho¡
+ <> 
+d©­©h
+.io.host
+
+184 
+io
+.
+gpio
+ <> 
+d©­©h
+.io.gpio
+
+185 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+) {
+
+186 
+d©­©h
+.
+io
+.
+	`št_exts
+(
+tid
+) := io.int_exts(tid)
+
+190 
+	}
+}
+
+192 
+objeù
+ 
+CÜeMaš
+ {
+
+193 
+def
+ 
+maš
+(
+¬gs
+: 
+A¼ay
+[
+SŒšg
+]): 
+Un™
+ = {
+
+195 
+v®
+ 
+cÚfSŒšg
+ = 
+¬gs
+(0)
+
+196 
+v®
+ 
+chi£lArgs
+ = 
+¬gs
+.
+¦iû
+(1,‡rgs.
+Ëngth
+)
+
+198 
+v®
+ 
+	g·r£d
+ = """(\d+é(.*)-(\d+)i-(\d+)d.*-(.*)""".
+r
+.
+fšdFœ¡M©chIn
+(
+cÚfSŒšg
+)
+
+199 
+v®
+ 
+cÜeCÚfig
+ = 
+Ãw
+ 
+FËx´‘CÚfigu¿tiÚ
+(
+
+200 
+·r£d
+.
+g‘
+.
+group
+(1).
+toIÁ
+,
+
+201 !
+·r£d
+.
+g‘
+.
+group
+(2).
+isEm±y
+,
+
+202 
+·r£d
+.
+g‘
+.
+group
+(3).
+toIÁ
+,
+
+203 
+·r£d
+.
+g‘
+.
+group
+(4).
+toIÁ
+,
+
+204 
+cÚfSŒšg
+ 
+cÚšs
+ "mul",
+
+205 
+·r£d
+.
+g‘
+.
+group
+(5)
+
+209 
+chi£lMaš
+Ğ
+chi£lArgs
+, (è=> 
+ModuË
+(
+Ãw
+ 
+CÜe
+(
+cÜeCÚfig
+)) )
+
+	@/home/salman/salman_cps/flexpret/src/Core/csr.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+11 
+impÜt
+ 
+	gFËx´‘CÚ¡ªts
+.
+_
+
+
+14 şas 
+	cCSR
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+ModuË
+
+
+16 
+v®
+ 
+io
+ = 
+Ãw
+ 
+BundË
+ {
+
+17 
+v®
+ 
+rw
+ = 
+Ãw
+ 
+BundË
+ {
+
+18 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 12)
+
+19 
+v®
+ 
+th»ad
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+20 
+v®
+ 
+c¤_ty³
+ = 
+	`UIÁ
+(
+INPUT
+, 
+CSR_WI
+)
+
+21 
+v®
+ 
+wr™e
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+22 
+v®
+ 
+d©a_š
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+23 
+v®
+ 
+d©a_out
+ = 
+	`B™s
+(
+OUTPUT
+, 32)
+
+24 
+v®
+ 
+v®id
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+27 
+v®
+ 
+¦Ùs
+ = 
+Vec
+.
+	`fl
+(8è{ 
+	`UIÁ
+(
+OUTPUT
+, 
+SLOT_WI
+) }
+
+28 
+v®
+ 
+tmodes
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`UIÁ
+(
+OUTPUT
+, 
+TMODE_WI
+) }
+
+30 
+v®
+ 
+kl
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+31 
+v®
+ 
+exû±iÚ
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+32 
+v®
+ 
+•c
+ = 
+	`UIÁ
+(
+INPUT
+, 32)
+
+33 
+v®
+ 
+ÿu£
+ = 
+	`UIÁ
+(
+INPUT
+, 
+CAUSE_WI
+)
+
+34 
+v®
+ 
+evecs
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`UIÁ
+(
+OUTPUT
+, 32) }
+
+36 
+v®
+ 
+¦“p
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+37 
+v®
+ 
+›
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+38 
+v®
+ 
+“
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+39 
+v®
+ 
+expœe
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+40 
+v®
+ 
+dec_tid
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+42 
+v®
+ 
+¤‘
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+44 
+v®
+ 
+ho¡
+ = 
+Ãw
+ 
+	`Ho¡IO
+()
+
+45 
+v®
+ 
+gpio
+ = 
+Ãw
+ 
+	`GPIO
+()
+
+46 
+v®
+ 
+št_exts
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`BoŞ
+(
+INPUT
+) }
+
+48 
+v®
+ 
+imem_´ÙeùiÚ
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+memRegiÚs
+è{ 
+	`UIÁ
+(
+OUTPUT
+, 
+MEMP_WI
+) }
+
+49 
+v®
+ 
+dmem_´ÙeùiÚ
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+memRegiÚs
+è{ 
+	`UIÁ
+(
+OUTPUT
+, 
+MEMP_WI
+) }
+
+51 
+v®
+ 
+cyşe
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+52 
+v®
+ 
+š¡»t
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+54 
+v®
+ 
+št_expœe
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+55 
+v®
+ 
+exc_expœe
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+56 
+v®
+ 
+št_ext
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+57 
+v®
+ 
+´iv_çuÉ
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+65 
+v®
+ 
+»g_¦Ùs
+ = 
+	`Vec
+(
+cÚf
+.
+š™ŸlSlÙs
+.
+	`m­
+(
+i
+ => 
+	$Reg
+(
+š™
+ = 
+i
+)))
+
+66 
+v®
+ 
+»g_tmodes
+ = 
+	`Vec
+(
+cÚf
+.
+š™ŸlTmodes
+.
+	`m­
+(
+i
+ => 
+	$Reg
+(
+š™
+ = 
+i
+)))
+
+68 
+v®
+ 
+»g_evecs
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+	`UIÁ
+()è
+	}
+}
+
+69 
+v®
+ 
+»g_•cs
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+	`UIÁ
+()è
+	}
+}
+
+70 
+v®
+ 
+»g_ÿu£s
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+	`UIÁ
+()è
+	}
+}
+
+71 
+v®
+ 
+»g_sup0
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+	`UIÁ
+()è
+	}
+}
+
+73 
+v®
+ 
+»g_time
+ = 
+Reg
+(
+š™
+ = 
+	$UIÁ
+(0, 64))
+
+74 
+v®
+ 
+»g_com·»
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+	`UIÁ
+(
+width
+ = cÚf.
+timeB™s
+)è
+	}
+}
+
+76 
+v®
+ 
+	g»g_to_ho¡
+ = 
+Reg
+(
+š™
+ = 
+	$B™s
+(0, 32))
+
+77 
+v®
+ 
+»g_gpis
+ = 
+	`Vec
+(
+cÚf
+.
+gpiPÜtSizes
+.
+	`m­
+(
+i
+ => 
+	`Reg
+(
+	$UIÁ
+(
+width
+ = 
+i
+))))
+
+78 
+v®
+ 
+»g_gpos
+ = 
+	`Vec
+(
+cÚf
+.
+gpoPÜtSizes
+.
+	`m­
+(
+i
+ => 
+	`Reg
+(
+š™
+ = 
+	$UIÁ
+(0, 
+i
+))))
+
+80 
+v®
+ 
+»g_gpo_´ÙeùiÚ
+ = 
+	`Vec
+(
+cÚf
+.
+š™ŸlGpo
+.
+	`m­
+(
+i
+ => 
+	$Reg
+(
+š™
+ = 
+i
+)))
+
+81 
+v®
+ 
+»g_imem_´ÙeùiÚ
+ = 
+	`Vec
+(
+cÚf
+.
+š™ŸlIMem
+.
+	`m­
+(
+i
+ => 
+	$Reg
+(
+š™
+ = 
+i
+)))
+
+82 
+v®
+ 
+»g_dmem_´ÙeùiÚ
+ = 
+	`Vec
+(
+cÚf
+.
+š™ŸlDMem
+.
+	`m­
+(
+i
+ => 
+	$Reg
+(
+š™
+ = 
+i
+)))
+
+84 
+v®
+ 
+»g_cyşe
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+	`UIÁ
+(
+width
+ = 64)è
+	}
+}
+
+85 
+v®
+ 
+	g»g_š¡»t
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+	`UIÁ
+(
+width
+ = 64)è
+	}
+}
+
+87 
+v®
+ 
+	g»g_mt›
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+	`BoŞ
+(
+çl£
+)è
+	}
+}
+
+88 
+v®
+ 
+	g»g_´v1
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+	`UIÁ
+(0, 2)è
+	}
+}
+
+89 
+v®
+ 
+	g»g_›1
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+	`BoŞ
+(
+çl£
+)è
+	}
+}
+
+90 
+v®
+ 
+	g»g_´v
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+	`UIÁ
+(3, 2)è
+	}
+}
+
+91 
+v®
+ 
+	g»g_›
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+	`BoŞ
+(
+çl£
+)è
+	}
+}
+
+92 
+v®
+ 
+	g»g_ms
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+	`BoŞ
+(
+çl£
+)è
+	}
+}
+
+95 
+v®
+ 
+	g»g_tim”
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+TIMER_OFF
+è
+	}
+}
+
+98 
+v®
+ 
+	g¡©us
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`UIÁ
+(è
+	}
+}
+
+99 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+) {
+
+100 
+¡©us
+(
+tid
+è:ğ
+C©
+(
+B™s
+(1,1), B™s(0,4), 
+»g_mt›
+Ñid), B™s(0,20), 
+»g_´v1
+Ñid), 
+»g_›1
+Ñid), 
+»g_´v
+Ñid), 
+»g_›
+Ñid), 
+»g_ms
+(tid), Bits(0,3))
+
+107 
+def
+ 
+	$com·»_addr
+(
+c¤
+: 
+IÁ
+): 
+BoŞ
+ = { 
+io
+.
+rw
+.
+addr
+ ==ğ
+	`UIÁ
+(c¤è
+	}
+}
+
+110 
+v®
+ 
+d©a_out
+ = 
+	$B™s
+()
+
+111 
+v®
+ 
+d©a_š
+ = 
+	`MuxLookup
+(
+io
+.
+rw
+.
+c¤_ty³
+, io.rw.d©a_š, 
+	`A¼ay
+(
+
+112 
+CSR_S
+ -> (
+d©a_out
+ | 
+io
+.
+rw
+.
+d©a_š
+),
+
+113 
+CSR_C
+ -> (
+d©a_out
+ & ~
+io
+.
+rw
+.
+d©a_š
+),
+
+114 
+CSR_W
+ -> 
+io
+.
+rw
+.
+d©a_š
+
+
+118 
+v®
+ 
+´iv_çuÉ
+ = 
+	$BoŞ
+()
+
+119 
+´iv_çuÉ
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+120 if(
+cÚf
+.
+´ivegedMode
+) {
+
+121 
+v®
+ 
+addr_»ad_Úly
+ = 
+io
+.
+rw
+.
+	`addr
+(11,10è==ğ
+	`UIÁ
+(3)
+
+122 
+v®
+ 
+addr_no_´iv
+ = (
+io
+.
+rw
+.
+	`addr
+(9,8è!ğ
+	`UIÁ
+(0)è&& (
+	`»g_´v
+(io.rw.
+th»ad
+) === UInt(0,2))
+
+123 
+	`wh’
+(
+io
+.
+rw
+.
+wr™e
+ && (
+addr_»ad_Úly
+ || 
+addr_no_´iv
+)) {
+
+124 
+´iv_çuÉ
+ :ğ
+	`BoŞ
+(
+Œue
+)
+
+127 
+	}
+}
+
+133 
+v®
+ 
+wr™e
+ = 
+io
+.
+rw
+.wr™&& !
+´iv_çuÉ
+ && !io.
+kl
+
+
+134 
+	$wh’
+(
+wr™e
+) {
+
+135 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+¦Ùs
+)) {
+
+136 (
+¦Ù
+, 
+i
+è<- 
+»g_¦Ùs
+.
+v›w
+.
+zW™hIndex
+è{ slÙ :ğ
+	`d©a_š
+(4*i+3, 4*i) }
+
+138 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+tmodes
+)) {
+
+139 (
+tmode
+, 
+i
+è<- 
+»g_tmodes
+.
+v›w
+.
+zW™hIndex
+è{mod:ğ
+	`d©a_š
+(2*i+1, 2*i) }
+
+143 if(
+cÚf
+.
+exû±iÚs
+) {
+
+144 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+evec
+)è{ 
+	`»g_evecs
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+d©a_š
+ }
+
+145 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+sup0
+)è{ 
+	`»g_sup0
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+d©a_š
+ }
+
+147 if(
+cÚf
+.
+d–ayUÁ
+ || cÚf.
+š‹¼u±Expœe
+) {
+
+148 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+com·»
+)) {
+
+149 
+	`»g_com·»
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+	`d©a_š
+(
+cÚf
+.
+timeB™s
+-1,0)
+
+150 
+	`»g_tim”
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+TIMER_OFF
+
+
+153 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+toho¡
+)è{ 
+»g_to_ho¡
+ :ğ
+d©a_š
+ }
+
+154 
+i
+ <- 0 
+uÁ
+ 
+cÚf
+.
+gpoPÜtSizes
+.
+Ëngth
+) {
+
+155 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+gpoBa£
+ + 
+i
+)) {
+
+156 if(
+cÚf
+.
+gpioPrÙeùiÚ
+) {
+
+157 
+	`wh’
+(((
+	`»g_gpo_´ÙeùiÚ
+(
+i
+è==ğ
+MEMP_SH
+è|| (»g_gpo_´ÙeùiÚ(i)(
+cÚf
+.
+th»adB™s
+-1,0è==ğ
+io
+.
+rw
+.
+th»ad
+)è&& (»g_gpo_´ÙeùiÚ(iè!ğ
+MEMP_RO
+)) {
+
+158 
+	`»g_gpos
+(
+i
+è:ğ
+	`d©a_š
+(
+cÚf
+.
+	`gpoPÜtSizes
+(i)-1, 0)
+
+161 
+	`»g_gpos
+(
+i
+è:ğ
+	`d©a_š
+(
+cÚf
+.
+	`gpoPÜtSizes
+(i)-1, 0)
+
+165 if(
+cÚf
+.
+memPrÙeùiÚ
+) {
+
+166 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+iMemPrÙeùiÚ
+)) {
+
+167 (
+»giÚ
+, 
+i
+è<- 
+»g_imem_´ÙeùiÚ
+.
+v›w
+.
+zW™hIndex
+è{„egiÚ :ğ
+	`d©a_š
+(4*i+3, 4*i) }
+
+169 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+dMemPrÙeùiÚ
+)) {
+
+170 (
+»giÚ
+, 
+i
+è<- 
+»g_dmem_´ÙeùiÚ
+.
+v›w
+.
+zW™hIndex
+è{„egiÚ :ğ
+	`d©a_š
+(4*i+3, 4*i) }
+
+173 if(
+cÚf
+.
+gpioPrÙeùiÚ
+) {
+
+174 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+gpoPrÙeùiÚ
+)) {
+
+175 (
+pÜt
+, 
+i
+è<- 
+»g_gpo_´ÙeùiÚ
+.
+v›w
+.
+zW™hIndex
+è{…Üˆ:ğ
+	`d©a_š
+(4*i+3, 4*i) }
+
+178 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+¡©us
+)) {
+
+179 if(
+cÚf
+.
+exû±iÚs
+) {
+
+180 
+	`»g_›
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+	`d©a_š
+(4).
+toBoŞ
+
+
+182 if(
+cÚf
+.
+š‹¼u±Expœe
+) {
+
+183 
+	`»g_mt›
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+	`d©a_š
+(26).
+toBoŞ
+
+
+185 if(
+cÚf
+.
+ex‹º®IÁ”ru±
+) {
+
+186 
+	`»g_ms
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+	`d©a_š
+(3).
+toBoŞ
+
+
+189 
+	}
+}
+
+194 
+def
+ 
+	$z”o_ex‹nd
+(
+ba£
+: 
+B™s
+, 
+Ën
+: 
+IÁ
+): B™ ğifÖ’ < 32è
+	`C©
+(
+	`B™s
+(0, 32-len), base) base
+
+195 
+d©a_out
+ :ğ
+	$B™s
+(0, 32)
+
+196 if(
+cÚf
+.
+th»ads
+ > 1) {
+
+197 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+¦Ùs
+)è{ 
+d©a_out
+ :ğ
+»g_¦Ùs
+.
+toB™s
+ }
+
+198 
+	`wh’
+(
+	`com·»_addr
+(
+CSRs
+.
+h¬tid
+)è{ 
+d©a_out
+ :ğ
+	`z”o_ex‹nd
+(
+io
+.
+rw
+.
+th»ad
+, 
+cÚf
+.
+th»adB™s
+) }
+
+199 
+	}
+}
+
+200 
+wh’
+(
+	$com·»_addr
+(
+CSRs
+.
+tmodes
+)) {
+
+201 
+d©a_out
+ :ğ
+	`z”o_ex‹nd
+(
+»g_tmodes
+.
+toB™s
+, 2*
+cÚf
+.
+th»ads
+)
+
+202 
+	}
+}
+
+203 if(
+	gcÚf
+.
+	gexû±iÚs
+) {
+
+204 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+evec
+)è{ 
+	gd©a_out
+ :ğ
+»g_evecs
+(
+io
+.
+rw
+.
+th»ad
+) }
+
+205 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+•c
+)è{ 
+d©a_out
+ :ğ
+»g_•cs
+(
+io
+.
+rw
+.
+th»ad
+) }
+
+206 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+ÿu£
+)) {
+
+207 
+d©a_out
+ :ğ
+C©
+(
+»g_ÿu£s
+(
+io
+.
+rw
+.
+th»ad
+)(
+CAUSE_WI
+-1), 
+B™s
+(0,32-CAUSE_WI),„eg_causes(io.rw.thread)(CAUSE_WI-2,0))
+
+209 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+sup0
+)è{ 
+	gd©a_out
+ :ğ
+»g_sup0
+(
+io
+.
+rw
+.
+th»ad
+) }
+
+211 if(
+cÚf
+.
+g‘Time
+) {
+
+212 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+şock
+)) {
+
+213 
+d©a_out
+ :ğ
+z”o_ex‹nd
+(
+»g_time
+(
+cÚf
+.
+timeB™s
+-1,0).
+toB™s
+, conf.timeBits)
+
+216 
+wh’
+(
+	$com·»_addr
+(
+CSRs
+.
+toho¡
+)è{ 
+d©a_out
+ :ğ
+»g_to_ho¡
+ 
+	}
+}
+
+217 
+i
+ <- 0 
+uÁ
+ 
+cÚf
+.
+gpiPÜtSizes
+.
+Ëngth
+) {
+
+218 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+gpiBa£
+ + 
+i
+)) {
+
+219 
+d©a_out
+ :ğ
+z”o_ex‹nd
+(
+»g_gpis
+(
+i
+).
+toB™s
+, 
+cÚf
+.
+gpiPÜtSizes
+(i))
+
+222 
+	gi
+ <- 0 
+uÁ
+ 
+	gcÚf
+.
+	ggpoPÜtSizes
+.
+	gËngth
+) {
+
+223 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+gpoBa£
+ + 
+i
+)) {
+
+224 
+	gd©a_out
+ :ğ
+z”o_ex‹nd
+(
+»g_gpos
+(
+i
+).
+toB™s
+, 
+cÚf
+.
+gpoPÜtSizes
+(i))
+
+228 if(
+	gcÚf
+.
+	ggpioPrÙeùiÚ
+) {
+
+229 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+gpoPrÙeùiÚ
+)è{ 
+	gd©a_out
+ :ğ
+»g_gpo_´ÙeùiÚ
+.
+toB™s
+() }
+
+231 if(
+cÚf
+.
+memPrÙeùiÚ
+) {
+
+232 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+iMemPrÙeùiÚ
+)è{ 
+d©a_out
+ :ğ
+»g_imem_´ÙeùiÚ
+.
+toB™s
+() }
+
+233 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+dMemPrÙeùiÚ
+)è{ 
+d©a_out
+ :ğ
+»g_dmem_´ÙeùiÚ
+.
+toB™s
+() }
+
+235 if(
+cÚf
+.
+¡©s
+) {
+
+236 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+time
+)è{ 
+d©a_out
+ :ğ
+»g_time
+(31,0) }
+
+237 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+cyşe
+)è{ 
+	gd©a_out
+ :ğ
+»g_cyşe
+(
+io
+.
+rw
+.
+th»ad
+)(31,0) }
+
+238 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+š¡»t
+)è{ 
+	gd©a_out
+ :ğ
+»g_š¡»t
+(
+io
+.
+rw
+.
+th»ad
+)(31,0) }
+
+239 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+timeh
+)è{ 
+	gd©a_out
+ :ğ
+»g_time
+(63,32) }
+
+240 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+cyşeh
+)è{ 
+	gd©a_out
+ :ğ
+»g_cyşe
+(
+io
+.
+rw
+.
+th»ad
+)(63,32) }
+
+241 
+wh’
+(
+com·»_addr
+(
+CSRs
+.
+š¡»th
+)è{ 
+	gd©a_out
+ :ğ
+»g_š¡»t
+(
+io
+.
+rw
+.
+th»ad
+)(63,32) }
+
+243 
+wh’
+(
+	$com·»_addr
+(
+CSRs
+.
+¡©us
+)è{ 
+d©a_out
+ :ğ
+	`¡©us
+(
+io
+.
+rw
+.
+th»ad
+è
+	}
+}
+
+250 
+v®
+ 
+¦“p
+ = 
+	$BoŞ
+()
+
+251 
+¦“p
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+252 
+	$wh’
+(
+¦“p
+è{ 
+	`»g_tmodes
+(
+io
+.
+rw
+.
+th»ad
+è:ğ»g_tmodes(io.rw.th»adè| 
+TMODE_OR_Z
+ 
+	}
+}
+
+253 
+v®
+ 
+wake
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`BoŞ
+(è
+	}
+}
+
+254 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+) {
+
+255 
+wake
+(
+tid
+è:ğ
+BoŞ
+(
+çl£
+)
+
+258 
+wh’
+(
+wake
+(
+tid
+)è{ 
+»g_tmodes
+Ñidè:ğ»g_tmodesÑidè& 
+TMODE_AND_A
+ }
+
+263 if(
+cÚf
+.
+exû±iÚs
+) {
+
+264 
+wh’
+(
+io
+.
+exû±iÚ
+) {
+
+265 
+»g_•cs
+(
+io
+.
+rw
+.
+th»ad
+è:ğio.
+•c
+
+
+266 
+»g_ÿu£s
+(
+io
+.
+rw
+.
+th»ad
+è:ğio.
+ÿu£
+
+
+272 
+v®
+ 
+expœed
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`BoŞ
+(è
+	}
+}
+
+274 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+è{ 
+expœed
+Ñidè:ğ
+BoŞ
+(
+çl£
+) }
+
+277 if(
+cÚf
+.
+g‘Time
+) {
+
+278 
+»g_time
+ :ğ»g_tim+ 
+UIÁ
+(
+cÚf
+.
+timeInc
+)
+
+283 if(
+cÚf
+.
+d–ayUÁ
+ || cÚf.
+š‹¼u±Expœe
+) {
+
+284 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+) {
+
+286 
+expœed
+(
+tid
+è:ğ(
+»g_time
+(
+cÚf
+.
+timeB™s
+-1,0è- 
+»g_com·»
+Ñid))(
+	gcÚf
+.
+	gtimeB™s
+-1è==ğ
+UIÁ
+(0, 1)
+
+287 if(
+	gcÚf
+.
+	groundRobš
+) {
+
+288 
+wh’
+(
+io
+.
+rw
+.
+th»ad
+ !ğ
+UIÁ
+(
+tid
+)è{ 
+expœed
+Ñidè:ğ
+BoŞ
+(
+çl£
+) }
+
+294 if(
+cÚf
+.
+d–ayUÁ
+) {
+
+296 
+wh’
+(
+io
+.
+¦“p
+) {
+
+297 
+¦“p
+ :ğ
+BoŞ
+(
+Œue
+)
+
+298 
+»g_tim”
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+TIMER_DU_WU
+
+
+301 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+) {
+
+302 
+wh’
+((
+»g_tim”
+(
+tid
+è==ğ
+TIMER_DU_WU
+è&& 
+expœed
+(tid)) {
+
+303 
+wake
+(
+tid
+è:ğ
+BoŞ
+(
+Œue
+)
+
+304 
+»g_tim”
+(
+tid
+è:ğ
+TIMER_OFF
+
+
+310 
+v®
+ 
+exc_expœe
+ = 
+	$BoŞ
+()
+
+311 
+exc_expœe
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+312 
+v®
+ 
+št_expœe
+ = 
+	$BoŞ
+()
+
+313 
+št_expœe
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+314 if(
+cÚf
+.
+š‹¼u±Expœe
+) {
+
+315 
+	`wh’
+(
+io
+.
+“
+) {
+
+316 
+	`»g_tim”
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+TIMER_EE
+
+
+319 
+	`wh’
+(
+io
+.
+rw
+.
+v®id
+ && (
+	`»g_tim”
+(io.rw.
+th»ad
+è==ğ
+TIMER_EE
+è&& 
+	`expœed
+(io.rw.thread)) {
+
+320 
+	`»g_tim”
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+TIMER_OFF
+
+
+321 
+exc_expœe
+ :ğ
+	`BoŞ
+(
+Œue
+)
+
+323 
+	`wh’
+(
+io
+.
+›
+) {
+
+324 
+	`»g_tim”
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+TIMER_IE
+
+
+327 
+v®
+ 
+mt›
+ = 
+	`BoŞ
+()
+
+328 
+mt›
+ :ğ
+	`BoŞ
+(
+çl£
+)
+
+329 
+	`wh’
+(
+io
+.
+rw
+.
+v®id
+ && (
+	`»g_tim”
+(io.rw.
+th»ad
+è==ğ
+TIMER_IE
+è&& 
+	`expœed
+(io.rw.thread)) {
+
+330 
+	`»g_tim”
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+TIMER_OFF
+
+
+331 
+mt›
+ :ğ
+	`BoŞ
+(
+Œue
+)
+
+332 
+	`»g_mt›
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+	`BoŞ
+(
+Œue
+)
+
+336 
+št_expœe
+ :ğ
+	`»g_›
+(
+io
+.
+rw
+.
+th»ad
+è&& (
+	`»g_mt›
+(io.rw.th»adè|| 
+mt›
+)
+
+337 
+	}
+}
+
+341 
+»g_gpis
+ :ğ
+io
+.
+gpio
+.
+š
+
+
+344 
+v®
+ 
+št_ext
+ = 
+	$BoŞ
+()
+
+345 
+št_ext
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+346 if(
+cÚf
+.
+ÿu£s
+.
+	$cÚšs
+(
+Cau£s
+.
+ex‹º®_št
+)) {
+
+347 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+) {
+
+349 
+	`wh’
+(
+io
+.
+	`št_exts
+(
+tid
+)) {
+
+350 
+	`»g_ms
+(
+io
+.
+rw
+.
+th»ad
+è:ğ
+	`BoŞ
+(
+Œue
+)
+
+351 
+	`wake
+(
+tid
+è:ğ
+	`BoŞ
+(
+Œue
+)
+
+356 
+št_ext
+ :ğ
+	`»g_›
+(
+io
+.
+rw
+.
+th»ad
+è&& 
+	`»g_ms
+(io.rw.thread)
+
+357 
+	}
+}
+
+360 if(
+cÚf
+.
+¡©s
+) {
+
+361 
+wh’
+(
+io
+.
+cyşe
+è{ 
+»g_cyşe
+(io.
+rw
+.
+th»ad
+è:ğ»g_cyşe(io.rw.th»adè+ 
+UIÁ
+(1) }
+
+362 
+wh’
+(
+io
+.
+š¡»t
+è{ 
+»g_š¡»t
+(io.
+rw
+.
+th»ad
+è:ğ»g_š¡»t(io.rw.th»adè+ 
+UIÁ
+(1) }
+
+366 if(
+cÚf
+.
+´ivegedMode
+) {
+
+367 
+wh’
+(
+io
+.
+exû±iÚ
+) {
+
+369 
+»g_´v1
+ :ğ
+»g_´v
+
+
+370 
+»g_›1
+ :ğ
+»g_›
+
+
+372 
+»g_´v
+ :ğ
+UIÁ
+(3, 2)
+
+373 
+	g»g_›
+ :ğ
+BoŞ
+(
+çl£
+)
+
+374 } .
+–£wh’
+(
+io
+.
+¤‘
+) {
+
+376 
+»g_´v
+ :ğ
+»g_´v1
+
+
+377 
+»g_›
+ :ğ
+»g_›1
+
+
+380 
+wh’
+(
+io
+.
+exû±iÚ
+) {
+
+381 
+»g_›
+ :ğ
+BoŞ
+(
+çl£
+)
+
+386 
+io
+.
+rw
+.
+d©a_out
+ := data_out
+
+387 
+io
+.
+¦Ùs
+ :ğ
+»g_¦Ùs
+
+
+388 
+io
+.
+tmodes
+ :ğ
+»g_tmodes
+
+
+389 if(
+cÚf
+.
+exû±iÚs
+) {
+
+390 
+io
+.
+evecs
+ :ğ
+»g_evecs
+
+
+392 
+io
+.
+expœe
+ :ğ
+	$expœed
+(
+io
+.
+rw
+.
+th»ad
+)
+
+393 
+io
+.
+ho¡
+.
+to_ho¡
+ :ğ
+»g_to_ho¡
+
+
+394 
+io
+.
+gpio
+.
+out
+ :ğ
+»g_gpos
+
+
+395 
+io
+.
+imem_´ÙeùiÚ
+ :ğ
+»g_imem_´ÙeùiÚ
+
+
+396 
+io
+.
+dmem_´ÙeùiÚ
+ :ğ
+»g_dmem_´ÙeùiÚ
+
+
+397 
+io
+.
+exc_expœe
+ :=ƒxc_expire
+
+398 
+io
+.
+št_expœe
+ := int_expire
+
+399 
+io
+.
+št_ext
+ := int_ext
+
+400 
+io
+.
+´iv_çuÉ
+ :=…riv_fault
+
+403 
+	}
+}
+
+	@/home/salman/salman_cps/flexpret/src/Core/datapath.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+11 
+impÜt
+ 
+	gFËx´‘CÚ¡ªts
+.
+_
+
+
+13 şas 
+	cD©­©h
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+ModuË
+
+
+15 
+v®
+ 
+io
+ = 
+Ãw
+ 
+BundË
+ {
+
+16 
+v®
+ 
+cÚŒŞ
+ = 
+Ãw
+ 
+	`CÚŒŞD©­©hIO
+().
+æ
+
+
+17 
+v®
+ 
+imem
+ = 
+Ãw
+ 
+	`In¡MemCÜeIO
+().
+æ
+
+
+18 
+v®
+ 
+dmem
+ = 
+Ãw
+ 
+	`D©aMemCÜeIO
+().
+æ
+
+
+19 
+v®
+ 
+bus
+ = 
+Ãw
+ 
+	`BusIO
+().
+æ
+
+
+20 
+v®
+ 
+ho¡
+ = 
+Ãw
+ 
+	`Ho¡IO
+()
+
+21 
+v®
+ 
+gpio
+ = 
+Ãw
+ 
+	`GPIO
+()
+
+22 
+v®
+ 
+št_exts
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`BoŞ
+(
+INPUT
+) }
+
+29 
+v®
+ 
+if_»g_tid
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+30 
+v®
+ 
+if_»g_pc
+ = if(
+cÚf
+.
+th»ads
+ > 1è
+	`Reg
+(
+	$UIÁ
+()è
+	$UIÁ
+()
+
+31 
+v®
+ 
+if_»g_pcs
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`Reg
+(
+š™
+ = 
+ADDR_PC_INIT
+.
+toUIÁ
+è
+	}
+}
+
+33 
+v®
+ 
+if_pc_¶us4
+ = 
+	$UIÁ
+()
+
+36 
+v®
+ 
+dec_»g_tid
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+37 
+v®
+ 
+dec_»g_pc
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+38 
+v®
+ 
+dec_»g_pc4
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+39 
+v®
+ 
+dec_»g_š¡
+ = 
+	`Reg
+(
+	$B™s
+())
+
+42 
+v®
+ 
+exe_»g_tid
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+43 
+v®
+ 
+exe_»g_rd_addr
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+44 
+v®
+ 
+exe_»g_İ1
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+45 
+v®
+ 
+exe_»g_İ2
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+46 
+v®
+ 
+exe_»g_rs1_d©a
+ = 
+	`Reg
+(
+	$B™s
+())
+
+47 
+v®
+ 
+exe_»g_rs2_d©a
+ = 
+	`Reg
+(
+	$B™s
+())
+
+48 
+v®
+ 
+exe_»g_pc
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+49 
+v®
+ 
+exe_»g_pc4
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+50 
+v®
+ 
+exe_»g_c¤_addr
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+51 
+v®
+ 
+exe_»g_c¤_d©a
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+53 
+v®
+ 
+exe_®u_»suÉ
+ = 
+	$B™s
+()
+
+54 
+v®
+ 
+exe_add»ss
+ = 
+	$UIÁ
+()
+
+55 
+v®
+ 
+exe_rd_d©a
+ = 
+	$B™s
+()
+
+56 
+v®
+ 
+exe_evec
+ = 
+	$UIÁ
+()
+
+59 
+v®
+ 
+mem_»g_tid
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+60 
+v®
+ 
+mem_»g_rd_addr
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+61 
+v®
+ 
+mem_»g_rd_d©a
+ = 
+	`Reg
+(
+	$B™s
+())
+
+62 
+v®
+ 
+mem_»g_add»ss
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+63 
+v®
+ 
+mem_evec
+ = 
+	$UIÁ
+()
+
+64 
+v®
+ 
+mem_rd_d©a
+ = 
+	$B™s
+()
+
+67 
+v®
+ 
+wb_»g_tid
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+68 
+v®
+ 
+wb_»g_rd_addr
+ = 
+	`Reg
+(
+	$UIÁ
+())
+
+69 
+v®
+ 
+wb_»g_rd_d©a
+ = 
+	`Reg
+(
+	$B™s
+())
+
+71 
+v®
+ 
+wb_rd_d©a
+ = 
+	$B™s
+()
+
+77 
+v®
+ 
+Ãxt_pcs
+ = 
+Vec
+.
+	$fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`UIÁ
+(è
+	}
+}
+
+78 
+tid
+ <- 0 
+uÁ
+ 
+cÚf
+.
+th»ads
+è{ 
+Ãxt_pcs
+Ñidè:ğ
+if_»g_pcs
+(tid) }
+
+79 
+wh’
+(
+io
+.
+cÚŒŞ
+.
+Ãxt_pc_£l
+(
+if_»g_tid
+è==ğ
+NPC_PLUS4
+) {
+
+80 
+Ãxt_pcs
+(
+if_»g_tid
+è:ğ
+if_pc_¶us4
+
+
+82 if(!
+cÚf
+.
+»gBrJmp
+) {
+
+83 
+wh’
+(
+io
+.
+cÚŒŞ
+.
+Ãxt_pc_£l
+(
+exe_»g_tid
+è==ğ
+NPC_BRJMP
+) {
+
+84 
+Ãxt_pcs
+(
+exe_»g_tid
+è:ğ
+exe_add»ss
+
+
+87 
+wh’
+(
+io
+.
+cÚŒŞ
+.
+Ãxt_pc_£l
+(
+mem_»g_tid
+è==ğ
+NPC_BRJMP
+) {
+
+88 
+Ãxt_pcs
+(
+mem_»g_tid
+è:ğ
+mem_»g_add»ss
+
+
+92 if(
+cÚf
+.
+exû±iÚs
+) {
+
+93 if(!
+cÚf
+.
+»gEvec
+) {
+
+94 
+wh’
+(
+io
+.
+cÚŒŞ
+.
+Ãxt_pc_£l
+(
+exe_»g_tid
+è==ğ
+NPC_EVEC
+) {
+
+95 
+Ãxt_pcs
+(
+exe_»g_tid
+è:ğ
+exe_evec
+
+
+98 
+wh’
+(
+io
+.
+cÚŒŞ
+.
+Ãxt_pc_£l
+(
+mem_»g_tid
+è==ğ
+NPC_EVEC
+) {
+
+99 
+Ãxt_pcs
+(
+mem_»g_tid
+è:ğ
+mem_evec
+
+
+107 
+v®
+ 
+Ãxt_tid
+ = 
+io
+.
+cÚŒŞ
+.next_tid
+
+108 
+v®
+ 
+Ãxt_pc
+ = 
+	$Ãxt_pcs
+(
+Ãxt_tid
+)
+
+111 
+io
+.
+imem
+.
+r
+.
+addr
+ :ğ
+	$Ãxt_pc
+(31, 2)
+
+112 
+io
+.
+imem
+.
+r
+.
+’abË
+ :ğ(if(
+cÚf
+.
+iMemFÜûEn
+è
+	$BoŞ
+(
+Œue
+è
+io
+.
+cÚŒŞ
+.
+Ãxt_v®id
+)
+
+116 
+if_»g_tid
+ :ğ
+Ãxt_tid
+
+
+117 
+if_»g_pc
+ :ğ(if(
+cÚf
+.
+th»ads
+ > 1è
+Ãxt_pc
+ 
+	$if_»g_pcs
+(0))
+
+118 
+if_»g_pcs
+ :ğ
+Ãxt_pcs
+
+
+124 
+if_pc_¶us4
+ :ğ
+if_»g_pc
+ + 
+	$UIÁ
+(4)
+
+127 
+v®
+ 
+if_š¡
+ = 
+io
+.
+imem
+.
+r
+.
+d©a_out
+
+
+131 
+v®
+ 
+»gfe
+ = 
+	`ModuË
+(
+Ãw
+ 
+	$Regi¡”Fe
+())
+
+132 
+»gfe
+.
+io
+.
+rs1
+.
+th»ad
+ :ğ
+if_»g_tid
+
+
+133 
+»gfe
+.
+io
+.
+rs1
+.
+addr
+ :ğ
+	$if_š¡
+(19, 15)
+
+134 
+»gfe
+.
+io
+.
+rs2
+.
+th»ad
+ :ğ
+if_»g_tid
+
+
+135 
+»gfe
+.
+io
+.
+rs2
+.
+addr
+ :ğ
+	$if_š¡
+(24, 20)
+
+138 
+io
+.
+cÚŒŞ
+.
+if_tid
+ :ğ
+if_»g_tid
+
+
+141 if(
+cÚf
+.
+ÿu£s
+.
+	$cÚšs
+(
+Cau£s
+.
+mi§ligÃd_ãtch
+)) {
+
+143 
+io
+.
+cÚŒŞ
+.
+if_exc_mi§ligÃd
+ :ğ
+	`if_»g_pc
+(1, 0è!ğ
+	`B™s
+(0)
+
+144 
+	}
+} {
+
+145 
+	gio
+.
+	gcÚŒŞ
+.
+	gif_exc_mi§ligÃd
+ :ğ
+BoŞ
+(
+çl£
+)
+
+147 if(
+cÚf
+.
+ÿu£s
+.
+	$cÚšs
+(
+Cau£s
+.
+çuÉ_ãtch
+)) {
+
+150 
+io
+.
+cÚŒŞ
+.
+if_exc_çuÉ
+ :ğ
+	`if_»g_pc
+(31, 
+cÚf
+.
+iMemAddrB™s
++2è!ğ
+	`C©
+(
+ADDR_ISPM_VAL
+, 
+	`B™s
+(0, 30 - 
+ADDR_ISPM_BITS
+ - conf.iMemAddrBits))
+
+151 
+	}
+} {
+
+152 
+	gio
+.
+	gcÚŒŞ
+.
+	gif_exc_çuÉ
+ :ğ
+BoŞ
+(
+çl£
+)
+
+156 
+dec_»g_tid
+ :ğ
+if_»g_tid
+
+
+157 
+dec_»g_pc
+ :ğ
+if_»g_pc
+
+
+158 
+dec_»g_pc4
+ :ğ
+if_pc_¶us4
+
+
+159 
+dec_»g_š¡
+ :ğ
+if_š¡
+
+
+167 
+v®
+ 
+dec_rs1_d©a
+ = 
+	$B™s
+()
+
+168 
+v®
+ 
+dec_rs2_d©a
+ = 
+	$B™s
+()
+
+169 if(
+cÚf
+.
+by·ssšg
+) {
+
+170 
+dec_rs1_d©a
+ :ğ
+	`MuxLookup
+(
+io
+.
+cÚŒŞ
+.
+dec_rs1_£l
+, 
+»gfe
+.io.
+rs1
+.
+d©a
+, 
+	`A¼ay
+(
+
+171 
+RS1_EXE
+ -> 
+exe_rd_d©a
+,
+
+172 
+RS1_MEM
+ -> 
+mem_rd_d©a
+,
+
+173 
+RS1_WB
+ -> 
+wb_rd_d©a
+
+
+176 
+dec_rs2_d©a
+ :ğ
+	`MuxLookup
+(
+io
+.
+cÚŒŞ
+.
+dec_rs2_£l
+, 
+»gfe
+.io.
+rs2
+.
+d©a
+, 
+	`A¼ay
+(
+
+177 
+RS2_EXE
+ -> 
+exe_rd_d©a
+,
+
+178 
+RS2_MEM
+ -> 
+mem_rd_d©a
+,
+
+179 
+RS2_WB
+ -> 
+wb_rd_d©a
+
+
+182 
+	}
+} {
+
+183 
+	gdec_rs1_d©a
+ :ğ
+»gfe
+.
+io
+.
+rs1
+.
+d©a
+
+
+184 
+dec_rs2_d©a
+ :ğ
+»gfe
+.
+io
+.
+rs2
+.
+d©a
+
+
+188 
+v®
+ 
+dec_imm_i
+ = 
+C©
+(
+Fl
+(21, 
+dec_»g_š¡
+(31)), 
+	$dec_»g_š¡
+(30, 20))
+
+189 
+v®
+ 
+dec_imm_s
+ = 
+	`C©
+(
+	`Fl
+(21, 
+	`dec_»g_š¡
+(31)), dec_»g_š¡(30, 25), 
+	$dec_»g_š¡
+(11,7))
+
+190 
+v®
+ 
+dec_imm_b
+ = 
+	`C©
+(
+	`Fl
+(20, 
+	`dec_»g_š¡
+(31)), dec_»g_š¡(7), dec_»g_š¡(30, 25), dec_»g_š¡(11, 8), 
+	$B™s
+(0, 1))
+
+191 
+v®
+ 
+dec_imm_u
+ = 
+	`C©
+(
+	`dec_»g_š¡
+(31,12), 
+	$B™s
+(0, 12))
+
+192 
+v®
+ 
+dec_imm_j
+ = 
+	`C©
+(
+	`Fl
+(12, 
+	`dec_»g_š¡
+(31)), dec_»g_š¡(19, 12), dec_»g_š¡(20), dec_»g_š¡(30, 21), 
+	$B™s
+(0, 1))
+
+194 
+v®
+ 
+dec_imm_z
+ = 
+	`C©
+(
+	`B™s
+(0, 27), 
+	$dec_»g_š¡
+(19, 15))
+
+196 
+v®
+ 
+dec_imm
+ = 
+	`MuxLookup
+(
+io
+.
+cÚŒŞ
+.
+dec_imm_£l
+, 
+dec_imm_i
+, 
+	`A¼ay
+(
+
+197 
+IMM_S
+ -> 
+dec_imm_s
+,
+
+198 
+IMM_B
+ -> 
+dec_imm_b
+,
+
+199 
+IMM_U
+ -> 
+dec_imm_u
+,
+
+200 
+IMM_J
+ -> 
+dec_imm_j
+,
+
+201 
+IMM_I
+ -> 
+dec_imm_i
+,
+
+202 
+IMM_Z
+ -> 
+dec_imm_z
+
+
+206 
+v®
+ 
+dec_İ1
+ = 
+	`MuxLookup
+(
+io
+.
+cÚŒŞ
+.
+dec_İ1_£l
+, 
+	`B™s
+(0, 32), 
+	`A¼ay
+(
+
+207 
+OP1_RS1
+ -> 
+dec_rs1_d©a
+,
+
+208 
+OP1_PC
+ -> 
+dec_»g_pc
+
+
+210 
+v®
+ 
+dec_İ2
+ = 
+	`MuxLookup
+(
+io
+.
+cÚŒŞ
+.
+dec_İ2_£l
+, 
+	`B™s
+(0, 32), 
+	`A¼ay
+(
+
+211 
+OP2_RS2
+ -> 
+dec_rs2_d©a
+,
+
+212 
+OP2_IMM
+ -> 
+dec_imm
+
+
+215 
+v®
+ 
+dec_c¤_d©a
+ = 
+	$Mux
+(
+io
+.
+cÚŒŞ
+.
+dec_İ2_£l
+ ==ğ
+OP2_IMM
+, 
+dec_imm
+, 
+dec_rs1_d©a
+)
+
+218 
+io
+.
+cÚŒŞ
+.
+dec_tid
+ :ğ
+dec_»g_tid
+
+
+219 
+io
+.
+cÚŒŞ
+.
+dec_š¡
+ :ğ
+dec_»g_š¡
+
+
+223 
+exe_»g_tid
+ :ğ
+dec_»g_tid
+
+
+224 
+exe_»g_rd_addr
+ :ğ
+	$dec_»g_š¡
+(11, 7)
+
+225 
+exe_»g_İ1
+ :ğ
+dec_İ1
+
+
+226 
+exe_»g_İ2
+ :ğ
+dec_İ2
+
+
+227 
+exe_»g_rs1_d©a
+ :ğ
+dec_rs1_d©a
+
+
+228 
+exe_»g_rs2_d©a
+ :ğ
+dec_rs2_d©a
+
+
+229 
+exe_»g_pc
+ :ğ
+dec_»g_pc
+
+
+230 
+exe_»g_pc4
+ :ğ
+dec_»g_pc4
+
+
+231 
+exe_»g_c¤_addr
+ :ğ
+	$dec_»g_š¡
+(31, 20)
+
+232 
+exe_»g_c¤_d©a
+ :ğ
+dec_c¤_d©a
+
+
+239 
+v®
+ 
+exe_®u_shiá
+ = 
+	$exe_»g_İ2
+(4, 0)
+
+240 
+v®
+ 
+def_exe_®u_»suÉ
+ = 
+exe_»g_İ1
+ + 
+exe_»g_İ2
+
+
+241 
+exe_®u_»suÉ
+ :ğ
+	`MuxLookup
+(
+io
+.
+cÚŒŞ
+.
+exe_®u_ty³
+, 
+def_exe_®u_»suÉ
+, 
+	`A¼ay
+(
+
+242 
+ALU_ADD
+ -> (
+exe_»g_İ1
+ + 
+exe_»g_İ2
+),
+
+243 
+ALU_SLL
+ -> (
+exe_»g_İ1
+ << 
+exe_®u_shiá
+)(32-1, 0),
+
+244 
+ALU_XOR
+ -> (
+exe_»g_İ1
+ ^ 
+exe_»g_İ2
+),
+
+245 
+ALU_SRL
+ -> (
+exe_»g_İ1
+ >> 
+exe_®u_shiá
+),
+
+246 
+ALU_OR
+ -> (
+exe_»g_İ1
+ | 
+exe_»g_İ2
+),
+
+247 
+ALU_AND
+ -> (
+exe_»g_İ1
+ & 
+exe_»g_İ2
+),
+
+248 
+ALU_SUB
+ -> (
+exe_»g_İ1
+ - 
+exe_»g_İ2
+),
+
+249 
+ALU_SLT
+ -> (
+exe_»g_İ1
+.
+toSIÁ
+ < 
+exe_»g_İ2
+.toSInt),
+
+250 
+ALU_SLTU
+ -> (
+exe_»g_İ1
+ < 
+exe_»g_İ2
+),
+
+251 
+ALU_SRA
+ -> (
+exe_»g_İ1
+.
+toSIÁ
+ >> 
+exe_®u_shiá
+)
+
+254 
+exe_add»ss
+ :ğ
+exe_®u_»suÉ
+
+
+257 
+v®
+ 
+exe_br_cÚd
+ = 
+	$BoŞ
+()
+
+258 
+v®
+ 
+exe_É
+ = 
+exe_»g_rs1_d©a
+.
+toSIÁ
+ < 
+exe_»g_rs2_d©a
+.toSInt
+
+259 
+v®
+ 
+exe_Éu
+ = 
+exe_»g_rs1_d©a
+ < 
+exe_»g_rs2_d©a
+
+
+260 
+v®
+ 
+exe_eq
+ = 
+exe_»g_rs1_d©a
+ ==ğ
+exe_»g_rs2_d©a
+
+
+261 
+v®
+ 
+def_exe_br_cÚd
+ = 
+	$BoŞ
+(
+çl£
+)
+
+262 
+exe_br_cÚd
+ :ğ
+	`MuxLookup
+(
+io
+.
+cÚŒŞ
+.
+exe_br_ty³
+, 
+def_exe_br_cÚd
+, 
+	`A¼ay
+(
+
+263 
+BR_EQ
+ -> 
+exe_eq
+,
+
+264 
+BR_LT
+ -> 
+exe_É
+,
+
+265 
+BR_LTU
+ -> 
+exe_Éu
+,
+
+266 
+BR_NE
+ -> !
+exe_eq
+,
+
+267 
+BR_GE
+ -> !
+exe_É
+,
+
+268 
+BR_GEU
+ -> !
+exe_Éu
+
+
+272 
+v®
+ 
+mem_mul_»suÉ
+ = 
+	$UIÁ
+()
+
+273 
+mem_mul_»suÉ
+ :ğ
+mem_»g_rd_d©a
+
+
+274 if(
+cÚf
+.
+mul
+) {
+
+275 
+v®
+ 
+muÉ
+ = 
+	`ModuË
+(
+Ãw
+ 
+	`MuÉl›r
+())
+
+276 
+muÉ
+.
+io
+.
+İ1
+ :ğ
+exe_»g_İ1
+
+
+277 
+muÉ
+.
+io
+.
+İ2
+ :ğ
+exe_»g_İ2
+
+
+278 
+muÉ
+.
+io
+.
+func
+ :ğio.
+cÚŒŞ
+.
+exe_mul_ty³
+
+
+279 
+mem_mul_»suÉ
+ :ğ
+muÉ
+.
+io
+.
+»suÉ
+
+
+280 
+	}
+}
+
+284 
+v®
+ 
+lßd¡Üe
+ = 
+ModuË
+(
+Ãw
+ 
+	$LßdStÜe
+())
+
+286 
+lßd¡Üe
+.
+io
+.
+dmem
+ <> io.dmem
+
+287 
+lßd¡Üe
+.
+io
+.
+imem
+.
+rw
+ <> io.imem.rw
+
+288 
+lßd¡Üe
+.
+io
+.
+bus
+ <> io.bus
+
+290 
+lßd¡Üe
+.
+io
+.
+addr
+ :ğ
+exe_add»ss
+
+
+291 
+lßd¡Üe
+.
+io
+.
+th»ad
+ :ğ
+exe_»g_tid
+
+
+292 
+lßd¡Üe
+.
+io
+.
+lßd
+ :ğio.
+cÚŒŞ
+.
+exe_lßd
+
+
+293 
+lßd¡Üe
+.
+io
+.
+¡Üe
+ :ğio.
+cÚŒŞ
+.
+exe_¡Üe
+
+
+294 
+lßd¡Üe
+.
+io
+.
+mem_ty³
+ :ğio.
+cÚŒŞ
+.
+exe_mem_ty³
+
+
+295 
+lßd¡Üe
+.
+io
+.
+d©a_š
+ :ğ
+exe_»g_rs2_d©a
+
+
+297 
+lßd¡Üe
+.
+io
+.
+kl
+ :ğio.
+cÚŒŞ
+.
+exe_kl
+
+
+300 
+v®
+ 
+c¤
+ = 
+	`ModuË
+(
+Ãw
+ 
+	$CSR
+())
+
+301 
+v®
+ 
+exe_c¤_d©a
+ = if(
+cÚf
+.
+dediÿ‹dC¤D©a
+è
+exe_»g_c¤_d©a
+ 
+exe_®u_»suÉ
+
+
+303 
+c¤
+.
+io
+.
+rw
+.
+addr
+ :ğ
+exe_»g_c¤_addr
+
+
+304 
+c¤
+.
+io
+.
+rw
+.
+th»ad
+ :ğ
+exe_»g_tid
+
+
+305 
+c¤
+.
+io
+.
+rw
+.
+c¤_ty³
+ :ğio.
+cÚŒŞ
+.
+exe_c¤_ty³
+
+
+306 
+c¤
+.
+io
+.
+rw
+.
+wr™e
+ :ğio.
+cÚŒŞ
+.
+exe_c¤_wr™e
+
+
+307 
+c¤
+.
+io
+.
+rw
+.
+d©a_š
+ :ğ
+exe_c¤_d©a
+
+
+308 
+c¤
+.
+io
+.
+rw
+.
+v®id
+ :ğio.
+cÚŒŞ
+.
+exe_v®id
+
+
+311 
+c¤
+.
+io
+.
+kl
+ :ğio.
+cÚŒŞ
+.
+exe_kl
+
+
+312 
+c¤
+.
+io
+.
+exû±iÚ
+ :ğio.
+cÚŒŞ
+.
+exe_exû±iÚ
+
+
+313 
+c¤
+.
+io
+.
+•c
+ :ğ
+exe_»g_pc
+
+
+314 
+c¤
+.
+io
+.
+ÿu£
+ :ğio.
+cÚŒŞ
+.
+exe_ÿu£
+
+
+317 
+c¤
+.
+io
+.
+¦“p
+ :ğio.
+cÚŒŞ
+.
+exe_¦“p
+
+
+318 
+c¤
+.
+io
+.
+›
+ :ğio.
+cÚŒŞ
+.
+exe_›
+
+
+319 
+c¤
+.
+io
+.
+“
+ :ğio.
+cÚŒŞ
+.
+exe_“
+
+
+320 
+io
+.
+cÚŒŞ
+.
+exe_expœe
+ :ğ
+c¤
+.io.
+expœe
+
+
+321 
+c¤
+.
+io
+.
+dec_tid
+ :ğ
+dec_»g_tid
+
+
+324 
+c¤
+.
+io
+.
+¤‘
+ :ğio.
+cÚŒŞ
+.
+exe_¤‘
+
+
+327 
+c¤
+.
+io
+.
+št_exts
+ := io.int_exts
+
+330 
+c¤
+.
+io
+.
+cyşe
+ :ğio.
+cÚŒŞ
+.
+exe_cyşe
+
+
+331 
+c¤
+.
+io
+.
+š¡»t
+ :ğio.
+cÚŒŞ
+.
+exe_š¡»t
+
+
+334 
+exe_evec
+ :ğ
+c¤
+.
+io
+.
+	$evecs
+(
+exe_»g_tid
+)
+
+337 
+lßd¡Üe
+.
+io
+.
+dmem_´ÙeùiÚ
+ :ğ
+c¤
+.io.dmem_protection
+
+338 
+lßd¡Üe
+.
+io
+.
+imem_´ÙeùiÚ
+ :ğ
+c¤
+.io.imem_protection
+
+342 
+exe_rd_d©a
+ :ğ
+	`Mux
+(
+io
+.
+cÚŒŞ
+.
+exe_rd_d©a_£l
+ ==ğ
+EXE_RD_CSR
+, 
+c¤
+.io.
+rw
+.
+d©a_out
+,
+
+343 
+	$Mux
+(
+io
+.
+cÚŒŞ
+.
+exe_rd_d©a_£l
+ ==ğ
+EXE_RD_PC4
+, 
+exe_»g_pc4
+,
+
+344 
+exe_®u_»suÉ
+))
+
+347 
+io
+.
+cÚŒŞ
+.
+exe_br_cÚd
+ :=ƒxe_br_cond
+
+348 
+io
+.
+cÚŒŞ
+.
+exe_tid
+ :ğ
+exe_»g_tid
+
+
+349 
+io
+.
+cÚŒŞ
+.
+exe_rd_addr
+ :ğ
+exe_»g_rd_addr
+
+
+352 
+io
+.
+cÚŒŞ
+.
+exe_št_expœe
+ :ğ
+c¤
+.io.
+št_expœe
+
+
+353 
+io
+.
+cÚŒŞ
+.
+exe_exc_expœe
+ :ğ
+c¤
+.io.
+exc_expœe
+
+
+354 
+io
+.
+cÚŒŞ
+.
+exe_št_ext
+ :ğ
+c¤
+.io.
+št_ext
+
+
+355 
+io
+.
+cÚŒŞ
+.
+exe_exc_´iv_š¡
+ :ğ
+c¤
+.io.
+´iv_çuÉ
+
+
+356 
+io
+.
+cÚŒŞ
+.
+exe_exc_lßd_mi§ligÃd
+ :ğ
+lßd¡Üe
+.io.
+lßd_mi§ligÃd
+
+
+357 
+io
+.
+cÚŒŞ
+.
+exe_exc_lßd_çuÉ
+ :ğ
+lßd¡Üe
+.io.
+lßd_çuÉ
+
+
+358 
+io
+.
+cÚŒŞ
+.
+exe_exc_¡Üe_mi§ligÃd
+ :ğ
+lßd¡Üe
+.io.
+¡Üe_mi§ligÃd
+
+
+359 
+io
+.
+cÚŒŞ
+.
+exe_exc_¡Üe_çuÉ
+ :ğ
+lßd¡Üe
+.io.
+¡Üe_çuÉ
+
+
+362 
+mem_»g_tid
+ :ğ
+exe_»g_tid
+
+
+363 
+mem_»g_rd_addr
+ :ğ
+exe_»g_rd_addr
+
+
+364 
+mem_»g_rd_d©a
+ :ğ
+exe_rd_d©a
+
+
+365 
+mem_»g_add»ss
+ :ğ
+exe_add»ss
+
+
+371 
+mem_rd_d©a
+ :=
+
+372 
+	`Mux
+(
+io
+.
+cÚŒŞ
+.
+mem_rd_d©a_£l
+ ==ğ
+MEM_RD_MEM
+, 
+lßd¡Üe
+.io.
+d©a_out
+,
+
+373 
+	$Mux
+(
+io
+.
+cÚŒŞ
+.
+mem_rd_d©a_£l
+ ==ğ
+MEM_RD_MUL
+, 
+mem_mul_»suÉ
+,
+
+375 
+mem_»g_rd_d©a
+)
+
+379 
+»gfe
+.
+io
+.
+rd
+.
+th»ad
+ :ğ
+mem_»g_tid
+
+
+380 
+»gfe
+.
+io
+.
+rd
+.
+addr
+ :ğ
+mem_»g_rd_addr
+
+
+381 
+»gfe
+.
+io
+.
+rd
+.
+d©a
+ :ğ
+mem_rd_d©a
+
+
+382 
+»gfe
+.
+io
+.
+rd
+.
+’abË
+ :ğio.
+cÚŒŞ
+.
+mem_rd_wr™e
+
+
+384 
+io
+.
+cÚŒŞ
+.
+mem_tid
+ :ğ
+mem_»g_tid
+
+
+385 
+io
+.
+cÚŒŞ
+.
+mem_rd_addr
+ :ğ
+mem_»g_rd_addr
+
+
+388 
+io
+.
+cÚŒŞ
+.
+c¤_¦Ùs
+ :ğ
+c¤
+.io.
+¦Ùs
+
+
+389 
+io
+.
+cÚŒŞ
+.
+c¤_tmodes
+ :ğ
+c¤
+.io.
+tmodes
+
+
+392 
+io
+.
+ho¡
+.
+to_ho¡
+ :ğ
+c¤
+.io.host.to_host
+
+393 
+io
+.
+gpio
+ <> 
+c¤
+.io.gpio
+
+397 
+mem_evec
+ :ğ
+c¤
+.
+io
+.
+	$evecs
+(
+mem_»g_tid
+)
+
+399 
+wb_»g_tid
+ :ğ
+mem_»g_tid
+
+
+400 
+wb_»g_rd_addr
+ :ğ
+mem_»g_rd_addr
+
+
+401 
+wb_»g_rd_d©a
+ :ğ
+mem_rd_d©a
+
+
+405 
+wb_rd_d©a
+ :ğ
+wb_»g_rd_d©a
+
+
+407 
+io
+.
+cÚŒŞ
+.
+wb_tid
+ :ğ
+wb_»g_tid
+
+
+408 
+io
+.
+cÚŒŞ
+.
+wb_rd_addr
+ :ğ
+wb_»g_rd_addr
+
+
+410 
+	}
+}
+
+	@/home/salman/salman_cps/flexpret/src/Core/decode.scala
+
+28 
+·ckage
+ 
+CÜe
+
+
+30 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+31 
+impÜt
+ 
+	gNode
+.
+_
+
+
+33 
+objeù
+ 
+	gDecodeLogic
+
+
+35 
+def
+ 
+‹rm
+(
+b
+: 
+B™s
+) = {
+
+36 
+v®
+ 
+l™
+ = 
+b
+.
+l™Of
+
+
+37 ià(
+l™
+.
+isZ
+) {
+
+38 
+v¬
+ (
+b™s
+, 
+mask
+, 
+swidth
+èğ
+L™”®
+.
+·r£L™
+(
+l™
+.
+toSŒšg
+)
+
+39 
+Ãw
+ 
+T”m
+(
+BigIÁ
+(
+b™s
+, 2), BigIÁ(2).
+pow
+(
+l™
+.
+g‘Width
+)-(BigIÁ(
+mask
+, 2)+1))
+
+41 
+Ãw
+ 
+T”m
+(
+l™
+.
+v®ue
+)
+
+44 
+def
+ 
+logic
+(
+addr
+: 
+UIÁ
+, 
+addrWidth
+: 
+IÁ
+, 
+ÿche
+: 
+sÿÏ
+.
+cŞËùiÚ
+.
+mubË
+.
+M­
+[
+T”m
+,
+BoŞ
+], 
+‹rms
+: 
+Seq
+[Term]) = {
+
+45 
+‹rms
+.
+m­
+ { 
+t
+ =>
+
+46 
+ÿche
+.
+g‘OrEl£Upd©e
+(
+t
+, (iàÑ.
+mask
+ =ğ0è
+addr
+ add¸& 
+B™s
+(
+BigIÁ
+(2).
+pow
+(
+addrWidth
+)-Ñ.mask+1),‡ddrWidth)è==ğB™sÑ.
+v®ue
+,‡ddrWidth))
+
+47 }.
+fŞdLeá
+(
+BoŞ
+(
+çl£
+))(
+	g_
+||_)
+
+49 
+def
+ 
+	g­¶y
+[
+T
+ <: 
+B™s
+](
+addr
+: 
+UIÁ
+, : T, 
+	gm­pšg
+: 
+I‹¿bË
+[(UInt, T)]): T = {
+
+50 
+v®
+ 
+ÿche
+ = 
+ÿches
+.
+g‘OrEl£Upd©e
+(
+addr
+, 
+cŞËùiÚ
+.
+mubË
+.
+M­
+[
+T”m
+,
+BoŞ
+]())
+
+51 
+v®
+ 
+	gd‹rm
+ = 
+‹rm
+()
+
+52 
+v®
+ (
+keys
+, 
+v®ues
+èğ
+m­pšg
+.
+unz
+
+
+53 
+v®
+ 
+addrWidth
+ = 
+keys
+.
+m­
+(
+_
+.
+g‘Width
+).
+max
+
+
+54 
+v®
+ 
+‹rms
+ = 
+keys
+.
+toLi¡
+.
+m­
+(
+k
+ => 
+‹rm
+(k))
+
+55 
+v®
+ 
+‹rmv®ues
+ = 
+‹rms
+ 
+z
+ 
+v®ues
+.
+toLi¡
+.
+m­
+(
+‹rm
+(
+_
+))
+
+57 
+t
+ <- 
+keys
+.
+z
+(
+‹rms
+).
+s
+; !
+	gt
+.
+	gisEm±y
+)
+
+58 
+	gu
+ <- 
+	gt
+.
+	g
+)
+
+59 
+as£¹
+(!
+t
+.
+h—d
+.
+_2
+.
+š‹r£ùs
+(
+u
+._2), "DecodeLogic: keys " +.head + "‡nd " + u + " overlap")
+
+61 
+v®
+ 
+	g»suÉ
+ = (0 
+uÁ
+ .
+l™Of
+.
+g‘Width
+.
+max
+(
+v®ues
+.
+m­
+(
+_
+.l™Of.g‘Width).max)).m­({ (
+i
+: 
+IÁ
+) =>
+
+62 
+v®
+ 
+mšt
+ = 
+‹rmv®ues
+.
+f‹r
+ { (
+k
+,
+t
+è=> (Ñ.
+mask
+ >> 
+i
+è& 1è=ğ0 && (Ñ.
+v®ue
+ >> iè& 1è=ğ1 }.
+m­
+(
+_
+.
+_1
+)
+
+63 
+v®
+ 
+maxt
+ = 
+‹rmv®ues
+.
+f‹r
+ { (
+k
+,
+t
+è=> (Ñ.
+mask
+ >> 
+i
+è& 1è=ğ0 && (Ñ.
+v®ue
+ >> iè& 1è=ğ0 }.
+m­
+(
+_
+.
+_1
+)
+
+64 
+v®
+ 
+dc
+ = 
+‹rmv®ues
+.
+f‹r
+ { (
+k
+,
+t
+è=> (Ñ.
+mask
+ >> 
+i
+è& 1è=ğ1 }.
+m­
+(
+_
+.
+_1
+)
+
+66 ià(((
+d‹rm
+.
+mask
+ >> 
+i
+) & 1) != 0) {
+
+67 
+logic
+(
+addr
+, 
+addrWidth
+, 
+ÿche
+, 
+Sim¶ifyDC
+(
+mšt
+, 
+maxt
+,‡ddrWidth)).
+toB™s
+
+
+69 
+v®
+ 
+defb™
+ = (
+d‹rm
+.
+v®ue
+.
+toIÁ
+ >> 
+i
+) & 1
+
+70 
+v®
+ 
+t
+ = ià(
+defb™
+ =ğ0è
+mšt
+ 
+maxt
+
+
+71 
+v®
+ 
+b™
+ = 
+logic
+(
+addr
+, 
+addrWidth
+, 
+ÿche
+, 
+Sim¶ify
+(
+t
+, 
+dc
+,‡ddrWidth)).
+toB™s
+
+
+72 ià(
+defb™
+ =ğ0è
+b™
+ ~bit
+
+74 }).
+	g»v”£
+.
+»duûRight
+(
+C©
+(
+_
+,_))
+
+75 .
+äomB™s
+(
+»suÉ
+)
+
+77 
+def
+ 
+	g­¶y
+[
+T
+ <: 
+B™s
+](
+addr
+: 
+UIÁ
+, : 
+I‹¿bË
+[T], 
+	gm­pšgIn
+: Iterable[(UInt, Iterable[T])]): Iterable[T] = {
+
+78 
+v®
+ 
+m­pšg
+ = 
+cŞËùiÚ
+.
+mubË
+.
+A¼ayBufãr
+.
+fl
+(.
+size
+)(cŞËùiÚ.mubË.A¼ayBufãr[(
+UIÁ
+, 
+T
+)]())
+
+79 (
+	gkey
+, 
+	gv®ues
+è<- 
+	gm­pšgIn
+)
+
+80 (
+	gv®ue
+, 
+	gi
+è<- 
+v®ues
+ 
+	gzW™hIndex
+)
+
+81 
+m­pšg
+(
+i
+è+ğ
+key
+ -> 
+v®ue
+
+
+82 (
+thisDeçuÉ
+, 
+	gthisM­pšg
+è<-  
+z
+ 
+	gm­pšg
+)
+
+83 
+y›ld
+ 
+­¶y
+(
+addr
+, 
+thisDeçuÉ
+, 
+thisM­pšg
+)
+
+85 
+def
+ 
+­¶y
+(
+addr
+: 
+UIÁ
+, 
+Œues
+: 
+I‹¿bË
+[UIÁ], 
+çl£s
+: I‹¿bË[UIÁ]): 
+BoŞ
+ =
+
+86 
+­¶y
+(
+addr
+, 
+BoŞ
+.
+DC
+, 
+Œues
+.
+m­
+(
+_
+ -> BoŞ(
+Œue
+)è++ 
+çl£s
+.m­(_ -> BoŞ(
+çl£
+)))
+
+87 
+def
+ 
+­¶y
+(
+addr
+: 
+UIÁ
+, 
+Œu
+: UIÁ, 
+çls
+: UIÁ): 
+BoŞ
+ =
+
+88 
+­¶y
+(
+addr
+, 
+Seq
+(
+Œu
+), Seq(
+çls
+))
+
+89 
+´iv©e
+ 
+v®
+ 
+	gÿches
+ = 
+cŞËùiÚ
+.
+mubË
+.
+M­
+[
+UIÁ
+,cŞËùiÚ.mubË.M­[
+T”m
+,
+BoŞ
+]]()
+
+92 
+şass
+ 
+	$T”m
+(
+v®
+ 
+v®ue
+: 
+BigIÁ
+, v® 
+mask
+: BigInt = 0)
+
+94 
+v¬
+ 
+´ime
+ = 
+Œue
+
+
+96 
+def
+ 
+	`cov”s
+(
+x
+: 
+T”m
+èğ((
+v®ue
+ ^ x.v®ueè&~ 
+mask
+ | x.mask &~ mask) == 0
+
+97 
+def
+ 
+	`š‹r£ùs
+(
+x
+: 
+T”m
+èğ((
+v®ue
+ ^ x.v®ueè&~ 
+mask
+ &~ x.mask) == 0
+
+98 
+ov”ride
+ 
+def
+ 
+	`equ®s
+(
+th©
+: 
+Any
+èğth© 
+m©ch
+ {
+
+99 
+x
+: 
+T”m
+ => x.
+v®ue
+ =ğv®u&& x.
+mask
+ == mask
+
+100 
+_
+ => 
+çl£
+
+
+102 
+ov”ride
+ 
+def
+ 
+hashCode
+ = 
+v®ue
+.
+toIÁ
+
+
+103 
+def
+ < (
+th©
+: 
+T”m
+èğ
+v®ue
+ <h©.v®u|| v®u=ğth©.v®u&& 
+mask
+ <hat.mask
+
+104 
+def
+ 
+	`sim¬
+(
+x
+: 
+T”m
+) = {
+
+105 
+v®
+ 
+diff
+ = 
+v®ue
+ - 
+x
+.value
+
+106 
+mask
+ =ğ
+x
+.mask && 
+v®ue
+ > x.v®u&& (
+diff
+ & diff-1) == 0
+
+108 
+def
+ 
+	`m”ge
+(
+x
+: 
+T”m
+) = {
+
+109 
+´ime
+ = 
+çl£
+
+
+110 
+x
+.
+´ime
+ = 
+çl£
+
+
+111 
+v®
+ 
+b™
+ = 
+v®ue
+ - 
+x
+.value
+
+112 
+Ãw
+ 
+	`T”m
+(
+v®ue
+ &~ 
+b™
+, 
+mask
+ | bit)
+
+115 
+ov”ride
+ 
+def
+ 
+toSŒšg
+ = 
+v®ue
+.
+	`toSŒšg
+(16è+ "-" + 
+mask
+.toSŒšg(16è+ (ià(
+´ime
+) "p" "")
+
+116 
+	}
+}
+
+118 
+objeù
+ 
+	gSim¶ify
+
+
+120 
+def
+ 
+g‘PrimeIm¶iÿÁs
+(
+im¶iÿÁs
+: 
+Seq
+[
+T”m
+], 
+b™s
+: 
+IÁ
+) = {
+
+121 
+v¬
+ 
+´ime
+ = 
+Li¡
+[
+T”m
+]()
+
+122 
+im¶iÿÁs
+.
+fÜ—ch
+(
+_
+.
+´ime
+ = 
+Œue
+)
+
+123 
+v®
+ 
+cŞs
+ = (0 
+to
+ 
+b™s
+).
+m­
+(
+b
+ => 
+im¶iÿÁs
+.
+f‹r
+(b =ğ
+_
+.
+mask
+.
+b™CouÁ
+))
+
+124 
+v®
+ 
+bË
+ = 
+cŞs
+.
+m­
+(
+c
+ => (0 
+to
+ 
+b™s
+).m­(
+b
+ => 
+cŞËùiÚ
+.
+mubË
+.
+S‘
+(c.
+f‹r
+(b =ğ
+_
+.
+v®ue
+.
+b™CouÁ
+):_*)))
+
+125 
+i
+ <- 0 
+to
+ 
+b™s
+) {
+
+126 
+j
+ <- 0 
+uÁ
+ 
+b™s
+-
+i
+)
+
+127 
+bË
+(
+i
+)(
+j
+).
+fÜ—ch
+(
+a
+ =>abË(i+1)(jè++ğbË(i)(j+1).
+f‹r
+(
+_
+.
+sim¬
+×)).
+m­
+(_.
+m”ge
+(a)))
+
+128 
+r
+ <- 
+bË
+(
+i
+))
+
+129 
+p
+ <- 
+r
+; 
+	gp
+.
+	g´ime
+)
+
+130 
+	g´ime
+ = 
+p
+ :: 
+´ime
+
+
+132 
+´ime
+.
+sÜtW™h
+(
+_
+<_)
+
+134 
+def
+ 
+g‘Es£ÁŸlPrimeIm¶iÿÁs
+(
+´ime
+: 
+Seq
+[
+T”m
+], 
+mš‹rms
+: Seq[T”m]): (Seq[T”m],
+	gSeq
+[Term],Seq[Term]) = {
+
+135 
+i
+ <- 0 
+uÁ
+ 
+´ime
+.
+size
+) {
+
+136 
+v®
+ 
+icov”
+ = 
+mš‹rms
+.
+f‹r
+(
+´ime
+(
+i
+è
+cov”s
+ 
+_
+)
+
+137 
+j
+ <- 0 
+uÁ
+ 
+´ime
+.
+size
+) {
+
+138 
+v®
+ 
+jcov”
+ = 
+mš‹rms
+.
+f‹r
+(
+´ime
+(
+j
+è
+cov”s
+ 
+_
+)
+
+139 ià(
+icov”
+.
+size
+ > 
+jcov”
+.siz&& jcov”.
+fÜ®l
+(
+´ime
+(
+i
+è
+cov”s
+ 
+_
+))
+
+140  
+g‘Es£ÁŸlPrimeIm¶iÿÁs
+(
+´ime
+.
+f‹r
+(
+_
+ !ğ´ime(
+j
+)), 
+mš‹rms
+)
+
+144 
+v®
+ 
+	ges£ÁŸÎyCov”ed
+ = 
+mš‹rms
+.
+f‹r
+(
+t
+ => 
+´ime
+.
+couÁ
+(
+_
+ 
+cov”s
+) == 1)
+
+145 
+v®
+ 
+es£ÁŸl
+ = 
+´ime
+.
+f‹r
+(
+p
+ => 
+es£ÁŸÎyCov”ed
+.
+exi¡s
+Õ 
+cov”s
+ 
+_
+))
+
+146 
+v®
+ 
+nÚes£ÁŸl
+ = 
+´ime
+.
+f‹rNÙ
+(
+es£ÁŸl
+ 
+cÚšs
+ 
+_
+)
+
+147 
+v®
+ 
+uncov”ed
+ = 
+mš‹rms
+.
+f‹rNÙ
+(
+t
+ => 
+es£ÁŸl
+.
+exi¡s
+(
+_
+ 
+cov”s
+))
+
+148 ià(
+es£ÁŸl
+.
+isEm±y
+ || 
+uncov”ed
+.isEmpty)
+
+149 (
+es£ÁŸl
+, 
+	gnÚes£ÁŸl
+, 
+	guncov”ed
+)
+
+151 
+v®
+ (
+a
+, 
+b
+, 
+c
+èğ
+g‘Es£ÁŸlPrimeIm¶iÿÁs
+(
+nÚes£ÁŸl
+, 
+uncov”ed
+)
+
+152 (
+	ges£ÁŸl
+ ++ 
+	ga
+, 
+	gb
+, 
+	gc
+)
+
+155 
+def
+ 
+g‘Co¡
+(
+cov”
+: 
+Seq
+[
+T”m
+], 
+b™s
+: 
+IÁ
+èğcov”.
+m­
+(b™ - 
+_
+.
+mask
+.
+b™CouÁ
+).
+sum
+
+
+156 
+def
+ 
+ch—³r
+(
+a
+: 
+Li¡
+[
+T”m
+], 
+b
+: Li¡[T”m], 
+b™s
+: 
+IÁ
+) = {
+
+157 
+v®
+ 
+ÿ
+ = 
+g‘Co¡
+(
+a
+, 
+b™s
+)
+
+158 
+v®
+ 
+	gcb
+ = 
+g‘Co¡
+(
+b
+, 
+b™s
+)
+
+159 
+def
+ 
+li¡Less
+(
+a
+: 
+Li¡
+[
+T”m
+], 
+b
+: Li¡[T”m]): 
+BoŞ—n
+ = !b.
+isEm±y
+ && (a.isEm±y ||‡.
+h—d
+ < b.h—d ||‡.h—d =ğb.h—d &&†i¡Less×.
+
+, b.tail))
+
+160 
+	gÿ
+ < 
+	gcb
+ || c¨=ğ
+cb
+ && 
+li¡Less
+(
+a
+.
+sÜtW™h
+(
+_
+<_), 
+b
+.sortWith(_<_))
+
+162 
+def
+ 
+g‘Cov”
+(
+im¶iÿÁs
+: 
+Seq
+[
+T”m
+], 
+mš‹rms
+: Seq[T”m], 
+b™s
+: 
+IÁ
+) = {
+
+163 ià(
+mš‹rms
+.
+nÚEm±y
+) {
+
+164 
+v®
+ 
+cov”
+ = 
+mš‹rms
+.
+m­
+(
+m
+ => 
+im¶iÿÁs
+.
+f‹r
+(
+_
+.
+cov”s
+(m)).m­(
+i
+ => 
+cŞËùiÚ
+.
+mubË
+.
+S‘
+(i)))
+
+165 
+v®
+ 
+®l
+ = 
+cov”
+.
+»duûLeá
+((
+c0
+, 
+c1
+è=> c0.
+m­
+(
+a
+ => c1.m­(
+_
+ ++‡)).reduceLeft(_++_))
+
+166 
+®l
+.
+m­
+(
+_
+.
+toLi¡
+).
+»duûLeá
+((
+a
+, 
+b
+è=> ià(
+ch—³r
+×, b, 
+b™s
+))‡ b)
+
+168 
+	gSeq
+[
+T”m
+]()
+
+170 
+def
+ 
+¡ršgify
+(
+s
+: 
+Seq
+[
+T”m
+], 
+b™s
+: 
+IÁ
+èğs.
+m­
+(
+t
+ => (0 
+uÁ
+ b™s).m­(
+i
+ => ià(Ñ.
+mask
+ & (1 << i)è!ğ0è"x" (Ñ.
+v®ue
+ >> iè& 1).
+toSŒšg
+).
+»duûLeá
+(
+_
++_).
+»v”£
+).reduceLeft(_+" + "+_)
+
+172 
+def
+ 
+­¶y
+(
+mš‹rms
+: 
+Seq
+[
+T”m
+], 
+dÚtÿ»s
+: Seq[T”m], 
+b™s
+: 
+IÁ
+) = {
+
+173 
+v®
+ 
+´ime
+ = 
+g‘PrimeIm¶iÿÁs
+(
+mš‹rms
+ ++ 
+dÚtÿ»s
+, 
+b™s
+)
+
+174 
+	gmš‹rms
+.
+fÜ—ch
+(
+t
+ => 
+as£¹
+(
+´ime
+.
+exi¡s
+(
+_
+.
+cov”s
+(t))))
+
+175 
+v®
+ (
+•rime
+, 
+´ime2
+, 
+uncov”ed
+èğ
+g‘Es£ÁŸlPrimeIm¶iÿÁs
+(
+´ime
+, 
+mš‹rms
+)
+
+176 
+v®
+ 
+	gcov”
+ = 
+•rime
+ ++ 
+g‘Cov”
+(
+´ime2
+, 
+uncov”ed
+, 
+b™s
+)
+
+177 
+	gmš‹rms
+.
+fÜ—ch
+(
+t
+ => 
+as£¹
+(
+cov”
+.
+exi¡s
+(
+_
+.
+cov”s
+(t))))
+
+178 
+cov”
+
+
+182 
+objeù
+ 
+	gSim¶ifyDC
+
+
+184 
+def
+ 
+g‘Im¶ic™DC
+(
+max‹rms
+: 
+Seq
+[
+T”m
+], 
+‹rm
+: T”m, 
+b™s
+: 
+IÁ
+, 
+above
+: 
+BoŞ—n
+): Term = {
+
+185 
+i
+ <- 0 
+uÁ
+ 
+b™s
+) {
+
+186 
+v¬
+ 
+t
+: 
+T”m
+ = 
+nuÎ
+
+
+187 ià(
+above
+ && ((
+‹rm
+.
+v®ue
+ |”m.
+mask
+è& (1L << 
+i
+)) == 0)
+
+188 
+t
+ = 
+Ãw
+ 
+T”m
+(
+‹rm
+.
+v®ue
+ | (1L << 
+i
+),”m.
+mask
+)
+
+189 ià(!
+	gabove
+ && (
+	g‹rm
+.
+	gv®ue
+ & (1L << 
+	gi
+)) != 0)
+
+190 
+t
+ = 
+Ãw
+ 
+T”m
+(
+‹rm
+.
+v®ue
+ & ~(1L << 
+i
+),”m.
+mask
+)
+
+191 ià(
+	gt
+ !ğ
+nuÎ
+ && !
+max‹rms
+.
+exi¡s
+(
+_
+.
+š‹r£ùs
+(
+t
+)))
+
+192  
+t
+
+
+194 
+	gnuÎ
+
+
+196 
+def
+ 
+g‘PrimeIm¶iÿÁs
+(
+mš‹rms
+: 
+Seq
+[
+T”m
+], 
+max‹rms
+: Seq[T”m], 
+b™s
+: 
+IÁ
+) = {
+
+197 
+v¬
+ 
+´ime
+ = 
+Li¡
+[
+T”m
+]()
+
+198 
+mš‹rms
+.
+fÜ—ch
+(
+_
+.
+´ime
+ = 
+Œue
+)
+
+199 
+v¬
+ 
+mšt
+ = 
+mš‹rms
+.
+m­
+(
+t
+ => 
+Ãw
+ 
+T”m
+Ñ.
+v®ue
+,.
+mask
+))
+
+200 
+v®
+ 
+	gcŞs
+ = (0 
+to
+ 
+b™s
+).
+m­
+(
+b
+ => 
+mšt
+.
+f‹r
+(b =ğ
+_
+.
+mask
+.
+b™CouÁ
+))
+
+201 
+v®
+ 
+bË
+ = 
+cŞs
+.
+m­
+(
+c
+ => (0 
+to
+ 
+b™s
+).m­(
+b
+ => 
+cŞËùiÚ
+.
+mubË
+.
+S‘
+(c.
+f‹r
+(b =ğ
+_
+.
+v®ue
+.
+b™CouÁ
+):_*)))
+
+203 
+i
+ <- 0 
+to
+ 
+b™s
+) {
+
+204 
+j
+ <- 0 
+uÁ
+ 
+b™s
+-
+i
+) {
+
+205 
+bË
+(
+i
+)(
+j
+).
+fÜ—ch
+(
+a
+ =>abË(i+1)(jè++ğbË(i)(j+1).
+f‹r
+(
+_
+ 
+sim¬
+‡).
+m­
+(_ 
+m”ge
+‡))
+
+207 
+j
+ <- 0 
+uÁ
+ 
+b™s
+-
+i
+) {
+
+208 
+a
+ <- 
+bË
+(
+i
+)(
+j
+).
+f‹r
+(
+_
+.
+´ime
+)) {
+
+209 
+v®
+ 
+dc
+ = 
+g‘Im¶ic™DC
+(
+max‹rms
+, 
+a
+, 
+b™s
+, 
+Œue
+)
+
+210 ià(
+	gdc
+ !ğ
+nuÎ
+)
+
+211 
+bË
+(
+i
++1)(
+j
+è+ğ
+dc
+ 
+m”ge
+ 
+a
+
+
+213 
+	ga
+ <- 
+bË
+(
+i
+)(
+	gj
++1).
+f‹r
+(
+_
+.
+´ime
+)) {
+
+214 
+v®
+ 
+	gdc
+ = 
+g‘Im¶ic™DC
+(
+max‹rms
+, 
+a
+, 
+b™s
+, 
+çl£
+)
+
+215 ià(
+	gdc
+ !ğ
+nuÎ
+)
+
+216 
+bË
+(
+i
++1)(
+j
+è+ğ
+a
+ 
+m”ge
+ 
+dc
+
+
+219 
+	gr
+ <- 
+bË
+(
+i
+))
+
+220 
+	gp
+ <- 
+	gr
+; p.
+	g´ime
+)
+
+221 
+	g´ime
+ = 
+p
+ :: 
+´ime
+
+
+223 
+´ime
+.
+sÜtW™h
+(
+_
+<_)
+
+226 
+def
+ 
+v”ify
+(
+cov”
+: 
+Seq
+[
+T”m
+], 
+mš‹rms
+: Seq[T”m], 
+max‹rms
+: Seq[Term]) = {
+
+227 
+as£¹
+(
+mš‹rms
+.
+fÜ®l
+(
+t
+ => 
+cov”
+.
+exi¡s
+(
+_
+ 
+cov”s
+)))
+
+228 
+as£¹
+(
+max‹rms
+.
+fÜ®l
+(
+t
+ => !
+cov”
+.
+exi¡s
+(
+_
+ 
+š‹r£ùs
+)))
+
+230 
+def
+ 
+­¶y
+(
+mš‹rms
+: 
+Seq
+[
+T”m
+], 
+max‹rms
+: Seq[T”m], 
+b™s
+: 
+IÁ
+) = {
+
+231 
+v®
+ 
+´ime
+ = 
+g‘PrimeIm¶iÿÁs
+(
+mš‹rms
+, 
+max‹rms
+, 
+b™s
+)
+
+232 
+v®
+ (
+•rime
+, 
+´ime2
+, 
+uncov”ed
+èğ
+Sim¶ify
+.
+g‘Es£ÁŸlPrimeIm¶iÿÁs
+(
+´ime
+, 
+mš‹rms
+)
+
+233 
+v®
+ 
+	gcov”
+ = 
+•rime
+ ++ 
+Sim¶ify
+.
+g‘Cov”
+(
+´ime2
+, 
+uncov”ed
+, 
+b™s
+)
+
+234 
+v”ify
+(
+cov”
+, 
+mš‹rms
+, 
+max‹rms
+)
+
+235 
+	gcov”
+
+
+	@/home/salman/salman_cps/flexpret/src/Core/dspm.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+12 şas 
+	cD©aMemCÜeIO
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BundË
+
+
+15 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+dMemAddrB™s
+-2)
+
+16 
+v®
+ 
+’abË
+ = 
+	$BoŞ
+(
+INPUT
+)
+
+17 
+v®
+ 
+d©a_out
+ = 
+	$B™s
+(
+OUTPUT
+, 32)
+
+18 
+v®
+ 
+by‹_wr™e
+ = 
+Vec
+.
+	$fl
+(4è{ 
+	`BoŞ
+(
+INPUT
+) }
+
+19 
+v®
+ 
+d©a_š
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+20 
+	}
+}
+
+24 şas 
+	cDSpm
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BÏckBox
+
+
+27 
+v®
+ 
+io
+ = 
+Ãw
+ 
+BundË
+ {
+
+28 
+v®
+ 
+cÜe
+ = 
+Ãw
+ 
+	`D©aMemCÜeIO
+()
+
+29 
+v®
+ 
+bus
+ = 
+Ãw
+ 
+	`D©aMemBusIO
+()
+
+33 
+v®
+ 
+d¥m
+ = 
+	`Mem
+(
+	`B™s
+(
+width
+ = 32), 
+cÚf
+.
+dMemD•th
+, 
+Œue
+)
+
+37 
+v®
+ 
+dout
+ = 
+	`Reg
+(
+	$B™s
+(
+width
+ = 32))
+
+38 
+io
+.
+cÜe
+.
+d©a_out
+ :ğ
+dout
+
+
+40 
+	$wh’
+(
+io
+.
+cÜe
+.
+’abË
+) {
+
+41 
+v®
+ 
+cu¼’t
+ = 
+	`d¥m
+(
+io
+.
+cÜe
+.
+addr
+)
+
+42 
+dout
+ :ğ
+cu¼’t
+
+
+43 
+	`d¥m
+(
+io
+.
+cÜe
+.
+addr
+è:ğ
+	`C©
+(
+
+44 
+	`Mux
+(
+io
+.
+cÜe
+.
+	`by‹_wr™e
+(3), io.cÜe.
+	`d©a_š
+(31, 24), 
+	`cu¼’t
+(31, 24)),
+
+45 
+	`Mux
+(
+io
+.
+cÜe
+.
+	`by‹_wr™e
+(2), io.cÜe.
+	`d©a_š
+(23, 16), 
+	`cu¼’t
+(23, 16)),
+
+46 
+	`Mux
+(
+io
+.
+cÜe
+.
+	`by‹_wr™e
+(1), io.cÜe.
+	`d©a_š
+(15, 8), 
+	`cu¼’t
+(15, 8)),
+
+47 
+	`Mux
+(
+io
+.
+cÜe
+.
+	`by‹_wr™e
+(0), io.cÜe.
+	`d©a_š
+Ğ7, 0), 
+	`cu¼’t
+( 7, 0))
+
+49 
+	}
+}
+
+51 if(
+	gcÚf
+.
+	gdMemBusRW
+) {
+
+53 
+v®
+ 
+	gdout_2
+ = 
+Reg
+(
+B™s
+(
+width
+ = 32))
+
+54 
+io
+.
+bus
+.
+d©a_out
+ :ğ
+dout_2
+
+
+56 
+wh’
+(
+io
+.
+bus
+.
+’abË
+) {
+
+57 
+v®
+ 
+cu¼’t_2
+ = 
+d¥m
+(
+io
+.
+bus
+.
+addr
+)
+
+58 
+dout
+ :ğ
+cu¼’t_2
+
+
+59 
+d¥m
+(
+io
+.
+bus
+.
+addr
+è:ğ
+C©
+(
+
+60 
+Mux
+(
+io
+.
+bus
+.
+by‹_wr™e
+(3), io.bus.
+d©a_š
+(31, 24), 
+cu¼’t_2
+(31, 24)),
+
+61 
+Mux
+(
+io
+.
+bus
+.
+by‹_wr™e
+(2), io.bus.
+d©a_š
+(23, 16), 
+cu¼’t_2
+(23, 16)),
+
+62 
+Mux
+(
+io
+.
+bus
+.
+by‹_wr™e
+(1), io.bus.
+d©a_š
+(15, 8), 
+cu¼’t_2
+(15, 8)),
+
+63 
+Mux
+(
+io
+.
+bus
+.
+by‹_wr™e
+(0), io.bus.
+d©a_š
+Ğ7, 0), 
+cu¼’t_2
+( 7, 0))
+
+	@/home/salman/salman_cps/flexpret/src/Core/instructions.scala
+
+9 
+·ckage
+ 
+CÜe
+
+
+11 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+14 
+objeù
+ 
+	gIn¡ruùiÚs
+ {
+
+15 
+def
+ 
+	gBEQ
+ = 
+B™s
+("b?????????????????000?????1100011")
+
+16 
+def
+ 
+BNE
+ = 
+B™s
+("b?????????????????001?????1100011")
+
+17 
+def
+ 
+BLT
+ = 
+B™s
+("b?????????????????100?????1100011")
+
+18 
+def
+ 
+BGE
+ = 
+B™s
+("b?????????????????101?????1100011")
+
+19 
+def
+ 
+BLTU
+ = 
+B™s
+("b?????????????????110?????1100011")
+
+20 
+def
+ 
+BGEU
+ = 
+B™s
+("b?????????????????111?????1100011")
+
+21 
+def
+ 
+JALR
+ = 
+B™s
+("b?????????????????000?????1100111")
+
+22 
+def
+ 
+JAL
+ = 
+B™s
+("b?????????????????????????1101111")
+
+23 
+def
+ 
+LUI
+ = 
+B™s
+("b?????????????????????????0110111")
+
+24 
+def
+ 
+AUIPC
+ = 
+B™s
+("b?????????????????????????0010111")
+
+25 
+def
+ 
+ADDI
+ = 
+B™s
+("b?????????????????000?????0010011")
+
+26 
+def
+ 
+SLLI
+ = 
+B™s
+("b000000???????????001?????0010011")
+
+27 
+def
+ 
+SLTI
+ = 
+B™s
+("b?????????????????010?????0010011")
+
+28 
+def
+ 
+SLTIU
+ = 
+B™s
+("b?????????????????011?????0010011")
+
+29 
+def
+ 
+XORI
+ = 
+B™s
+("b?????????????????100?????0010011")
+
+30 
+def
+ 
+SRLI
+ = 
+B™s
+("b000000???????????101?????0010011")
+
+31 
+def
+ 
+SRAI
+ = 
+B™s
+("b010000???????????101?????0010011")
+
+32 
+def
+ 
+ORI
+ = 
+B™s
+("b?????????????????110?????0010011")
+
+33 
+def
+ 
+ANDI
+ = 
+B™s
+("b?????????????????111?????0010011")
+
+34 
+def
+ 
+ADD
+ = 
+B™s
+("b0000000??????????000?????0110011")
+
+35 
+def
+ 
+SUB
+ = 
+B™s
+("b0100000??????????000?????0110011")
+
+36 
+def
+ 
+SLL
+ = 
+B™s
+("b0000000??????????001?????0110011")
+
+37 
+def
+ 
+SLT
+ = 
+B™s
+("b0000000??????????010?????0110011")
+
+38 
+def
+ 
+SLTU
+ = 
+B™s
+("b0000000??????????011?????0110011")
+
+39 
+def
+ 
+XOR
+ = 
+B™s
+("b0000000??????????100?????0110011")
+
+40 
+def
+ 
+SRL
+ = 
+B™s
+("b0000000??????????101?????0110011")
+
+41 
+def
+ 
+SRA
+ = 
+B™s
+("b0100000??????????101?????0110011")
+
+42 
+def
+ 
+OR
+ = 
+B™s
+("b0000000??????????110?????0110011")
+
+43 
+def
+ 
+AND
+ = 
+B™s
+("b0000000??????????111?????0110011")
+
+44 
+def
+ 
+ADDIW
+ = 
+B™s
+("b?????????????????000?????0011011")
+
+45 
+def
+ 
+SLLIW
+ = 
+B™s
+("b0000000??????????001?????0011011")
+
+46 
+def
+ 
+SRLIW
+ = 
+B™s
+("b0000000??????????101?????0011011")
+
+47 
+def
+ 
+SRAIW
+ = 
+B™s
+("b0100000??????????101?????0011011")
+
+48 
+def
+ 
+ADDW
+ = 
+B™s
+("b0000000??????????000?????0111011")
+
+49 
+def
+ 
+SUBW
+ = 
+B™s
+("b0100000??????????000?????0111011")
+
+50 
+def
+ 
+SLLW
+ = 
+B™s
+("b0000000??????????001?????0111011")
+
+51 
+def
+ 
+SRLW
+ = 
+B™s
+("b0000000??????????101?????0111011")
+
+52 
+def
+ 
+SRAW
+ = 
+B™s
+("b0100000??????????101?????0111011")
+
+53 
+def
+ 
+LB
+ = 
+B™s
+("b?????????????????000?????0000011")
+
+54 
+def
+ 
+LH
+ = 
+B™s
+("b?????????????????001?????0000011")
+
+55 
+def
+ 
+LW
+ = 
+B™s
+("b?????????????????010?????0000011")
+
+56 
+def
+ 
+LD
+ = 
+B™s
+("b?????????????????011?????0000011")
+
+57 
+def
+ 
+LBU
+ = 
+B™s
+("b?????????????????100?????0000011")
+
+58 
+def
+ 
+LHU
+ = 
+B™s
+("b?????????????????101?????0000011")
+
+59 
+def
+ 
+LWU
+ = 
+B™s
+("b?????????????????110?????0000011")
+
+60 
+def
+ 
+SB
+ = 
+B™s
+("b?????????????????000?????0100011")
+
+61 
+def
+ 
+SH
+ = 
+B™s
+("b?????????????????001?????0100011")
+
+62 
+def
+ 
+SW
+ = 
+B™s
+("b?????????????????010?????0100011")
+
+63 
+def
+ 
+SD
+ = 
+B™s
+("b?????????????????011?????0100011")
+
+64 
+def
+ 
+FENCE
+ = 
+B™s
+("b?????????????????000?????0001111")
+
+65 
+def
+ 
+FENCE_I
+ = 
+B™s
+("b?????????????????001?????0001111")
+
+66 
+def
+ 
+MUL
+ = 
+B™s
+("b0000001??????????000?????0110011")
+
+67 
+def
+ 
+MULH
+ = 
+B™s
+("b0000001??????????001?????0110011")
+
+68 
+def
+ 
+MULHSU
+ = 
+B™s
+("b0000001??????????010?????0110011")
+
+69 
+def
+ 
+MULHU
+ = 
+B™s
+("b0000001??????????011?????0110011")
+
+70 
+def
+ 
+DIV
+ = 
+B™s
+("b0000001??????????100?????0110011")
+
+71 
+def
+ 
+DIVU
+ = 
+B™s
+("b0000001??????????101?????0110011")
+
+72 
+def
+ 
+REM
+ = 
+B™s
+("b0000001??????????110?????0110011")
+
+73 
+def
+ 
+REMU
+ = 
+B™s
+("b0000001??????????111?????0110011")
+
+74 
+def
+ 
+MULW
+ = 
+B™s
+("b0000001??????????000?????0111011")
+
+75 
+def
+ 
+DIVW
+ = 
+B™s
+("b0000001??????????100?????0111011")
+
+76 
+def
+ 
+DIVUW
+ = 
+B™s
+("b0000001??????????101?????0111011")
+
+77 
+def
+ 
+REMW
+ = 
+B™s
+("b0000001??????????110?????0111011")
+
+78 
+def
+ 
+REMUW
+ = 
+B™s
+("b0000001??????????111?????0111011")
+
+79 
+def
+ 
+AMOADD_W
+ = 
+B™s
+("b00000????????????010?????0101111")
+
+80 
+def
+ 
+AMOXOR_W
+ = 
+B™s
+("b00100????????????010?????0101111")
+
+81 
+def
+ 
+AMOOR_W
+ = 
+B™s
+("b01000????????????010?????0101111")
+
+82 
+def
+ 
+AMOAND_W
+ = 
+B™s
+("b01100????????????010?????0101111")
+
+83 
+def
+ 
+AMOMIN_W
+ = 
+B™s
+("b10000????????????010?????0101111")
+
+84 
+def
+ 
+AMOMAX_W
+ = 
+B™s
+("b10100????????????010?????0101111")
+
+85 
+def
+ 
+AMOMINU_W
+ = 
+B™s
+("b11000????????????010?????0101111")
+
+86 
+def
+ 
+AMOMAXU_W
+ = 
+B™s
+("b11100????????????010?????0101111")
+
+87 
+def
+ 
+AMOSWAP_W
+ = 
+B™s
+("b00001????????????010?????0101111")
+
+88 
+def
+ 
+LR_W
+ = 
+B™s
+("b00010??00000?????010?????0101111")
+
+89 
+def
+ 
+SC_W
+ = 
+B™s
+("b00011????????????010?????0101111")
+
+90 
+def
+ 
+AMOADD_D
+ = 
+B™s
+("b00000????????????011?????0101111")
+
+91 
+def
+ 
+AMOXOR_D
+ = 
+B™s
+("b00100????????????011?????0101111")
+
+92 
+def
+ 
+AMOOR_D
+ = 
+B™s
+("b01000????????????011?????0101111")
+
+93 
+def
+ 
+AMOAND_D
+ = 
+B™s
+("b01100????????????011?????0101111")
+
+94 
+def
+ 
+AMOMIN_D
+ = 
+B™s
+("b10000????????????011?????0101111")
+
+95 
+def
+ 
+AMOMAX_D
+ = 
+B™s
+("b10100????????????011?????0101111")
+
+96 
+def
+ 
+AMOMINU_D
+ = 
+B™s
+("b11000????????????011?????0101111")
+
+97 
+def
+ 
+AMOMAXU_D
+ = 
+B™s
+("b11100????????????011?????0101111")
+
+98 
+def
+ 
+AMOSWAP_D
+ = 
+B™s
+("b00001????????????011?????0101111")
+
+99 
+def
+ 
+LR_D
+ = 
+B™s
+("b00010??00000?????011?????0101111")
+
+100 
+def
+ 
+SC_D
+ = 
+B™s
+("b00011????????????011?????0101111")
+
+102 
+def
+ 
+SBREAK
+ = 
+B™s
+("b00000000000100000000000001110011")
+
+104 
+def
+ 
+CSRRW
+ = 
+B™s
+("b?????????????????001?????1110011")
+
+105 
+def
+ 
+CSRRS
+ = 
+B™s
+("b?????????????????010?????1110011")
+
+106 
+def
+ 
+CSRRC
+ = 
+B™s
+("b?????????????????011?????1110011")
+
+107 
+def
+ 
+CSRRWI
+ = 
+B™s
+("b?????????????????101?????1110011")
+
+108 
+def
+ 
+CSRRSI
+ = 
+B™s
+("b?????????????????110?????1110011")
+
+109 
+def
+ 
+CSRRCI
+ = 
+B™s
+("b?????????????????111?????1110011")
+
+110 
+def
+ 
+FADD_S
+ = 
+B™s
+("b0000000??????????????????1010011")
+
+111 
+def
+ 
+FSUB_S
+ = 
+B™s
+("b0000100??????????????????1010011")
+
+112 
+def
+ 
+FMUL_S
+ = 
+B™s
+("b0001000??????????????????1010011")
+
+113 
+def
+ 
+FDIV_S
+ = 
+B™s
+("b0001100??????????????????1010011")
+
+114 
+def
+ 
+FSGNJ_S
+ = 
+B™s
+("b0010000??????????000?????1010011")
+
+115 
+def
+ 
+FSGNJN_S
+ = 
+B™s
+("b0010000??????????001?????1010011")
+
+116 
+def
+ 
+FSGNJX_S
+ = 
+B™s
+("b0010000??????????010?????1010011")
+
+117 
+def
+ 
+FMIN_S
+ = 
+B™s
+("b0010100??????????000?????1010011")
+
+118 
+def
+ 
+FMAX_S
+ = 
+B™s
+("b0010100??????????001?????1010011")
+
+119 
+def
+ 
+FSQRT_S
+ = 
+B™s
+("b010110000000?????????????1010011")
+
+120 
+def
+ 
+FADD_D
+ = 
+B™s
+("b0000001??????????????????1010011")
+
+121 
+def
+ 
+FSUB_D
+ = 
+B™s
+("b0000101??????????????????1010011")
+
+122 
+def
+ 
+FMUL_D
+ = 
+B™s
+("b0001001??????????????????1010011")
+
+123 
+def
+ 
+FDIV_D
+ = 
+B™s
+("b0001101??????????????????1010011")
+
+124 
+def
+ 
+FSGNJ_D
+ = 
+B™s
+("b0010001??????????000?????1010011")
+
+125 
+def
+ 
+FSGNJN_D
+ = 
+B™s
+("b0010001??????????001?????1010011")
+
+126 
+def
+ 
+FSGNJX_D
+ = 
+B™s
+("b0010001??????????010?????1010011")
+
+127 
+def
+ 
+FMIN_D
+ = 
+B™s
+("b0010101??????????000?????1010011")
+
+128 
+def
+ 
+FMAX_D
+ = 
+B™s
+("b0010101??????????001?????1010011")
+
+129 
+def
+ 
+FCVT_S_D
+ = 
+B™s
+("b010000000001?????????????1010011")
+
+130 
+def
+ 
+FCVT_D_S
+ = 
+B™s
+("b010000100000?????????????1010011")
+
+131 
+def
+ 
+FSQRT_D
+ = 
+B™s
+("b010110100000?????????????1010011")
+
+132 
+def
+ 
+FLE_S
+ = 
+B™s
+("b1010000??????????000?????1010011")
+
+133 
+def
+ 
+FLT_S
+ = 
+B™s
+("b1010000??????????001?????1010011")
+
+134 
+def
+ 
+FEQ_S
+ = 
+B™s
+("b1010000??????????010?????1010011")
+
+135 
+def
+ 
+FLE_D
+ = 
+B™s
+("b1010001??????????000?????1010011")
+
+136 
+def
+ 
+FLT_D
+ = 
+B™s
+("b1010001??????????001?????1010011")
+
+137 
+def
+ 
+FEQ_D
+ = 
+B™s
+("b1010001??????????010?????1010011")
+
+138 
+def
+ 
+FCVT_W_S
+ = 
+B™s
+("b110000000000?????????????1010011")
+
+139 
+def
+ 
+FCVT_WU_S
+ = 
+B™s
+("b110000000001?????????????1010011")
+
+140 
+def
+ 
+FCVT_L_S
+ = 
+B™s
+("b110000000010?????????????1010011")
+
+141 
+def
+ 
+FCVT_LU_S
+ = 
+B™s
+("b110000000011?????????????1010011")
+
+142 
+def
+ 
+FMV_X_S
+ = 
+B™s
+("b111000000000?????000?????1010011")
+
+143 
+def
+ 
+FCLASS_S
+ = 
+B™s
+("b111000000000?????001?????1010011")
+
+144 
+def
+ 
+FCVT_W_D
+ = 
+B™s
+("b110000100000?????????????1010011")
+
+145 
+def
+ 
+FCVT_WU_D
+ = 
+B™s
+("b110000100001?????????????1010011")
+
+146 
+def
+ 
+FCVT_L_D
+ = 
+B™s
+("b110000100010?????????????1010011")
+
+147 
+def
+ 
+FCVT_LU_D
+ = 
+B™s
+("b110000100011?????????????1010011")
+
+148 
+def
+ 
+FMV_X_D
+ = 
+B™s
+("b111000100000?????000?????1010011")
+
+149 
+def
+ 
+FCLASS_D
+ = 
+B™s
+("b111000100000?????001?????1010011")
+
+150 
+def
+ 
+FCVT_S_W
+ = 
+B™s
+("b110100000000?????????????1010011")
+
+151 
+def
+ 
+FCVT_S_WU
+ = 
+B™s
+("b110100000001?????????????1010011")
+
+152 
+def
+ 
+FCVT_S_L
+ = 
+B™s
+("b110100000010?????????????1010011")
+
+153 
+def
+ 
+FCVT_S_LU
+ = 
+B™s
+("b110100000011?????????????1010011")
+
+154 
+def
+ 
+FMV_S_X
+ = 
+B™s
+("b111100000000?????000?????1010011")
+
+155 
+def
+ 
+FCVT_D_W
+ = 
+B™s
+("b110100100000?????????????1010011")
+
+156 
+def
+ 
+FCVT_D_WU
+ = 
+B™s
+("b110100100001?????????????1010011")
+
+157 
+def
+ 
+FCVT_D_L
+ = 
+B™s
+("b110100100010?????????????1010011")
+
+158 
+def
+ 
+FCVT_D_LU
+ = 
+B™s
+("b110100100011?????????????1010011")
+
+159 
+def
+ 
+FMV_D_X
+ = 
+B™s
+("b111100100000?????000?????1010011")
+
+160 
+def
+ 
+FLW
+ = 
+B™s
+("b?????????????????010?????0000111")
+
+161 
+def
+ 
+FLD
+ = 
+B™s
+("b?????????????????011?????0000111")
+
+162 
+def
+ 
+FSW
+ = 
+B™s
+("b?????????????????010?????0100111")
+
+163 
+def
+ 
+FSD
+ = 
+B™s
+("b?????????????????011?????0100111")
+
+164 
+def
+ 
+FMADD_S
+ = 
+B™s
+("b?????00??????????????????1000011")
+
+165 
+def
+ 
+FMSUB_S
+ = 
+B™s
+("b?????00??????????????????1000111")
+
+166 
+def
+ 
+FNMSUB_S
+ = 
+B™s
+("b?????00??????????????????1001011")
+
+167 
+def
+ 
+FNMADD_S
+ = 
+B™s
+("b?????00??????????????????1001111")
+
+168 
+def
+ 
+FMADD_D
+ = 
+B™s
+("b?????01??????????????????1000011")
+
+169 
+def
+ 
+FMSUB_D
+ = 
+B™s
+("b?????01??????????????????1000111")
+
+170 
+def
+ 
+FNMSUB_D
+ = 
+B™s
+("b?????01??????????????????1001011")
+
+171 
+def
+ 
+FNMADD_D
+ = 
+B™s
+("b?????01??????????????????1001111")
+
+172 
+def
+ 
+CUSTOM0
+ = 
+B™s
+("b?????????????????000?????0001011")
+
+173 
+def
+ 
+CUSTOM0_RS1
+ = 
+B™s
+("b?????????????????010?????0001011")
+
+174 
+def
+ 
+CUSTOM0_RS1_RS2
+ = 
+B™s
+("b?????????????????011?????0001011")
+
+175 
+def
+ 
+CUSTOM0_RD
+ = 
+B™s
+("b?????????????????100?????0001011")
+
+176 
+def
+ 
+CUSTOM0_RD_RS1
+ = 
+B™s
+("b?????????????????110?????0001011")
+
+177 
+def
+ 
+CUSTOM0_RD_RS1_RS2
+ = 
+B™s
+("b?????????????????111?????0001011")
+
+178 
+def
+ 
+CUSTOM1
+ = 
+B™s
+("b?????????????????000?????0101011")
+
+179 
+def
+ 
+CUSTOM1_RS1
+ = 
+B™s
+("b?????????????????010?????0101011")
+
+180 
+def
+ 
+CUSTOM1_RS1_RS2
+ = 
+B™s
+("b?????????????????011?????0101011")
+
+181 
+def
+ 
+CUSTOM1_RD
+ = 
+B™s
+("b?????????????????100?????0101011")
+
+182 
+def
+ 
+CUSTOM1_RD_RS1
+ = 
+B™s
+("b?????????????????110?????0101011")
+
+183 
+def
+ 
+CUSTOM1_RD_RS1_RS2
+ = 
+B™s
+("b?????????????????111?????0101011")
+
+184 
+def
+ 
+CUSTOM2
+ = 
+B™s
+("b?????????????????000?????1011011")
+
+185 
+def
+ 
+CUSTOM2_RS1
+ = 
+B™s
+("b?????????????????010?????1011011")
+
+186 
+def
+ 
+CUSTOM2_RS1_RS2
+ = 
+B™s
+("b?????????????????011?????1011011")
+
+187 
+def
+ 
+CUSTOM2_RD
+ = 
+B™s
+("b?????????????????100?????1011011")
+
+188 
+def
+ 
+CUSTOM2_RD_RS1
+ = 
+B™s
+("b?????????????????110?????1011011")
+
+189 
+def
+ 
+CUSTOM2_RD_RS1_RS2
+ = 
+B™s
+("b?????????????????111?????1011011")
+
+190 
+def
+ 
+CUSTOM3
+ = 
+B™s
+("b?????????????????000?????1111011")
+
+191 
+def
+ 
+CUSTOM3_RS1
+ = 
+B™s
+("b?????????????????010?????1111011")
+
+192 
+def
+ 
+CUSTOM3_RS1_RS2
+ = 
+B™s
+("b?????????????????011?????1111011")
+
+193 
+def
+ 
+CUSTOM3_RD
+ = 
+B™s
+("b?????????????????100?????1111011")
+
+194 
+def
+ 
+CUSTOM3_RD_RS1
+ = 
+B™s
+("b?????????????????110?????1111011")
+
+195 
+def
+ 
+CUSTOM3_RD_RS1_RS2
+ = 
+B™s
+("b?????????????????111?????1111011")
+
+196 
+v®
+ 
+DU
+ = 
+CUSTOM0_RD_RS1_RS2
+
+
+197 
+v®
+ 
+WU
+ = 
+CUSTOM1_RD_RS1_RS2
+
+
+198 
+v®
+ 
+IE
+ = 
+CUSTOM2_RD_RS1_RS2
+
+
+199 
+def
+ 
+SCALL
+ = 
+B™s
+("b0??????????0?????000?????1110011")
+
+200 
+def
+ 
+SRET
+ = 
+B™s
+("b1????????????????000?????1110011")
+
+202 
+objeù
+ 
+	gCau£s
+ {
+
+203 
+v®
+ 
+	gmi§ligÃd_ãtch
+ = 0x0
+
+204 
+v®
+ 
+çuÉ_ãtch
+ = 0x1
+
+205 
+v®
+ 
+Ëg®_š¡ruùiÚ
+ = 0x2
+
+206 
+v®
+ 
+´iveged_š¡ruùiÚ
+ = 0x3
+
+207 
+v®
+ 
+å_di§bËd
+ = 0x4
+
+208 
+v®
+ 
+sysÿÎ
+ = 0x6
+
+209 
+v®
+ 
+b»akpošt
+ = 0x7
+
+210 
+v®
+ 
+mi§ligÃd_lßd
+ = 0x8
+
+211 
+v®
+ 
+mi§ligÃd_¡Üe
+ = 0x9
+
+212 
+v®
+ 
+çuÉ_lßd
+ = 0xa
+
+213 
+v®
+ 
+çuÉ_¡Üe
+ = 0xb
+
+214 
+v®
+ 
+acûË¿tÜ_di§bËd
+ = 0xc
+
+216 
+v®
+ 
+“
+ = 0xd
+
+217 
+v®
+ 
+›
+ = 0x1d
+
+218 
+v®
+ 
+ex‹º®_št
+ = 0x1e
+
+219 
+v®
+ 
+®l
+ = {
+
+220 
+v®
+ 
+»s
+ = 
+cŞËùiÚ
+.
+mubË
+.
+A¼ayBufãr
+[
+IÁ
+]()
+
+221 
+»s
+ +ğ
+mi§ligÃd_ãtch
+
+
+222 
+»s
+ +ğ
+çuÉ_ãtch
+
+
+223 
+»s
+ +ğ
+Ëg®_š¡ruùiÚ
+
+
+224 
+»s
+ +ğ
+´iveged_š¡ruùiÚ
+
+
+225 
+»s
+ +ğ
+å_di§bËd
+
+
+226 
+»s
+ +ğ
+sysÿÎ
+
+
+227 
+»s
+ +ğ
+b»akpošt
+
+
+228 
+»s
+ +ğ
+mi§ligÃd_lßd
+
+
+229 
+»s
+ +ğ
+mi§ligÃd_¡Üe
+
+
+230 
+»s
+ +ğ
+çuÉ_lßd
+
+
+231 
+»s
+ +ğ
+çuÉ_¡Üe
+
+
+232 
+»s
+ +ğ
+acûË¿tÜ_di§bËd
+
+
+233 
+»s
+.
+toA¼ay
+
+
+236 
+objeù
+ 
+	gCSRs
+ {
+
+237 
+v®
+ 
+	gfæags
+ = 0x1
+
+238 
+v®
+ 
+äm
+ = 0x2
+
+239 
+v®
+ 
+fc¤
+ = 0x3
+
+240 
+v®
+ 
+¡©s
+ = 0xc0
+
+241 
+v®
+ 
+sup0
+ = 0x500
+
+242 
+v®
+ 
+sup1
+ = 0x501
+
+243 
+v®
+ 
+•c
+ = 0x502
+
+244 
+v®
+ 
+badvaddr
+ = 0x503
+
+245 
+v®
+ 
+±br
+ = 0x504
+
+246 
+v®
+ 
+asid
+ = 0x505
+
+247 
+v®
+ 
+couÁ
+ = 0x506
+
+248 
+v®
+ 
+com·»
+ = 0x507
+
+249 
+v®
+ 
+evec
+ = 0x508
+
+250 
+v®
+ 
+ÿu£
+ = 0x509
+
+251 
+v®
+ 
+¡©us
+ = 0x50a
+
+252 
+v®
+ 
+h¬tid
+ = 0x50b
+
+253 
+v®
+ 
+im¶
+ = 0x50c
+
+254 
+v®
+ 
+çtc
+ = 0x50d
+
+255 
+v®
+ 
+£nd_i
+ = 0x50e
+
+256 
+v®
+ 
+ş—r_i
+ = 0x50f
+
+257 
+v®
+ 
+»£t
+ = 0x51d
+
+258 
+v®
+ 
+toho¡
+ = 0x51e
+
+259 
+v®
+ 
+äomho¡
+ = 0x51f
+
+260 
+v®
+ 
+cyşe
+ = 0xc00
+
+261 
+v®
+ 
+time
+ = 0xc01
+
+262 
+v®
+ 
+š¡»t
+ = 0xc02
+
+263 
+v®
+ 
+u¬ch0
+ = 0xcc0
+
+264 
+v®
+ 
+u¬ch1
+ = 0xcc1
+
+265 
+v®
+ 
+u¬ch2
+ = 0xcc2
+
+266 
+v®
+ 
+u¬ch3
+ = 0xcc3
+
+267 
+v®
+ 
+u¬ch4
+ = 0xcc4
+
+268 
+v®
+ 
+u¬ch5
+ = 0xcc5
+
+269 
+v®
+ 
+u¬ch6
+ = 0xcc6
+
+270 
+v®
+ 
+u¬ch7
+ = 0xcc7
+
+271 
+v®
+ 
+u¬ch8
+ = 0xcc8
+
+272 
+v®
+ 
+u¬ch9
+ = 0xcc9
+
+273 
+v®
+ 
+u¬ch10
+ = 0xcca
+
+274 
+v®
+ 
+u¬ch11
+ = 0xccb
+
+275 
+v®
+ 
+u¬ch12
+ = 0xccc
+
+276 
+v®
+ 
+u¬ch13
+ = 0xccd
+
+277 
+v®
+ 
+u¬ch14
+ = 0xcce
+
+278 
+v®
+ 
+u¬ch15
+ = 0xccf
+
+279 
+v®
+ 
+couÁh
+ = 0x586
+
+280 
+v®
+ 
+cyşeh
+ = 0xc80
+
+281 
+v®
+ 
+timeh
+ = 0xc81
+
+282 
+v®
+ 
+š¡»th
+ = 0xc82
+
+284 
+v®
+ 
+şock
+ = 
+fæags
+
+
+285 
+v®
+ 
+¦Ùs
+ = 
+badvaddr
+
+
+286 
+v®
+ 
+tmodes
+ = 
+±br
+
+
+287 
+v®
+ 
+iMemPrÙeùiÚ
+ = 
+asid
+
+
+288 
+v®
+ 
+dMemPrÙeùiÚ
+ = 
+im¶
+
+
+289 
+v®
+ 
+gpoPrÙeùiÚ
+ = 
+çtc
+
+
+290 
+v®
+ 
+gpiBa£
+ = 
+u¬ch0
+
+
+291 
+v®
+ 
+gpoBa£
+ = 
+u¬ch4
+
+
+292 
+v®
+ 
+®l
+ = {
+
+293 
+v®
+ 
+»s
+ = 
+cŞËùiÚ
+.
+mubË
+.
+A¼ayBufãr
+[
+IÁ
+]()
+
+294 
+»s
+ +ğ
+fæags
+
+
+295 
+»s
+ +ğ
+äm
+
+
+296 
+»s
+ +ğ
+fc¤
+
+
+297 
+»s
+ +ğ
+¡©s
+
+
+298 
+»s
+ +ğ
+sup0
+
+
+299 
+»s
+ +ğ
+sup1
+
+
+300 
+»s
+ +ğ
+•c
+
+
+301 
+»s
+ +ğ
+badvaddr
+
+
+302 
+»s
+ +ğ
+±br
+
+
+303 
+»s
+ +ğ
+asid
+
+
+304 
+»s
+ +ğ
+couÁ
+
+
+305 
+»s
+ +ğ
+com·»
+
+
+306 
+»s
+ +ğ
+evec
+
+
+307 
+»s
+ +ğ
+ÿu£
+
+
+308 
+»s
+ +ğ
+¡©us
+
+
+309 
+»s
+ +ğ
+h¬tid
+
+
+310 
+»s
+ +ğ
+im¶
+
+
+311 
+»s
+ +ğ
+çtc
+
+
+312 
+»s
+ +ğ
+£nd_i
+
+
+313 
+»s
+ +ğ
+ş—r_i
+
+
+314 
+»s
+ +ğ
+»£t
+
+
+315 
+»s
+ +ğ
+toho¡
+
+
+316 
+»s
+ +ğ
+äomho¡
+
+
+317 
+»s
+ +ğ
+cyşe
+
+
+318 
+»s
+ +ğ
+time
+
+
+319 
+»s
+ +ğ
+š¡»t
+
+
+320 
+»s
+ +ğ
+u¬ch0
+
+
+321 
+»s
+ +ğ
+u¬ch1
+
+
+322 
+»s
+ +ğ
+u¬ch2
+
+
+323 
+»s
+ +ğ
+u¬ch3
+
+
+324 
+»s
+ +ğ
+u¬ch4
+
+
+325 
+»s
+ +ğ
+u¬ch5
+
+
+326 
+»s
+ +ğ
+u¬ch6
+
+
+327 
+»s
+ +ğ
+u¬ch7
+
+
+328 
+»s
+ +ğ
+u¬ch8
+
+
+329 
+»s
+ +ğ
+u¬ch9
+
+
+330 
+»s
+ +ğ
+u¬ch10
+
+
+331 
+»s
+ +ğ
+u¬ch11
+
+
+332 
+»s
+ +ğ
+u¬ch12
+
+
+333 
+»s
+ +ğ
+u¬ch13
+
+
+334 
+»s
+ +ğ
+u¬ch14
+
+
+335 
+»s
+ +ğ
+u¬ch15
+
+
+337 
+»s
+ +ğ
+¦Ùs
+
+
+338 
+»s
+ +ğ
+tmodes
+
+
+339 
+»s
+ +ğ
+iMemPrÙeùiÚ
+
+
+340 
+»s
+ +ğ
+dMemPrÙeùiÚ
+
+
+341 
+»s
+ +ğ
+gpoPrÙeùiÚ
+
+
+342 
+»s
+ +ğ
+gpiBa£
+
+
+343 
+»s
+ +ğ
+gpoBa£
+
+
+344 
+»s
+.
+toA¼ay
+
+
+346 
+v®
+ 
+	g®l32
+ = {
+
+347 
+v®
+ 
+»s
+ = 
+cŞËùiÚ
+.
+mubË
+.
+A¼ayBufãr
+(
+®l
+:
+_
+*)
+
+348 
+»s
+ +ğ
+couÁh
+
+
+349 
+»s
+ +ğ
+cyşeh
+
+
+350 
+»s
+ +ğ
+timeh
+
+
+351 
+»s
+ +ğ
+š¡»th
+
+
+352 
+»s
+.
+toA¼ay
+
+
+	@/home/salman/salman_cps/flexpret/src/Core/ispm.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+12 şas 
+	cIn¡MemCÜeIO
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BundË
+
+
+14 
+v®
+ 
+r
+ = 
+Ãw
+ 
+BundË
+ {
+
+16 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+iMemAddrB™s
+)
+
+17 
+v®
+ 
+’abË
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+18 
+v®
+ 
+d©a_out
+ = 
+	`B™s
+(
+OUTPUT
+, 32)
+
+20 
+v®
+ 
+rw
+ = 
+Ãw
+ 
+BundË
+ {
+
+22 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+iMemAddrB™s
+)
+
+23 
+v®
+ 
+’abË
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+24 
+v®
+ 
+d©a_out
+ = 
+	`B™s
+(
+OUTPUT
+, 32)
+
+25 
+v®
+ 
+wr™e
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+26 
+v®
+ 
+d©a_š
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+27 
+	}
+}
+
+31 şas 
+	cISpm
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+BÏckBox
+
+
+34 
+v®
+ 
+io
+ = 
+Ãw
+ 
+BundË
+ {
+
+35 
+v®
+ 
+cÜe
+ = 
+Ãw
+ 
+	`In¡MemCÜeIO
+()
+
+36 
+v®
+ 
+bus
+ = 
+Ãw
+ 
+	`In¡MemBusIO
+()
+
+40 
+v®
+ 
+i¥m
+ = 
+	`Mem
+(
+	`B™s
+(
+width
+ = 32), 
+cÚf
+.
+iMemD•th
+, 
+Œue
+)
+
+44 
+v®
+ 
+dout_r
+ = 
+	`Reg
+(
+	$B™s
+(
+width
+ = 32))
+
+45 
+io
+.
+cÜe
+.
+r
+.
+d©a_out
+ :ğ
+dout_r
+
+
+48 
+	$wh’
+(
+io
+.
+cÜe
+.
+r
+.
+’abË
+) {
+
+49 
+dout_r
+ :ğ
+	`i¥m
+(
+io
+.
+cÜe
+.
+r
+.
+addr
+)
+
+50 
+	}
+}
+
+52 if(
+cÚf
+.
+iMemCÜeRW
+ || cÚf.
+iMemBusRW
+) {
+
+55 
+v®
+ 
+dout_rw
+ = 
+Reg
+(
+B™s
+(
+width
+ = 32))
+
+57 if(
+cÚf
+.
+iMemBusRW
+) {
+
+58 
+io
+.
+bus
+.
+d©a_out
+ :ğ
+dout_rw
+
+
+59 
+io
+.
+bus
+.
+»ady
+ :ğ
+BoŞ
+(
+Œue
+)
+
+60 
+wh’
+(
+io
+.
+bus
+.
+’abË
+) {
+
+61 
+wh’
+(
+io
+.
+bus
+.
+wr™e
+) {
+
+62 
+i¥m
+(
+io
+.
+bus
+.
+addr
+è:ğio.bus.
+d©a_š
+
+
+64 
+dout_rw
+ :ğ
+i¥m
+(
+io
+.
+bus
+.
+addr
+)
+
+69 if(
+cÚf
+.
+iMemCÜeRW
+) {
+
+70 
+io
+.
+cÜe
+.
+rw
+.
+d©a_out
+ :ğ
+dout_rw
+
+
+71 
+wh’
+(
+io
+.
+cÜe
+.
+rw
+.
+’abË
+) {
+
+72 if(
+cÚf
+.
+iMemBusRW
+è
+io
+.
+bus
+.
+»ady
+ :ğ
+BoŞ
+(
+çl£
+)
+
+73 
+wh’
+(
+io
+.
+cÜe
+.
+rw
+.
+wr™e
+) {
+
+74 
+i¥m
+(
+io
+.
+cÜe
+.
+rw
+.
+addr
+è:ğio.cÜe.rw.
+d©a_š
+
+
+76 
+dout_rw
+ :ğ
+i¥m
+(
+io
+.
+cÜe
+.
+rw
+.
+addr
+)
+
+	@/home/salman/salman_cps/flexpret/src/Core/loadstore.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+11 
+impÜt
+ 
+	gFËx´‘CÚ¡ªts
+.
+_
+
+
+15 
+objeù
+ 
+	gLßdFÜm©
+ {
+
+16 
+def
+ 
+­¶y
+(
+d©a
+: 
+B™s
+, 
+add»ss
+: 
+UIÁ
+, 
+memTy³
+: UInt) = {
+
+21 
+v®
+ 
+shiáed
+ = 
+UIÁ
+(
+d©a
+è>> (
+C©
+(
+add»ss
+, UInt(0,3)))
+
+24 
+Mux
+(
+memTy³
+ ==ğ
+MEM_LB
+, 
+C©
+(
+Fl
+(24, 
+shiáed
+( 7)), shifted(7, 0)),
+
+25 
+Mux
+(
+memTy³
+ ==ğ
+MEM_LBU
+, 
+C©
+(
+B™s
+(0, 24), 
+shiáed
+(7, 0)),
+
+26 
+Mux
+(
+memTy³
+ ==ğ
+MEM_LH
+, 
+C©
+(
+Fl
+(16, 
+shiáed
+(15)), shifted(15, 0)),
+
+27 
+Mux
+(
+memTy³
+ ==ğ
+MEM_LHU
+, 
+C©
+(
+B™s
+(0, 16), 
+shiáed
+(15, 0)),
+
+28 
+shiáed
+))))
+
+33 
+objeù
+ 
+	gStÜeFÜm©
+ {
+
+34 
+def
+ 
+­¶y
+(
+d©a
+: 
+B™s
+, 
+memTy³
+: 
+UIÁ
+) = {
+
+40 
+Mux
+(
+memTy³
+ ==ğ
+MEM_SB
+, 
+Fl
+(4, 
+d©a
+( 7, 0)),
+
+41 
+Mux
+(
+memTy³
+ ==ğ
+MEM_SH
+, 
+Fl
+(2, 
+d©a
+(15, 0)),
+
+42 
+d©a
+))
+
+48 
+objeù
+ 
+	gStÜeMask
+ {
+
+49 
+def
+ 
+­¶y
+(
+add»ss
+: 
+UIÁ
+, 
+memTy³
+: UInt) = {
+
+54 
+Mux
+(
+memTy³
+ ==ğ
+MEM_SB
+, 
+B™s
+(1, 1è<< 
+add»ss
+,
+
+55 
+Mux
+(
+memTy³
+ ==ğ
+MEM_SH
+, 
+B™s
+(3, 2è<< 
+add»ss
+,
+
+56 
+Mux
+(
+memTy³
+ ==ğ
+MEM_SW
+, 
+B™s
+(15, 4),
+
+57 
+B™s
+(0, 4))))
+
+61 şas 
+	cLßdStÜe
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+ModuË
+
+
+63 
+v®
+ 
+io
+ = 
+Ãw
+ 
+BundË
+ {
+
+65 
+v®
+ 
+dmem
+ = 
+Ãw
+ 
+	`D©aMemCÜeIO
+().
+æ
+
+
+66 
+v®
+ 
+imem
+ = 
+Ãw
+ 
+	`In¡MemCÜeIO
+().
+æ
+
+
+67 
+v®
+ 
+bus
+ = 
+Ãw
+ 
+	`BusIO
+().
+æ
+
+
+69 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 32)
+
+70 
+v®
+ 
+th»ad
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+71 
+v®
+ 
+lßd
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+72 
+v®
+ 
+¡Üe
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+73 
+v®
+ 
+mem_ty³
+ = 
+	`UIÁ
+(
+INPUT
+, 
+MEM_WI
+)
+
+74 
+v®
+ 
+d©a_š
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+75 
+v®
+ 
+d©a_out
+ = 
+	`B™s
+(
+OUTPUT
+, 32)
+
+77 
+v®
+ 
+imem_´ÙeùiÚ
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+memRegiÚs
+è{ 
+	`UIÁ
+(
+INPUT
+, 
+MEMP_WI
+) }
+
+78 
+v®
+ 
+dmem_´ÙeùiÚ
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+memRegiÚs
+è{ 
+	`UIÁ
+(
+INPUT
+, 
+MEMP_WI
+) }
+
+80 
+v®
+ 
+kl
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+81 
+v®
+ 
+lßd_mi§ligÃd
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+82 
+v®
+ 
+lßd_çuÉ
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+83 
+v®
+ 
+¡Üe_mi§ligÃd
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+84 
+v®
+ 
+¡Üe_çuÉ
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+88 
+v®
+ 
+addr_by‹_»g
+ = 
+	`Reg
+(
+Ãxt
+ = 
+io
+.
+	$addr
+(1, 0))
+
+89 
+v®
+ 
+mem_ty³_»g
+ = 
+	$Reg
+(
+Ãxt
+ = 
+io
+.
+mem_ty³
+)
+
+92 
+v®
+ 
+dmem_İ
+ = 
+io
+.
+	`addr
+(31, 32-
+ADDR_DSPM_BITS
+è==ğ
+ADDR_DSPM_VAL
+
+
+93 
+v®
+ 
+imem_İ
+ = 
+io
+.
+	`addr
+(31, 32-
+ADDR_ISPM_BITS
+è==ğ
+ADDR_ISPM_VAL
+
+
+94 
+v®
+ 
+bus_İ
+ = 
+io
+.
+	`addr
+(31, 32-
+ADDR_BUS_BITS
+è==ğ
+ADDR_BUS_VAL
+
+
+97 
+v®
+ 
+bad_add»ss
+ = (
+
+98 (
+dmem_İ
+ && 
+io
+.
+	`addr
+(31-
+ADDR_DSPM_BITS
+, 
+cÚf
+.
+dMemAddrB™s
+è!ğ
+	`B™s
+(0)) ||
+
+99 (
+imem_İ
+ && 
+io
+.
+	`addr
+(31-
+ADDR_ISPM_BITS
+, 
+cÚf
+.
+iMemAddrB™s
++2è!ğ
+	`B™s
+(0)) ||
+
+100 (
+bus_İ
+ && 
+io
+.
+	`addr
+(31-
+ADDR_BUS_BITS
+, 
+cÚf
+.
+busAddrB™s
+-cÚf.
+th»adB™s
+è!ğ
+	$B™s
+(0)) )
+
+103 
+v®
+ 
+³rmissiÚ
+ = 
+	$BoŞ
+()
+
+104 if(
+cÚf
+.
+memPrÙeùiÚ
+) {
+
+106 
+v®
+ 
+imem_»giÚ_mode
+ = 
+io
+.
+	`imem_´ÙeùiÚ
+(io.
+	`addr
+(
+cÚf
+.
+iMemHighIndex
+, cÚf.
+iMemLowIndex
+))
+
+107 
+v®
+ 
+dmem_»giÚ_mode
+ = 
+io
+.
+	`dmem_´ÙeùiÚ
+(io.
+	`addr
+(
+cÚf
+.
+dMemHighIndex
+, cÚf.
+dMemLowIndex
+))
+
+109 
+v®
+ 
+imem_³rmissiÚ
+ = ((
+imem_»giÚ_mode
+ ==ğ
+MEMP_SH
+è|| (
+	`imem_»giÚ_mode
+(
+cÚf
+.
+th»adB™s
+-1,0è==ğ
+io
+.
+th»ad
+)è&& (imem_»giÚ_mod!ğ
+MEMP_RO
+)
+
+110 
+v®
+ 
+dmem_³rmissiÚ
+ = ((
+dmem_»giÚ_mode
+ ==ğ
+MEMP_SH
+è|| (
+	`dmem_»giÚ_mode
+(
+cÚf
+.
+th»adB™s
+-1,0è==ğ
+io
+.
+th»ad
+)è&& (dmem_»giÚ_mod!ğ
+MEMP_RO
+)
+
+112 
+³rmissiÚ
+ :ğ(
+dmem_İ
+ && 
+dmem_³rmissiÚ
+è|| (
+imem_İ
+ && 
+imem_³rmissiÚ
+è|| 
+bus_İ
+
+
+113 
+	}
+} {
+
+114 
+³rmissiÚ
+ :ğ
+BoŞ
+(
+Œue
+)
+
+118 
+v®
+ 
+lßd_mi§ligÃd
+ = 
+	$BoŞ
+()
+
+119 
+lßd_mi§ligÃd
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+120 if(
+cÚf
+.
+ÿu£s
+.
+	$cÚšs
+(
+Cau£s
+.
+mi§ligÃd_lßd
+)) {
+
+121 
+lßd_mi§ligÃd
+ :ğ
+io
+.
+lßd
+ && (
+
+122 (((
+io
+.
+mem_ty³
+ ==ğ
+MEM_LH
+è|| (io.mem_ty³ ==ğ
+MEM_LHU
+)è&& (io.
+	`addr
+(0è!ğ
+	`B™s
+(0))) ||
+
+123 ((
+io
+.
+mem_ty³
+ ==ğ
+MEM_LW
+è&& (io.
+	`addr
+(1,0è!ğ
+	`B™s
+(0))))
+
+124 
+	}
+}
+
+125 
+v®
+ 
+	glßd_çuÉ
+ = 
+	$BoŞ
+()
+
+126 
+lßd_çuÉ
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+127 if(
+cÚf
+.
+ÿu£s
+.
+	$cÚšs
+(
+Cau£s
+.
+çuÉ_lßd
+)) {
+
+128 
+lßd_çuÉ
+ :ğ
+io
+.
+lßd
+ && 
+bad_add»ss
+
+
+129 
+	}
+}
+
+130 
+v®
+ 
+¡Üe_mi§ligÃd
+ = 
+	$BoŞ
+()
+
+131 
+¡Üe_mi§ligÃd
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+132 if(
+cÚf
+.
+ÿu£s
+.
+	$cÚšs
+(
+Cau£s
+.
+mi§ligÃd_¡Üe
+)) {
+
+133 
+¡Üe_mi§ligÃd
+ :ğ
+io
+.
+¡Üe
+ && (
+
+134 ((
+io
+.
+mem_ty³
+ ==ğ
+MEM_SH
+è&& (io.
+	`addr
+(0è!ğ
+	`B™s
+(0))) ||
+
+135 ((
+io
+.
+mem_ty³
+ ==ğ
+MEM_SW
+è&& (io.
+	`addr
+(1,0è!ğ
+	`B™s
+(0))))
+
+136 
+	}
+}
+
+137 
+v®
+ 
+	g¡Üe_çuÉ
+ = 
+	$BoŞ
+()
+
+138 
+¡Üe_çuÉ
+ :ğ
+	$BoŞ
+(
+çl£
+)
+
+139 if(
+cÚf
+.
+ÿu£s
+.
+	$cÚšs
+(
+Cau£s
+.
+çuÉ_¡Üe
+)) {
+
+140 
+¡Üe_çuÉ
+ :ğ
+io
+.
+¡Üe
+ && (
+bad_add»ss
+ || !
+³rmissiÚ
+)
+
+141 
+	}
+}
+
+144 
+v®
+ 
+dmem_İ_»g
+ = 
+	$Reg
+(
+Ãxt
+ = 
+dmem_İ
+)
+
+145 
+v®
+ 
+imem_İ_»g
+ = 
+	$Reg
+(
+Ãxt
+ = 
+imem_İ
+)
+
+147 
+v®
+ 
+wr™e
+ = 
+io
+.
+¡Üe
+ && 
+³rmissiÚ
+ && !
+¡Üe_mi§ligÃd
+ && !
+¡Üe_çuÉ
+ && !io.
+kl
+
+
+149 
+io
+.
+dmem
+.
+addr
+ :ğio.
+	`addr
+(
+cÚf
+.
+dMemAddrB™s
+-1, 2)
+
+150 
+io
+.
+dmem
+.
+d©a_š
+ :ğ
+	$StÜeFÜm©
+(
+io
+.
+d©a_š
+, io.
+mem_ty³
+)
+
+151 
+io
+.
+dmem
+.
+’abË
+ :ğ(if(
+cÚf
+.
+dMemFÜûEn
+è
+	$BoŞ
+(
+Œue
+)
+
+152 
+dmem_İ
+ && (
+io
+.
+lßd
+ || io.
+¡Üe
+))
+
+153 
+io
+.
+dmem
+.
+by‹_wr™e
+ :ğ
+	`StÜeMask
+(io.
+	`addr
+(1, 0), io.
+mem_ty³
+) &
+
+154 
+	$Fl
+(
+wr™e
+.
+toB™s
+, 4)
+
+159 if(
+cÚf
+.
+iMemCÜeRW
+) {
+
+160 
+io
+.
+imem
+.
+rw
+.
+addr
+ :ğio.
+	`addr
+(
+cÚf
+.
+iMemAddrB™s
+-1, 2)
+
+161 
+io
+.
+imem
+.
+rw
+.
+d©a_š
+ := io.data_in
+
+162 
+io
+.
+imem
+.
+rw
+.
+’abË
+ :ğ(if(
+cÚf
+.
+iMemFÜûEn
+è
+	`BoŞ
+(
+Œue
+)
+
+163 
+imem_İ
+ && (
+io
+.
+lßd
+ || io.
+¡Üe
+))
+
+164 
+io
+.
+imem
+.
+rw
+.
+wr™e
+ :ğ
+imem_İ
+ && write
+
+165 
+	}
+} {
+
+166 
+io
+.
+imem
+.
+rw
+.
+’abË
+ :ğ
+BoŞ
+(
+çl£
+)
+
+167 
+io
+.
+imem
+.
+rw
+.
+wr™e
+ :ğ
+BoŞ
+(
+çl£
+)
+
+173 
+io
+.
+bus
+.
+addr
+ :ğ
+C©
+(io.
+th»ad
+, io.addr(
+cÚf
+.
+busAddrB™s
+-cÚf.
+th»adB™s
+-1,0))
+
+174 
+	gio
+.
+	gbus
+.
+	gd©a_š
+ :ğ
+io
+.
+d©a_š
+
+
+175 
+io
+.
+bus
+.
+’abË
+ :ğ
+bus_İ
+ && (io.
+lßd
+ || io.
+¡Üe
+)
+
+176 
+io
+.
+bus
+.
+wr™e
+ :ğ
+bus_İ
+ && write
+
+179 
+io
+.
+d©a_out
+ :ğ
+Mux
+(
+dmem_İ_»g
+, 
+LßdFÜm©
+(io.
+dmem
+.d©a_out, 
+addr_by‹_»g
+, 
+mem_ty³_»g
+),
+
+180 
+	$Mux
+(
+imem_İ_»g
+, 
+io
+.
+imem
+.
+rw
+.
+d©a_out
+,
+
+181 
+io
+.
+bus
+.
+d©a_out
+))
+
+183 
+io
+.
+lßd_mi§ligÃd
+ :=†oad_misaligned
+
+184 
+io
+.
+lßd_çuÉ
+ :=†oad_fault
+
+185 
+io
+.
+¡Üe_mi§ligÃd
+ := store_misaligned
+
+186 
+io
+.
+¡Üe_çuÉ
+ := store_fault
+
+188 
+	}
+}
+
+	@/home/salman/salman_cps/flexpret/src/Core/multiplier.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+11 
+impÜt
+ 
+	gFËx´‘CÚ¡ªts
+.
+_
+
+
+13 şas 
+	cMuÉl›r
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+ModuË
+ {
+
+14 
+v®
+ 
+io
+ = 
+Ãw
+ 
+BundË
+ {
+
+15 
+v®
+ 
+İ1
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+16 
+v®
+ 
+İ2
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+17 
+v®
+ 
+func
+ = 
+	`UIÁ
+(
+INPUT
+, 4)
+
+18 
+v®
+ 
+»suÉ
+ = 
+	`B™s
+(
+OUTPUT
+, 32)
+
+21 
+v®
+ 
+İ1
+ = 
+	`Mux
+(
+io
+.
+func
+ ==ğ
+MUL_HU
+, 
+	`C©
+(
+	`B™s
+(0, 1), io.İ1).
+toSIÁ
+, C©(io.
+	`İ1
+(31), io.op1).toSInt)
+
+22 
+v®
+ 
+İ2
+ = 
+	`Mux
+(
+io
+.
+func
+ ==ğ
+MUL_HSU
+ || io.funø==ğ
+MUL_HU
+, 
+	`C©
+(
+	`B™s
+(0, 1), io.İ2).
+toSIÁ
+, C©(io.
+	`İ2
+(31), io.op2).toSInt)
+
+23 
+v®
+ 
+mul_»suÉ
+ = 
+İ1
+ * 
+İ2
+
+
+24 
+v®
+ 
+»suÉ
+ = 
+	`Mux
+(
+io
+.
+func
+ ==ğ
+MUL_L
+, 
+	`mul_»suÉ
+(31, 0), 
+	$mul_»suÉ
+(63, 32))
+
+27 
+io
+.
+»suÉ
+ :ğ
+	`Reg
+(
+Ãxt
+ =„esult)
+
+29 
+	}
+}
+
+	@/home/salman/salman_cps/flexpret/src/Core/regfile.scala
+
+8 
+·ckage
+ 
+CÜe
+
+
+10 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+11 
+impÜt
+ 
+	gFËx´‘CÚ¡ªts
+.
+_
+
+
+13 şas 
+	cRegi¡”Fe
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+ModuË
+
+
+15 
+v®
+ 
+io
+ = 
+Ãw
+ 
+BundË
+ {
+
+16 
+v®
+ 
+rs1
+ = 
+Ãw
+ 
+BundË
+ {
+
+17 
+v®
+ 
+th»ad
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+18 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 
+REG_ADDR_BITS
+)
+
+19 
+v®
+ 
+d©a
+ = 
+	`B™s
+(
+OUTPUT
+, 32)
+
+21 
+v®
+ 
+rs2
+ = 
+Ãw
+ 
+BundË
+ {
+
+22 
+v®
+ 
+th»ad
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+23 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 
+REG_ADDR_BITS
+)
+
+24 
+v®
+ 
+d©a
+ = 
+	`B™s
+(
+OUTPUT
+, 32)
+
+26 
+v®
+ 
+rd
+ = 
+Ãw
+ 
+BundË
+ {
+
+27 
+v®
+ 
+th»ad
+ = 
+	`UIÁ
+(
+INPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+28 
+v®
+ 
+addr
+ = 
+	`UIÁ
+(
+INPUT
+, 
+REG_ADDR_BITS
+)
+
+29 
+v®
+ 
+d©a
+ = 
+	`B™s
+(
+INPUT
+, 32)
+
+30 
+v®
+ 
+’abË
+ = 
+	`BoŞ
+(
+INPUT
+)
+
+34 
+v®
+ 
+»gfe
+ = 
+	`Mem
+(
+	`B™s
+(
+width
+ = 32), 
+cÚf
+.
+»gD•th
+, 
+Œue
+)
+
+37 
+v®
+ 
+dout1
+ = 
+	`Reg
+(
+	$B™s
+(
+width
+ = 32))
+
+38 
+v®
+ 
+dout2
+ = 
+	`Reg
+(
+	$B™s
+(
+width
+ = 32))
+
+39 
+io
+.
+rs1
+.
+d©a
+ :ğ
+dout1
+
+
+40 
+io
+.
+rs2
+.
+d©a
+ :ğ
+dout2
+
+
+43 
+dout1
+ :ğ
+	`Mux
+(
+io
+.
+rs1
+.
+addr
+ ==ğ
+	`UIÁ
+(0), 
+	`B™s
+(0),
+
+44 
+	`»gfe
+(
+	$C©
+(
+io
+.
+rs1
+.
+addr
+, io.rs1.
+th»ad
+)))
+
+45 
+dout2
+ :ğ
+	`Mux
+(
+io
+.
+rs2
+.
+addr
+ ==ğ
+	`UIÁ
+(0), 
+	`B™s
+(0),
+
+46 
+	`»gfe
+(
+	$C©
+(
+io
+.
+rs2
+.
+addr
+, io.rs2.
+th»ad
+)))
+
+49 
+	$wh’
+(
+io
+.
+rd
+.
+’abË
+) {
+
+50 
+	`»gfe
+(
+	`C©
+(
+io
+.
+rd
+.
+addr
+, io.rd.
+th»ad
+)è:ğio.rd.
+d©a
+
+
+51 
+	}
+}
+
+	@/home/salman/salman_cps/flexpret/src/Core/scheduler.scala
+
+9 
+·ckage
+ 
+CÜe
+
+
+11 
+impÜt
+ 
+	gChi£l
+.
+_
+
+
+12 
+impÜt
+ 
+	gFËx´‘CÚ¡ªts
+.
+_
+
+
+13 
+impÜt
+ 
+	gFËx´‘CÚfigu¿tiÚ
+.
+_
+
+
+17 
+objeù
+ 
+	g´iÜ™yArb™”
+ {
+
+18 
+def
+ 
+­¶y
+(
+»que¡
+: 
+Seq
+[
+BoŞ
+]) = {
+
+19 
+»que¡
+(0è+: (1 
+uÁ
+„eque¡.
+Ëngth
+).
+m­
+(
+i
+ =>„eque¡(iè&& !»que¡.
+¦iû
+(0, i).
+fŞdLeá
+(
+BoŞ
+(
+çl£
+))(
+_
+ || _))
+
+23 
+objeù
+ 
+	gRRArb™”MaskM‘hod
+ {
+
+24 
+def
+ 
+­¶y
+(
+»que¡
+: 
+Seq
+[
+BoŞ
+], 
+Ï¡G¿ÁOH
+: Seq[Bool]) = {
+
+26 
+v®
+ 
+mask
+ = 
+BoŞ
+(
+çl£
+è+: (1 
+uÁ
+ 
+Ï¡G¿ÁOH
+.
+Ëngth
+).
+m­
+(
+i
+ =>†a¡G¿ÁOH.
+¦iû
+(0, i).
+fŞdLeá
+(BoŞ(çl£))(
+_
+ || _))
+
+28 
+v®
+ 
+	gmaskedReque¡
+ = (
+»que¡
+, 
+	gmask
+).
+	gz³d
+.
+m­
+(
+_
+ && _)
+
+30 
+v®
+ 
+	gmaskedG¿Á
+ = 
+´iÜ™yArb™”
+(
+maskedReque¡
+)
+
+32 
+v®
+ 
+unmaskedG¿Á
+ = 
+´iÜ™yArb™”
+(
+»que¡
+)
+
+36 
+v®
+ 
+u£MaskedG¿Á
+ = 
+maskedReque¡
+.
+fŞdLeá
+(
+BoŞ
+(
+çl£
+))(
+_
+ || _)
+
+37 (
+maskedG¿Á
+, 
+	gunmaskedG¿Á
+).
+	gz³d
+.
+m­
+(
+Mux
+(
+u£MaskedG¿Á
+, 
+_
+, _))
+
+42 şas 
+	cScheduËr
+(
+im¶ic™
+ 
+cÚf
+: 
+FËx´‘CÚfigu¿tiÚ
+è
+ex‹nds
+ 
+ModuË
+
+
+44 
+v®
+ 
+io
+ = 
+Ãw
+ 
+BundË
+ {
+
+45 
+v®
+ 
+¦Ùs
+ = 
+Vec
+.
+	`fl
+(8è{ 
+	`UIÁ
+(
+INPUT
+, 
+SLOT_WI
+) }
+
+46 
+v®
+ 
+th»ad_modes
+ = 
+Vec
+.
+	`fl
+(
+cÚf
+.
+th»ads
+è{ 
+	`UIÁ
+(
+INPUT
+, 
+TMODE_WI
+) }
+
+47 
+v®
+ 
+th»ad
+ = 
+	`UIÁ
+(
+OUTPUT
+, 
+cÚf
+.
+th»adB™s
+)
+
+48 
+v®
+ 
+v®id
+ = 
+	`BoŞ
+(
+OUTPUT
+)
+
+51 
+def
+ 
+	$th»adAùive
+(
+i
+: 
+UIÁ
+): 
+BoŞ
+ = { (
+io
+.
+	`th»ad_modes
+(iè==ğ
+TMODE_HA
+è|| (io.th»ad_modes(iè==ğ
+TMODE_SA
+è
+	}
+}
+
+53 if(
+cÚf
+.
+th»ads
+ == 1) {
+
+54 
+io
+.
+th»ad
+ :ğ
+UIÁ
+(0)
+
+55 
+io
+.
+v®id
+ :ğ
+th»adAùive
+(
+UIÁ
+(0))
+
+56 } if(
+cÚf
+.
+roundRobš
+) {
+
+58 
+v®
+ 
+cu¼’tTh»ad
+ = 
+Reg
+(
+š™
+ = 
+UIÁ
+(0, 
+cÚf
+.
+th»adB™s
+))
+
+59 
+	gcu¼’tTh»ad
+ :ğ
+Mux
+(
+cu¼’tTh»ad
+ < 
+UIÁ
+(
+cÚf
+.
+th»ads
+ - 1), currentThread + UInt(1), UInt(0))
+
+60 
+	gio
+.
+	gv®id
+ :ğ
+th»adAùive
+(
+cu¼’tTh»ad
+)
+
+61 
+io
+.
+th»ad
+ :ğ
+cu¼’tTh»ad
+
+
+66 
+v®
+ 
+¦ÙOH
+ = 
+Vec
+.
+fl
+(8è{ 
+Reg
+(
+š™
+ = 
+BoŞ
+(
+çl£
+)) }
+
+67 
+v®
+ 
+¦ÙReque¡
+ = 
+io
+.
+¦Ùs
+.
+m­
+(
+i
+ => i !ğ
+SLOT_D
+)
+
+68 
+v®
+ 
+¦ÙG¿ÁOH
+ = 
+RRArb™”MaskM‘hod
+(
+¦ÙReque¡
+, 
+¦ÙOH
+)
+
+69 
+v®
+ 
+	g¦ÙG¿ÁV®id
+ = 
+¦ÙG¿ÁOH
+.
+fŞdLeá
+(
+BoŞ
+(
+çl£
+))(
+_
+ || _)
+
+70 
+v®
+ 
+¦ÙS–eùed
+ = 
+Mux1H
+(
+¦ÙG¿ÁOH
+, 
+io
+.
+¦Ùs
+)
+
+73 
+v®
+ 
+	gth»adModeOH
+ = 
+Vec
+.
+fl
+(
+cÚf
+.
+th»ads
+è{ 
+Reg
+(
+š™
+ = 
+BoŞ
+(
+çl£
+))}
+
+74 
+v®
+ 
+	gth»adModeReque¡
+ = 
+io
+.
+th»ad_modes
+.
+m­
+(
+i
+ => i ==ğ
+TMODE_SA
+)
+
+75 
+v®
+ 
+th»adModeG¿ÁOH
+ = 
+RRArb™”MaskM‘hod
+(
+th»adModeReque¡
+, 
+th»adModeOH
+)
+
+76 
+v®
+ 
+	gth»adModeG¿ÁV®id
+ = 
+th»adModeG¿ÁOH
+.
+fŞdLeá
+(
+BoŞ
+(
+çl£
+))(
+_
+ || _)
+
+77 
+v®
+ 
+th»adS–eùed
+ = 
+OHToUIÁ
+(
+th»adModeG¿ÁOH
+)
+
+80 
+io
+.
+th»ad
+ :ğ
+¦ÙS–eùed
+(
+cÚf
+.
+th»adB™s
+-1,0)
+
+81 
+	gio
+.
+	gv®id
+ :ğ
+BoŞ
+(
+çl£
+)
+
+82 
+wh’
+(
+¦ÙG¿ÁV®id
+) {
+
+83 
+¦ÙOH
+ :ğ
+¦ÙG¿ÁOH
+
+
+84 
+wh’
+(
+¦ÙS–eùed
+ !ğ
+SLOT_S
+ && 
+th»adAùive
+(¦ÙS–eùed(
+cÚf
+.
+th»adB™s
+-1,0))) {
+
+85 
+	gio
+.
+	gth»ad
+ :ğ
+¦ÙS–eùed
+(
+cÚf
+.
+th»adB™s
+,0)
+
+86 
+	gio
+.
+	gv®id
+ :ğ
+BoŞ
+(
+Œue
+)
+
+87 } .
+–£wh’
+(
+th»adModeG¿ÁV®id
+) {
+
+88 
+th»adModeOH
+ :ğ
+th»adModeG¿ÁOH
+
+
+89 
+io
+.
+th»ad
+ :ğ
+th»adS–eùed
+
+
+90 
+io
+.
+v®id
+ :ğ
+BoŞ
+(
+Œue
+)
+
+	@
+1
+.
+1
+/usr/include
+13
+729
+/home/salman/salman_cps/flexpret/src/Core/constants.scala
+/home/salman/salman_cps/flexpret/src/Core/control.scala
+/home/salman/salman_cps/flexpret/src/Core/core.scala
+/home/salman/salman_cps/flexpret/src/Core/csr.scala
+/home/salman/salman_cps/flexpret/src/Core/datapath.scala
+/home/salman/salman_cps/flexpret/src/Core/decode.scala
+/home/salman/salman_cps/flexpret/src/Core/dspm.scala
+/home/salman/salman_cps/flexpret/src/Core/instructions.scala
+/home/salman/salman_cps/flexpret/src/Core/ispm.scala
+/home/salman/salman_cps/flexpret/src/Core/loadstore.scala
+/home/salman/salman_cps/flexpret/src/Core/multiplier.scala
+/home/salman/salman_cps/flexpret/src/Core/regfile.scala
+/home/salman/salman_cps/flexpret/src/Core/scheduler.scala

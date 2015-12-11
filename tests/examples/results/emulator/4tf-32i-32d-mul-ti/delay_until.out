@@ -1,0 +1,7 @@
+maxcycles: 20000000
+ispm: tests/examples/build/emulator/delay_until.inst.mem
+dspm: tests/examples/build/emulator/delay_until.data.mem
+vcd: tests/examples/results/emulator/4tf-32i-32d-mul-ti/delay_until.vcd
+000000B4
+00002800
+*** PASSED ***

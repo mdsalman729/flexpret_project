@@ -1,0 +1,20 @@
+#!/bin/bash
+
+MYPWD=`pwd`
+
+PINNAME=pin-2.11-49306-gcc.3.4.6-ia32_intel64-linux
+
+CHECKOUT_DIR=$CONCURRIT_TPDIR/$PINNAME
+INSTALL_DIR=$CONCURRIT_TPDIR/pin
+
+cd $CONCURRIT_TPDIR
+
+rm -rf $CONCURRIT_TPDIR/pin
+
+tar -xvf $CONCURRIT_TPDIR/$PINNAME.tar
+
+mv $CHECKOUT_DIR $INSTALL_DIR
+
+$CONCURRIT_HOME/scripts/compile_pintool.sh
+
+cd $MYPWD

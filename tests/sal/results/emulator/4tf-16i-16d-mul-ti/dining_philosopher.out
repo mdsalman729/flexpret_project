@@ -1,0 +1,22 @@
+maxcycles: 20000000
+ispm: tests/sal/build/emulator/dining_philosopher.inst.mem
+dspm: tests/sal/build/emulator/dining_philosopher.data.mem
+vcd: tests/sal/results/emulator/4tf-16i-16d-mul-ti/dining_philosopher.vcd
+PPhhiilloossoopphheerr  12  eeaattiinnggGPIO (tid = 0, cycle =     505): 0x00000003
+*** PASSED ***
+Counters for tid = 0
+Processor cycles = 530
+Thread cycles = 157
+Commit cycles = 147
+Counters for tid = 1
+Processor cycles = 530
+Thread cycles = 124
+Commit cycles = 124
+Counters for tid = 2
+Processor cycles = 530
+Thread cycles = 124
+Commit cycles = 123
+Counters for tid = 3
+Processor cycles = 530
+Thread cycles = 125
+Commit cycles = 0

@@ -1,0 +1,9 @@
+maxcycles: 20000000
+ispm: tests/examples/build/emulator/gpio.inst.mem
+dspm: tests/examples/build/emulator/gpio.data.mem
+vcd: tests/examples/results/emulator/4tf-32i-32d-mul-ti/gpio.vcd
+GPIO (tid = 0, cycle =      20): 0x00000001
+GPIO (tid = 0, cycle =    1027): 0x00000003
+GPIO (tid = 0, cycle =    1028): 0x00000002
+00000002
+*** PASSED ***

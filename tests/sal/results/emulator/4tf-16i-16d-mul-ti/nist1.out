@@ -1,0 +1,22 @@
+maxcycles: 20000000
+ispm: tests/sal/build/emulator/nist1.inst.mem
+dspm: tests/sal/build/emulator/nist1.data.mem
+vcd: tests/sal/results/emulator/4tf-16i-16d-mul-ti/nist1.vcd
+sssscccc3333ããããƒƒƒƒoooo————““““ƒƒƒƒççççóóóócccc““““3333####ooooccccssssoooogggg····““““····####““““ããããgggg····####3333ïïïï········““““####ƒƒƒƒ““““####““““####gggg····““““····####ƒƒƒƒ····cccc####ƒƒƒƒããããgggg····““““3333####cccc####gggg····““““3333gggg77777777““““oooo####cccc““““““““““““ãããã####ãããã7777““““####ggggƒƒƒƒ7777cccc####ƒƒƒƒããããgggg········““““““““““““########ssssssssƒƒƒƒãããããããããããã····7777····ƒƒƒƒ““““oooo####““““cccc““““““““ãããã####““““ãããã····““““####““““····cccc####““““ããããóóóóggggSalmanSalmanSalmanSalman0000000AGPIO (tid = 0, cycle =    9330): 0x00000003
+*** PASSED ***
+Counters for tid = 0
+Processor cycles = 9349
+Thread cycles = 3138
+Commit cycles = 3128
+Counters for tid = 1
+Processor cycles = 9349
+Thread cycles = 3105
+Commit cycles = 3105
+Counters for tid = 2
+Processor cycles = 9349
+Thread cycles = 3106
+Commit cycles = 3105
+Counters for tid = 3
+Processor cycles = 9349
+Thread cycles = 0
+Commit cycles = 0

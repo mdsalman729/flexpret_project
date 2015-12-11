@@ -1,0 +1,47 @@
+
+tests/isa/build/emulator/exc_external.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00000517          	auipc	a0,0x0
+   4:	06450513          	addi	a0,a0,100 # 64 <int_handler>
+   8:	50851073          	csrw	evec,a0
+   c:	00200e13          	li	t3,2
+  10:	00200613          	li	a2,2
+  14:	00202573          	frrm	a0
+  18:	00000013          	nop
+  1c:	00000013          	nop
+  20:	00000013          	nop
+  24:	00000013          	nop
+  28:	00000013          	nop
+  2c:	00300613          	li	a2,3
+  30:	50a86073          	csrsi	status,16
+  34:	00c0006f          	j	40 <fail>
+  38:	01c0006f          	j	54 <pass>
+  3c:	01c01c63          	bne	zero,t3,54 <pass>
+
+00000040 <fail>:
+  40:	0ff0000f          	fence
+  44:	000e0663          	beqz	t3,50 <fail+0x10>
+  48:	51ee1073          	csrw	tohost,t3
+  4c:	cc416073          	csrsi	uarch4,2
+  50:	0000006f          	j	50 <fail+0x10>
+
+00000054 <pass>:
+  54:	0ff0000f          	fence
+  58:	51e0d073          	csrwi	tohost,1
+  5c:	cc40e073          	csrsi	uarch4,1
+  60:	0000006f          	j	60 <pass+0xc>
+
+00000064 <int_handler>:
+  64:	00300e13          	li	t3,3
+  68:	fdc61ce3          	bne	a2,t3,40 <fail>
+  6c:	00400e13          	li	t3,4
+  70:	800005b7          	lui	a1,0x80000
+  74:	00e58593          	addi	a1,a1,14 # 8000000e <begin_signature+0x6000000e>
+  78:	50902573          	csrr	a0,cause
+  7c:	fcb512e3          	bne	a0,a1,40 <fail>
+  80:	50202573          	csrr	a0,epc
+  84:	00450067          	jr	a0,4
