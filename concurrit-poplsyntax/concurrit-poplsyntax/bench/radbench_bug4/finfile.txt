@@ -1,2 +1,0 @@
-#PR_LocalTimeParameters
-MT_safe_localtime
